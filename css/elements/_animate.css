@@ -1,0 +1,156 @@
+/* ---------------------------------------------------------------------------- */
+/* --- ANIMATIONS
+/* ----------------------------------------------------------------------------- */
+
+*[data-animate] {
+  visibility: hidden;
+  animation-delay: 0.15s;
+  animation-duration: 0.75s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+
+}
+*[data-animate].visible {
+  visibility: visible;
+}
+
+.fade-in-right {
+  animation-name: fadeInRight;
+}
+@keyframes fadeInRight {
+  0% {
+    transform: translate3d(20px, 0, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.fade-in-left {
+  animation-name: fadeInLeft;
+}
+@keyframes fadeInLeft {
+  0% {
+    transform: translate3d(-20px, 0, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.fade-in-down {
+  animation-name: fadeInDown;
+}
+@keyframes fadeInDown {
+  0% {
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.fade-in-up {
+  animation-name: fadeInUp;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translate3d(0, 20px, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.zoom-out {
+  animation-name: zoomOut;
+  opacity: 0;
+}
+@keyframes zoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scale-x-in-left {
+  animation-name: scaleInXLeft;
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+@keyframes scaleInXLeft {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.scale-x-in-right {
+  animation-name: scaleInXRight;
+  transform-origin: right center;
+  transform: scaleX(0);
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+@keyframes scaleInXRight {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.floating {
+  animation: floating 3s infinite;
+}
+@keyframes floating {
+  0% {
+    transform: translateY(-6%);
+  }
+
+  50% {
+    transform: translateY(6%);
+  }
+
+  100% {
+    transform: translateY(-6%);
+  }
+}

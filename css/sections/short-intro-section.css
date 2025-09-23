@@ -1,0 +1,21 @@
+
+.short-intro-main{padding: 79px 0 0;}
+.short-intro-title h2{margin-bottom: 25px; color: var(--Charcoal-Black); font-size: 40px; font-weight: 700; line-height: 48px; letter-spacing: -0.8px; }
+.short-intro-btn .button{width: fit-content;}
+
+
+
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .short-intro-head{gap: 60px;}
+    .short-intro-title{flex: 0 0 394px;}
+    .short-intro-desc{flex: 1;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 600px){
+
+}
+@media only screen and (max-width: 599px) and (min-width: 0px){
+ 
+}

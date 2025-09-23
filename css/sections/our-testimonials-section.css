@@ -1,0 +1,57 @@
+
+
+
+
+
+.our-testimonial-main{padding: 0 0 20px;}
+
+.our-testimonials-text h2{margin-bottom: 23px;}
+.our-testimonials-btns{gap: 13px;}
+.our-testimonials-text:first-child:last-child{width: 100%; flex: 0 0 100%;}
+.our-testimonials-image:first-child:last-child{width: 100%; flex: 0 0 100%;}
+
+.our-testimonial-nav{gap: 12px;}
+.our-testimonial-nav .swiper-button-next, .our-testimonial-nav .swiper-button-prev{width: 44px; height: 44px; margin: 0; position: static; border: 1px solid var( --Light-Gray);}
+.our-testimonial-nav .swiper-button-next svg, .our-testimonial-nav .swiper-button-prev svg{width: 16px; height: 16px;}
+.our-testimonial-nav .swiper-button-next::after, .our-testimonial-nav .swiper-button-prev::after{display: none;}
+.our-testimonial-nav .swiper-pagination{position: static; flex: 1;}
+.our-testimonial-nav .swiper-pagination-horizontal .swiper-pagination-bullet{width: 4px; height: 4px; margin: 0 12px; opacity: 1; border-radius: 30px; background: var(--Bluish-Gray);}
+
+.our-testimonial-nav .swiper-pagination-horizontal .swiper-pagination-bullet-active{width: 60px; background: var(--Muted-Ochre);}
+
+
+
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .our-testimonials-main{gap: 80px; padding: 40px 0 80px; flex-direction: row;}
+    .our-testimonials-main:not(.row-reverse){padding: 80px 0 40px; flex-direction: row-reverse;}
+    .our-testimonials-text{flex: 1; max-width: 584px;} 
+    .our-testimonials-image{flex: 0 0 430px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 760px){
+    .our-testimonials-main{gap: 64px; padding: 40px 0 80px;}
+    .our-testimonials-main:not(.row-reverse){padding: 80px 0 40px;}
+    .our-testimonials-text{flex: 0 0 calc(50% - 32px); font-size: 24px; line-height: 36px; letter-spacing: -0.24px;}
+    .our-testimonials-image{flex: 0 0 calc(50% - 32px);}
+}
+@media screen and (max-width: 759px) and (min-width: 0px){
+    .our-testimonials-main:not(.row-reverse){padding: 49px 0 16px;}
+    .our-testimonials-main{gap: 43px 0; padding: 16px 0 29px; flex-direction: column;}
+    .our-testimonials-text{flex: 1; font-size: 20px; line-height: 30px; letter-spacing: -0.2px;}
+    .our-testimonials-image{flex: 1;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+
+.default-intro-main{padding: 39px 0 0;}
+.default-intro-head h2{margin-bottom: 19px; }
+.default-intro-btn .button{width: fit-content;}
+
+.default-intro-icon{margin-bottom: 14px; max-width: 48px; max-height: 48px;}
+.default-intro-icon svg, .default-intro-icon img{object-fit: contain; max-height: 48px;}
+.default-intro-list h2{margin-bottom: 17px; font-size: 24px; font-weight: 700; line-height: 28px; letter-spacing: -0.24px; }
+.default-intro-list p{margin-bottom: 16px;}
+
+
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .default-intro-head{max-width: 800px;}
+    .default-intro-title{flex: 0 0 394px;}
+    .default-intro-desc{flex: 1;}
+    .default-intro-row{gap: 48px; padding: 80px 0 80px;}
+    .default-intro-list{flex: 0  0 calc(25% - 36px); flex-grow: 1;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 600px){
+    .default-intro-row{gap: 32px; padding: 48px 0;}
+    .default-intro-list{flex: 0 0 calc(50% - 16px);}
+}
+@media only screen and (max-width: 599px) and (min-width: 0px){
+    .default-intro-row{gap: 28px 0; padding: 16px 0 38px; flex-direction: column;}
+    .default-intro-list{flex: 0 0 100%; width: 100%; font-size: 18px; line-height: 27px;}
+    .default-intro-icon{margin-bottom: 6px;}
+    .default-intro-list h2{margin-bottom: 9px;}
+}

@@ -1,0 +1,20 @@
+
+.site-footer{background: var(--Charcoal-Black);}
+.footer{padding: 36px 0;}
+.footer-left{flex: 1; gap: 24px;}
+.footer-logo a img{max-width: 132px; object-fit: contain;} 
+.copyrights{flex: 1;}
+
+ul.footer-links{margin: 0; gap: 0 44px; flex: 1; justify-content: flex-end;}
+ul.footer-links li::before{width: 4px; height: 4px; left: -24px; top: 9px; background-color: var(--Bluish-Gray);}
+ul.footer-links li:first-child:before{display: none;}
+
+
+
+
+
+
+
+
+
+

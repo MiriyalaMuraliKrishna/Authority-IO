@@ -1,0 +1,74 @@
+
+
+:root{
+    --Black: #000000;
+    --Black-5: rgb(0 0 0 / 5%);
+    --Black-8: rgb(0 0 0 / 8%);
+    --Black-10: rgb(0 0 0 / 10%);
+    --Black-15: rgb(0 0 0 / 15%);
+    --Black-16: rgb(0 0 0 / 16%);
+    --Black-20: rgb(0 0 0 / 20%);
+    --Black-25: rgb(0 0 0 / 25%);
+    --Black-30: rgb(0 0 0 / 30%);
+    --Black-50: rgb(0 0 0 / 50%);
+    --Black-60: rgb(0 0 0 / 60%);
+    --Black-75: rgb(0 0 0 / 75%);
+    --Black-90: rgb(0 0 0 / 90%);
+    --White-5: rgb(255 255 255 / 5%);
+    --White-7: rgb(255 255 255 / 7%);
+
+    --White-10: rgb(255 255 255 / 10%);
+    --White-15: rgb(255 255 255 / 15%);
+    --White-16: rgb(255 255 255 / 16%);
+    --White-20: rgb(255 255 255 / 20%);
+    --White-25: rgb(255 255 255 / 25%);
+    --White-30: rgb(255 255 255 / 30%);
+    --White-31: rgb(255 255 255 / 31%);
+    --White-40: rgb(255 255 255 / 40%);
+    --White-50: rgb(255 255 255 / 50%);
+    --White-60: rgb(255 255 255 / 60%);
+    --White-70: rgb(255 255 255 / 70%);
+    --White-75: rgb(255 255 255 / 75%);
+    --White-80: rgb(255 255 255 / 80%);
+    --White-90: rgb(255 255 255 / 90%);
+    --White: #ffffff;
+  
+    --Green: #A0BB41;
+    --Yellow: #FEDC31;
+    --Red: #f00;
+
+    --Dark-Gray: #262626;
+    --mid-gray: #292929;
+    
+    --mid-gray-40: rgba(41, 41, 41, 0.40);
+    --mid-gray-80: rgba(41, 41, 41, 0.80);
+
+    --Light-Gray: #424242;
+
+    --Muted-Ochre: #C6A157;
+    --Text-Color: #0A0A0A;
+
+    --Bluish-Gray: #789291;
+    --Charcoal-Black: #1C1C1C;
+    --Background: #EDEDED;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+
+
+.stat-number{padding-top: 79px; color: var(--Bluish-Gray);}
+.stat-values-main{justify-content: center;}
+.stat-value{flex: 0 0 calc(25% - 20px); text-align: center;}
+.stat-number{justify-content: center;}

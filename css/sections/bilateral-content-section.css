@@ -1,0 +1,46 @@
+
+
+.bilateral-head{letter-spacing: -0.4px;}
+.bilateral-list{
+border: 1px solid #212121;
+background: #151515;
+}
+.bilateral-image img{border-radius: 20px 20px 0 0;}
+.bilateral-text{padding: 37px 40px 40px;}
+.bilateral-text h2{margin-bottom: 24px;}
+.bilateral-text ul{margin: 0 0 26px 20px;}
+.bilateral-text ul li::before{top: 11px; left: -20px; width: 4px; height: 4px; background-color: var(--Muted-Ochre);}
+.bilateral-desc{margin-bottom: 24px;}
+
+
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .bilateral-wrap{padding: 80px 0;}
+    .bilateral-head{max-width: 800px; margin-bottom: 81px;}
+    .bilateral-main{gap: 64px;}
+    .bilateral-list{flex: 0 0 calc(50% - 32px);}
+}
+@media only screen and (max-width: 1023px) and (min-width: 760px){
+    .bilateral-wrap{padding: 48px 0;}
+    .bilateral-main{gap: 48px;}
+    .bilateral-list{flex: 0 0 calc(50% - 24px);}
+    .bilateral-text{padding: 28px;}
+    .bilateral-text h2{font-size: 20px; line-height: 25px; padding-right: 40px;}
+    .bilateral-desc{font-size: 16px; line-height: 24px;}
+}
+@media only screen and (max-width: 759px) and (min-width: 0px){
+    .bilateral-wrap{padding: 32px 0;}
+    .bilateral-main{gap: 40px; flex-direction: column;}
+    .bilateral-list{flex: 0 0 100%;}
+    .bilateral-text{padding: 28px;}
+    .bilateral-text h2{font-size: 20px; line-height: 25px; padding-right: 40px;}
+    .bilateral-desc{font-size: 16px; line-height: 24px;}
+}
+
+
+
+
+
+

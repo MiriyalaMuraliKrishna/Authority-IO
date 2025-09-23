@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+.careers-testimonial-text hr{margin-bottom: 20px;}
+
+
+.careers-testimonial-text:first-child:last-child{width: 100%; flex: 0 0 100%;}
+.careers-testimonial-image:first-child:last-child{width: 100%; flex: 0 0 100%;}
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .careers-testimonial-main{gap: 80px; padding: 40px 0 80px; flex-direction: row;}
+    .careers-testimonial-main:not(.row-reverse){padding: 80px 0 40px; flex-direction: row-reverse;}
+    .careers-testimonial-text{flex: 0 0 calc(50% - 40px);}
+    .careers-testimonial-image{flex: 0 0 calc(50% - 40px);}
+}
+@media screen and (max-width: 1023px) and (min-width: 760px){
+    .careers-testimonial-main{gap: 64px; padding: 40px 0 80px;}
+    .careers-testimonial-main:not(.row-reverse){padding: 80px 0 40px;}
+    .careers-testimonial-text{flex: 0 0 calc(50% - 32px); font-size: 24px; line-height: 36px; letter-spacing: -0.24px;}
+    .careers-testimonial-image{flex: 0 0 calc(50% - 32px);}
+}
+@media screen and (max-width: 759px) and (min-width: 0px){
+    .careers-testimonial-main:not(.row-reverse){padding: 49px 0 16px;}
+    .careers-testimonial-main{gap: 43px 0; padding: 16px 0 29px; flex-direction: column;}
+    .careers-testimonial-text{flex: 1; font-size: 20px; line-height: 30px; letter-spacing: -0.2px;}
+    .careers-testimonial-text hr{margin-bottom: 14px;}
+    .careers-testimonial-image{flex: 1;}
+    .name-position span.fs-24{font-size: 18px; line-height: 22px; letter-spacing: -0.18px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
