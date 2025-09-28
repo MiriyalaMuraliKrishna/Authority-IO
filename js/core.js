@@ -6,6 +6,7 @@ import { counter } from "./elements/counter.js";
 import { scrollnavline } from "./elements/scrollnavline";
 import { youtube, vimeo } from "./elements/popup.js";
 import { testimonialSwiper } from "./elements/swiper.js";
+import { accordion } from "./elements/accordion.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   header.init();
@@ -17,4 +18,5 @@ document.addEventListener("DOMContentLoaded", () => {
   youtube.init();
   vimeo.init();
   testimonialSwiper.init();
+  accordion.init();
 });

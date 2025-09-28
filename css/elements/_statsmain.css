@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stats-main{padding: 80px;}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .stats-head{gap: 0 256px;}
+    .stats-title{flex: 1;}
+    .stats-btn{width: fit-content;}
+    .stats-row{gap: 32px;}
+    .stats-list{flex: 0 0 calc(25% - 24px); padding: 32px; border: 1px dashed red;} 
+    .stats-num{ color: var(--Bluish-Gray); font-size: 64px; font-weight: 800; line-height: 100%; letter-spacing: -1.28px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

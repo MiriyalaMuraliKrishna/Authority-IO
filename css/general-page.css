@@ -16,10 +16,11 @@
 @import "./sections/value-props-section.css";
 @import "./sections/optional-repeater-section.css";
 @import "./sections/large-cta-section.css";
+@import "./elements/_statsmain.css";
 
 
 
-
+body{background-color: var(--Background);}
 
 
 
