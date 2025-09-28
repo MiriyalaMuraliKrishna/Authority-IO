@@ -6,3 +6,15 @@
 .resources-banner-btns{gap: 32px;}
 
 
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+
+}
+@media only screen and (max-width: 1023px) and (min-width: 760px){
+
+}
+@media only screen and (max-width: 759px) and (min-width: 0px){
+    
+}

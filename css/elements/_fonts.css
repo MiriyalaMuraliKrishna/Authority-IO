@@ -1,5 +1,6 @@
 :root{
     --body-font: "Plus Jakarta Sans", sans-serif;
     --heading-font: "Plus Jakarta Sans", sans-serif;
+    --manrope-font: "Manrope", sans-serif;
 }
 .body-font{font-family: var(--body-font);}

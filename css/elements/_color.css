@@ -33,8 +33,6 @@
     --White-90: rgb(255 255 255 / 90%);
     --White: #ffffff;
   
-    --Green: #A0BB41;
-    --Yellow: #FEDC31;
     --Red: #f00;
 
     --Dark-Gray: #262626;
@@ -51,6 +49,10 @@
     --Bluish-Gray: #789291;
     --Charcoal-Black: #1C1C1C;
     --Background: #EDEDED;
+
+    --Muted-Teal: #49636D;
+
+    --Spun-Pearl: #A8AAB7;
 }
 
 

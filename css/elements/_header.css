@@ -28,7 +28,7 @@ header.sticky-header{background-color: var(--White);}
     ul.main_menu > li:first-child:before{display: none;}
     ul.main_menu > li::before{top: 13px; left: -34px; width: 4px; height: 4px; background: var(--Muted-Ochre);}
     ul.main_menu > li > a{ position: relative; display: inline-block; font-size: 16; line-height: 22px; letter-spacing: -0.16px; font-weight: 700; color: var(--White); }
-    ul.main_menu > li.current-post-ancestor > a, ul.main_menu > li.current-menu-item > a, ul.main_menu > li.current-menu-parent > a, ul.main_menu > li:hover > a, ul.main_menu > li > a:hover{color: var(--Yellow);}
+    ul.main_menu > li.current-post-ancestor > a, ul.main_menu > li.current-menu-item > a, ul.main_menu > li.current-menu-parent > a, ul.main_menu > li:hover > a, ul.main_menu > li > a:hover{color: var(--Muted-Ochre);}
     
     ul.main_menu > li.button{padding: 0; top: 0px; background: none;}
     .nav-btn .button{padding: 13px 13px 14px; font-size: 13px; font-weight: 600; letter-spacing: 1.56px; line-height: 13px;}
@@ -39,7 +39,7 @@ header.sticky-header{background-color: var(--White);}
     ul.main_menu > li > ul > li::before{display: none;}
     ul.main_menu > li > ul > li > a:not(.text-link){ display: block; font-size: 17px; font-weight: 600; letter-spacing: 0; line-height: 22px; padding: 18px 22px 17px 0; position: relative; }
     ul.main_menu > li > ul > li:last-child > a{border-bottom-color: transparent;}
-    ul.main_menu > li > ul > li.current-menu-item > a, ul.main_menu > li > ul > li > a:not(.text-link):hover{color: var(--Green);}
+    ul.main_menu > li > ul > li.current-menu-item > a, ul.main_menu > li > ul > li > a:not(.text-link):hover{color: var(--Muted-Ochre);}
 
 
 
@@ -51,7 +51,7 @@ header.sticky-header{background-color: var(--White);}
     ul > li.menu-item-company > ul > li:nth-child(odd){padding-left: 0;}
     ul > li.menu-item-company > ul > li:nth-child(odd)::before{display: none;}
     ul > li.menu-item-company > ul > li:nth-child(even){padding-right: 0;}
-    ul > li.menu-item-company > ul > li::before{width: 1px; height: 100%; top: 0; left: 0; display: block; background-color: var(--Yellow); border-radius: 0;}
+    ul > li.menu-item-company > ul > li::before{width: 1px; height: 100%; top: 0; left: 0; display: block; background-color: var(--Muted-Ochre); border-radius: 0;}
     ul > li.menu-item-company > ul > li > a:not(.text-link){margin-bottom: 25px; padding: 0; color: var(--Foreground); font-size: 20px; font-weight: 600; line-height: 125%; letter-spacing: 1.6px; text-transform: uppercase;}
 
     /*-- menu item services --*/
@@ -62,7 +62,7 @@ header.sticky-header{background-color: var(--White);}
     ul > li.menu-item-services > ul > li:nth-child(odd){padding-left: 0;}
     ul > li.menu-item-services > ul > li:nth-child(odd)::before{display: none;}
     ul > li.menu-item-services > ul > li:nth-child(even){padding-right: 0;}
-    ul > li.menu-item-services > ul > li::before{width: 1px; height: 100%; top: 0; left: 0; display: block; background-color: var(--Yellow); border-radius: 0;}
+    ul > li.menu-item-services > ul > li::before{width: 1px; height: 100%; top: 0; left: 0; display: block; background-color: var(--Muted-Ochre); border-radius: 0;}
     ul > li.menu-item-services > ul > li > a:not(.text-link){margin-bottom: 25px; padding: 0; color: var(--Foreground); font-size: 20px; font-weight: 600; line-height: 125%; letter-spacing: 1.6px; text-transform: uppercase;}
 
     /*-- menu item projects --*/
@@ -77,14 +77,14 @@ header.sticky-header{background-color: var(--White);}
     .menu-item-projects-btn{bottom: 8px; left: 8px; width: calc(100% - 16px); position: absolute;}
     .menu-item-projects-btn .button{justify-content: space-between; background-color: var(--White); border: none;}
     .menu-item-projects-btn .button span{flex: 1; text-align: left;}
-    .menu-item-projects-btn .button:hover{color: var(--Yellow);}
+    .menu-item-projects-btn .button:hover{color: var(--Muted-Ochre);}
 
     /*-- insights menu --*/
     ul.main_menu > li.insights-menu-item > ul::before{width: 1000vw; left: -100vw; height: 100%; top: 0; background-color: var(--White); content: ""; display: block; position: absolute; z-index: -1;}
     ul.main_menu > li.insights-menu-item > ul{padding: 64px; gap: 0; display: flex; flex-wrap: wrap; background-color: var(--White);}
     ul.main_menu > li.insights-menu-item > ul > li:first-child{flex: 1; padding-right: 80px; display: flex; flex-wrap: wrap;}
     ul.main_menu > li.insights-menu-item > ul > li:first-child > a{display: none;}
-    ul.main_menu > li.insights-menu-item > ul > li:last-child{flex: 0 0 283px; border-left: 1px solid var(--Yellow); padding-left: 80px; flex-direction: column;}
+    ul.main_menu > li.insights-menu-item > ul > li:last-child{flex: 0 0 283px; border-left: 1px solid var(--Muted-Ochre); padding-left: 80px; flex-direction: column;}
     ul.main_menu > li.insights-menu-item > ul > li > ul{margin: 0; gap: 32px; display: flex; flex-wrap: wrap;}
     ul.main_menu > li.insights-menu-item > ul > li > ul > li::before{display: none;}
     ul.main_menu > li.insights-menu-item > ul > li > ul > li{margin: 0;}
@@ -184,8 +184,8 @@ header.sticky-header{background-color: var(--White);}
 
    
     ul.main_menu > li > a{padding: 18px 24px; border-bottom: 1px solid var(--Elevated); font-size: 16px; line-height: 16px; font-weight: 600; letter-spacing: 1.62px; color: var(--Foreground); display: flex; align-items: center; flex-wrap: wrap; width: 100%; text-transform: uppercase; position: relative;}
-    ul.main_menu > li > a:hover{color: var(--Yellow);}
-    ul.main_menu > li > a::after{top: 50%; transform: translateY(-50%); right: 24px; content: "\f061"; color: var(--Yellow); font-size: 20px; line-height: 20px; position: absolute; display: block; font-family: "Font Awesome 6 Sharp"; font-weight: 900;}
+    ul.main_menu > li > a:hover{color: var(--Muted-Ochre);}
+    ul.main_menu > li > a::after{top: 50%; transform: translateY(-50%); right: 24px; content: "\f061"; color: var(--Muted-Ochre); font-size: 20px; line-height: 20px; position: absolute; display: block; font-family: "Font Awesome 6 Sharp"; font-weight: 900;}
     ul.main_menu > li.menu-item-has-children > a.hide-link{display: none;}
 
     ul.main_menu > li.menu-item-has-children > a::after{content: "\2b";}
@@ -205,7 +205,7 @@ header.sticky-header{background-color: var(--White);}
     ul.main_menu > li > ul > li > a.text-link{display: none;}
 
     ul.main_menu > li > ul > li > a .button{padding: 0; background: none; text-align: left; text-transform: capitalize; letter-spacing: 0; display: block; font-size: 18px; font-weight: 400; line-height: 18px; position: relative; border: none; flex-direction: row-reverse; justify-content: flex-end;}
-    ul.main_menu > li > ul > li > a .button:active{background: none; color: var(--Yellow);}
+    ul.main_menu > li > ul > li > a .button:active{background: none; color: var(--Muted-Ochre);}
     ul.main_menu > li > ul > li > a .button svg{display: none;}
 
 
@@ -264,7 +264,7 @@ header.sticky-header{background-color: var(--White);}
   body.home .logo{margin-left: 74px;}
 
   .nav-btn .button{padding: 14px 13px 15px; width: 100%; text-align: center; color: var(--Foreground); font-size: 18px; font-weight: 600; line-height: 100%; letter-spacing: 2.16px; text-transform: uppercase; } 
-  .nav-btn .button:hover{background: var(--Foreground); color: var(--Yellow);}
+  .nav-btn .button:hover{background: var(--Foreground); color: var(--Muted-Ochre);}
 }
 @media screen and (max-width: 389px) and (min-width: 0px){
   .logo{flex: 0 0 190px;}

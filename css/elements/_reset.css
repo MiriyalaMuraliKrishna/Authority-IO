@@ -9,7 +9,7 @@ section{overflow: hidden;}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
 audio, canvas, video {display: inline-block; max-width: 100%;}
 html{overflow-y: scroll; overflow-x: hidden; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; box-sizing: border-box; scroll-behavior: smooth;}
-a{color: var(--Yellow);text-decoration: none; transition: var(--b-transition);}
+a{color: var(--Muted-Ochre);text-decoration: none; transition: var(--b-transition);}
 a:focus {outline: none;}
 a:hover, a:active {outline: 0;}
 a:hover{color: var(--Sky-Blue);}
@@ -22,7 +22,7 @@ a:hover{color: var(--Sky-Blue);}
 .h5, h5{font-size: 20px; line-height: 28px; margin-bottom: 19px; letter-spacing: -0.2px;}
 .h6, h6{font-size: 16px; line-height: 24px; margin-bottom: 18px; letter-spacing: -0.2px;}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color: var(--Base-Foreground);}
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color: var(--Yellow);}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color: var(--Muted-Ochre);}
 address{font-size: 1.125rem; line-height: 1.5rem; margin-bottom: 24px;}
 abbr[title] {border-bottom: 1px dotted var(--Navy); cursor: help;}
 b, strong {font-weight: 700;}
@@ -69,7 +69,7 @@ legend {white-space: normal;}
 table, th, td {border: 1px solid rgba(0, 0, 0, 0.1);}
 table {margin: 52px 0 49px; border-collapse: separate; border-spacing: 0; border-width: 1px; max-width: 100%; width: 100%; border-radius: 8px;}
 table tr td:first-child {text-align: left;}
-th {border-width: 0; padding: 11px 16px 12px; background-color: var(--Yellow); color: var(--White); border-radius: 0; font-family: var(--body-font); font-weight: 700;}
+th {border-width: 0; padding: 11px 16px 12px; background-color: var(--Muted-Ochre); color: var(--White); border-radius: 0; font-family: var(--body-font); font-weight: 700;}
 th span.icon{font-size: 0.875rem; margin-left: 4px; top: 0px; position: relative; }
 td {border-width: 0; padding: 13px 15px 11px; text-align: center; border-bottom: 1px solid rgba(0,0,0,.1); vertical-align: middle; font-size: 1rem; line-height: 1.5rem;}
 table tr:nth-child(odd) td{background-color: rgba(0,0,0, 0.02);}
@@ -81,35 +81,28 @@ td:last-child{border-radius: 0 0 8px 0;}
 
 caption, td, th{text-align: left;}
 del {color: var(--Base-Foreground);}
-hr{ margin: 0 0 32px; height: 2px; width: 0; display: block; border: none; border-radius: 2px; background: var(--Yellow);}
-hr.umber{ width: 100%; height: 2px; background: var(--Umber); }
-hr.h-1{height: 1px;}
-hr.h-2{height: 2px;}
-hr.h-3{height: 3px;}
-hr.w-32{width: 32px;}
-hr.h-4{height: 4px;}
-hr.w-64{width: 64px; height: 2px; margin-bottom: 12px;}
+hr{ margin: 0 0 32px; height: 1px; width: 20px; display: block; border: none; border-radius: 0; background: var(--Bluish-Gray);}
 
-::selection {background-color: var(--Base-Foreground); color: var(--White);}
-::-moz-selection {background-color: var(--Base-Foreground); color: var(--White);}
+
+::selection {background-color: var(--Bluish-Gray); color: var(--White);}
 
 
 
 /* Buttons */ 
 .button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit, button{padding: 10px 10px 10px 20px; gap: 11px; font-size: 16px; font-weight: 700; line-height: 24px; letter-spacing: -0.32px; font-family: var(--body-font); display: inline-block; border-radius: 52px; background: linear-gradient(0deg, #DBB548 0%, #F3D370 100%), #6B530B; color: var(--Text-Color); border: none;  cursor: pointer; vertical-align: middle; text-decoration: none; text-transform: capitalize;  outline: 0; position: relative; -webkit-writing-mode: horizontal-tb; -ms-writing-mode: horizontal-tb; writing-mode: horizontal-tb; text-orientation: mixed; box-shadow: none; transition: var(--b-transition); z-index: 1; margin: 0; }
-.button:hover, button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background: var(--Yellow); color: var(--Foreground);}
+.button:hover, button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background: var(--Muted-Ochre); color: var(--Foreground);}
 
 .button.reverse{flex-direction: row-reverse;}
 .button.transparent{padding: 8px 10px 9px 20px; border: 1px solid var(--Light-Gray); color: var(--White); background: transparent;}
-.button.transparent:hover{border-color: var(--Yellow);}
-.button.transparent:hover svg path{stroke: var(--Yellow);}
+.button.transparent:hover{border-color: var(--Muted-Ochre);}
+.button.transparent:hover svg path{stroke: var(--Muted-Ochre);}
 .button.transparent svg{width: 21px;}
 .button.transparent svg path{transition: var(--b-transition);}
 .button.c-black-bg{padding: 9px 19px 9px; background: var(--Charcoal-Black); border: 1px solid var(--Light-Gray); color: var(--White);}
 
 
 a.text-link{gap: 8px; color: var(--Foreground); font-size: 14px; line-height: 14px; letter-spacing: 1.68px; font-weight: 500;}
-a.text-link em{color: var(--Yellow); font-size: 1rem; left: 0; line-height: 1.5rem; position: relative; top: 1px; transition: all .5s ease;}
+a.text-link em{color: var(--Muted-Ochre); font-size: 1rem; left: 0; line-height: 1.5rem; position: relative; top: 1px; transition: all .5s ease;}
 
 /* Responsive images. Fluid images for posts, comments, and widgets */
 embed, iframe, object, video{margin: 0; max-width: 100%; border-radius: 0; display: block; object-fit: cover;}
@@ -259,26 +252,26 @@ picture.object-fit{width: 100%; height: 100%; display: block;}
 .inverted h1, .inverted h2, .inverted h3, .inverted h4, .inverted h5, .inverted h6{color: var(--White);}
 .inverted .h1, .inverted .h2, .inverted .h3, .inverted .h4, .inverted .h5, .inverted .h6{color: var(--White);}
 .inverted h1 a, .inverted h2 a, .inverted h3 a, .inverted h4 a{color: var(--White);}
-.inverted h1 a:hover, .inverted h2 a:hover, .inverted h3 a:hover, .inverted h4 a:hover{color: var(--Yellow);}
+.inverted h1 a:hover, .inverted h2 a:hover, .inverted h3 a:hover, .inverted h4 a:hover{color: var(--Muted-Ochre);}
 .inverted dl dt::before{background-color: var(--White);}
 .inverted p a{color: var(--White);}
-.inverted p a:hover{color: var(--Yellow);}
+.inverted p a:hover{color: var(--Muted-Ochre);}
 .inverted ul > li > a{color: var(--White);}
-.inverted ul > li > a:hover{color: var(--Yellow);}
+.inverted ul > li > a:hover{color: var(--Muted-Ochre);}
 
-.inverted-yellow, .inverted-yellow .h1, .inverted-yellow .h2, .inverted-yellow .h3, .inverted-yellow .h4, .inverted-yellow .h5, .inverted-yellow .h6, .inverted-yellow h1, .inverted-yellow h1 a, .inverted-yellow h2, .inverted-yellow h2 a, .inverted-yellow h3, .inverted-yellow h3 a, .inverted-yellow h4, .inverted-yellow h4 a, .inverted-yellow h5, .inverted-yellow h6{color: var(--Yellow);}
+.inverted-yellow, .inverted-yellow .h1, .inverted-yellow .h2, .inverted-yellow .h3, .inverted-yellow .h4, .inverted-yellow .h5, .inverted-yellow .h6, .inverted-yellow h1, .inverted-yellow h1 a, .inverted-yellow h2, .inverted-yellow h2 a, .inverted-yellow h3, .inverted-yellow h3 a, .inverted-yellow h4, .inverted-yellow h4 a, .inverted-yellow h5, .inverted-yellow h6{color: var(--Muted-Ochre);}
 
 
 .dark-text{color: var(--Base-Foreground);}
 .dark-text h1, .dark-text h2, .dark-text h3, .dark-text h4, .dark-text h5, .dark-text h6{color: var(--Navy);}
 .dark-text .h1, .dark-text .h2, .dark-text .h3, .dark-text .h4, .dark-text .h5, .dark-text .h6{color: var(--Navy);}
 .dark-text h1 a, .dark-text h2 a, .dark-text h3 a, .dark-text h4 a{color: var(--Navy);}
-.dark-text h1 a:hover, .dark-text h2 a:hover, .dark-text h3 a:hover, .dark-text h4 a:hover{color: var(--Yellow);}
+.dark-text h1 a:hover, .dark-text h2 a:hover, .dark-text h3 a:hover, .dark-text h4 a:hover{color: var(--Muted-Ochre);}
 .dark-text dl dt::before{background-color: var(--Navy);}
 .dark-text p a{color: var(--Navy);}
-.dark-text p a:hover{color: var(--Yellow);}
+.dark-text p a:hover{color: var(--Muted-Ochre);}
 .dark-text ul > li > a{color: var(--Navy);}
-.dark-text ul > li > a:hover{color: var(--Yellow);}
+.dark-text ul > li > a:hover{color: var(--Muted-Ochre);}
 
 .line-clamp{ display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden;}
 .clamp-3{ -webkit-line-clamp: 3; }
@@ -288,7 +281,7 @@ picture.object-fit{width: 100%; height: 100%; display: block;}
 .white-bg{background-color: var(--White);}
 .white-bg-80{background-color: var(--White-80);}
 .white-bg-90{background-color: var(--White-90);}
-.yellow-bg{background-color: var(--Yellow);}
+.yellow-bg{background-color: var(--Muted-Ochre);}
 .gray-bg{background: var(--Background);}
 
 .no-bg{background: transparent;}
@@ -300,13 +293,13 @@ picture.object-fit{width: 100%; height: 100%; display: block;}
 [data-vbg] iframe{max-width: inherit;}
 
 button.slick-arrow{width: 56px; height: 56px; padding: 0; font-size: 1.5rem; line-height: 1.5rem; position: relative; z-index: 1; cursor: pointer; transition: var(--b-transition); color: var(--White); background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Earthy-Blue);}
-button.slick-arrow:hover{background-color: var(--Yellow);}
+button.slick-arrow:hover{background-color: var(--Muted-Ochre);}
 button.slick-arrow.slick-disabled{pointer-events: none; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%);}
 span.slick-prev-arrow{ transform: scaleX(-1); }
 
 ul.slick-dots:not(.pagination){margin: 0; gap: 12px; align-items: center; justify-content: center; display: flex; flex-wrap: wrap; flex: 1; order: 2;}
 ul.slick-dots:not(.pagination) li{margin: 0; width: 16px; height: 16px; border-radius: 50%; background-color: rgba(23, 125, 138, 0.2); cursor: pointer;}
-ul.slick-dots:not(.pagination) li.slick-active{background-color: var(--Yellow);}
+ul.slick-dots:not(.pagination) li.slick-active{background-color: var(--Muted-Ochre);}
 ul.slick-dots:not(.pagination) li::before{display: none;}
 ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
 

@@ -78,7 +78,7 @@ ul.scroll-nav-list li svg{width: 30px;}
   ul.scroll-nav-list{gap: 40px;}
   ul.scroll-nav-list li{flex: 0 0 calc(20% - 32px); gap: 7px;}
 }
-@media screen and (max-width: 1023px) and (min-width: 768px){
+@media screen and (max-width: 1023px) and (min-width: 760px){
   .scroll-nav-main{padding: 41px 0 39px; flex-direction: column;}
   .scroll-nav-btns{margin-top: 32px;}
   .scroll-nav-head{padding-bottom: 11px;}
@@ -93,7 +93,7 @@ ul.scroll-nav-list li svg{width: 30px;}
   ul.scroll-nav-list li{flex: 0 0 calc(33.33333% - 20px); gap: 7px; margin: 0;}
 }
 
-@media screen and (max-width: 767px) and (min-width: 200px){
+@media screen and (min-width: 759px) and (min-width: 200px){
   .scroll-nav-main{padding: 41px 0 39px; flex-direction: column;}
   .scroll-nav-btns{margin-top: 32px;}
   .scroll-nav-head{padding-bottom: 11px;}
