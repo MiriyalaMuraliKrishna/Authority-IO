@@ -1,30 +1,28 @@
 
-.accordion-header {padding: 16px 64px 25px 0; font-size: 16px; line-height: 20px; cursor: pointer; position: relative; font-weight: 500;} 
 
+.accordion-list{margin-bottom: 8px; }
+.accordion-header {font-size: 18px; line-height: 22px; letter-spacing: -0.18px; padding: 20px 48px 20px 24px; cursor: pointer; position: relative; } 
 
-.accordion-icon svg{top: 50%; left: 50%; transform: translate(-50%,-50%); transition: top 0.5s ease; position: absolute;}
-.accordion-header:hover .accordion-icon svg:first-child{top: calc(50% - 3px);}
-.accordion-header:hover .accordion-icon svg:last-child{top: calc(50% + 3px);}
+.accordion-icon{transition: var(--b-transition); position: absolute; right: 31px; top: 50%; transform: translateY(-50%); width: 10px; height: 11px;}
+.accordion-header.open .accordion-icon{background-color: var(--Umber);} 
+.accordion-icon svg{top: 50%; left: 50%; transform: translate(-50%,-50%); transition: all 0.5s ease; position: absolute;}
+.accordion-icon svg:not(:first-child){opacity: 0;}
+.accordion-header:hover .accordion-icon svg:first-child{opacity: 0;}
+.accordion-header:hover .accordion-icon svg:last-child{opacity: 1;}
 .accordion-header.open:hover .accordion-icon svg,
 .accordion-header.open .accordion-icon svg{top: calc(50% + 0px); transform: translate(-50%, -50%) rotate(180deg);}
 
 
 
-.accordion-icon{transition: var(--b-transition); position: absolute; right: 0; top: 18px; width: 24px; height: 24px; background-color: var(--Teal);}
-.accordion-header.open .accordion-icon{background-color: var(--Umber);} 
 
 .accordion-header.open{color: var(--Accent);} 
-.accordion-header.open span.ui-plus { transform: rotate(45deg); } 
 .accordion-title{display: block; transition: transform 0.5s ease;}
 .accordion-header:hover .accordion-title{transform: translateX(6px); color: var(--Foreground);}
 .accordion-header.open:hover .accordion-title{transform: translateX(0);}
 
-span.ui-plus { width: 24px; height: 24px; left: 27px; } 
-span.ui-plus::after, span.ui-plus::before { top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: var(--Blue); content: ""; display: block; position: absolute; z-index: -1; } 
-span.ui-plus::before { width: 24px; height: 2px; } 
-span.ui-plus::after { width: 2px; height: 24px; } 
+
 .accordion-content { max-height: 0; transition: max-height 0.9s; overflow: hidden; } 
-.accordion-desc {padding: 0 0 23px; font-size: 14px; line-height: 21px; color: var(--Foreground);}
+.accordion-desc {padding: 5px 24px 23px; font-size: 14px; line-height: 22px; color: var(--Charcoal-Black-75);}
 .accordion-desc ul > li::before { top: 10px; left: -11px; width: 4px; height: 4px; } 
 .accordion-desc ol { margin: 0 0 28px 27px; }
 .accordion-desc ol > li::before { font-size: 14px; line-height: 14px; top: 3px; left: -17px; } 
@@ -37,7 +35,6 @@ span.ui-plus::after { width: 2px; height: 24px; }
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .accordion-main{padding: 40px 0 60px;}
-    body.career-template-default .accordion-main{padding: 19px 0 25px;}
     .application-main{margin-top: 40px;}
 
 }
@@ -45,11 +42,8 @@ span.ui-plus::after { width: 2px; height: 24px; }
     .accordion-main{padding: 40px 0 60px;}
 }
 @media screen and (max-width: 759px) and (min-width: 0px){
-    .project-case-study-main .accordion-main{padding: 12px 0 47px;}
-    .careers-post-article .accordion-main{padding: 31px 0 48px;}
     .accordion-main{padding: 40px 0 57px;}
     .accordion-header{padding: 16px 64px 16px 0; font-size: 14px; line-height: 21px; font-weight: 500; letter-spacing: 0;}
-    .accordion-header span.ui-plus {left: 0; margin-bottom: 20px; display: block; position: relative;}
     .accordion-desc{padding: 3px 0 22px;}
     .accordion-wrap { padding: 50px 0 20px; }
     .accordion-head-lt h3 {font-size: 2rem;}

@@ -1,0 +1,18 @@
+.quote-avatar { gap: 18px; }
+.quote-avatar-img { flex: 0 0 48px;}
+.quote-avatar-img figure{vertical-align: top;}
+.quote-avatar-img figure img{height: 48px; width: 48px; object-position: center top;}
+.quote-avatar-text { flex:1; letter-spacing: 0; }
+.quote-avatar-text span.fs-16{margin-bottom: 3px; color: var(--Charcoal-Black); letter-spacing: -0.16px; }
+
+
+  /*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+
+}
+@media only screen and (max-width: 1023px) and (min-width: 760px){
+
+}
+@media only screen and (max-width: 759px) and (min-width: 0px){
+    
+}

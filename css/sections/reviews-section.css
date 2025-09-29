@@ -13,10 +13,7 @@
 .reviews-list{flex: 0 0 calc(33.33333% - 27px);}
 
 .reviews-stripe{width: 4px; height: 100%; top: 0; left: 0; background-color: var(--Muted-Teal);}
-.quote-avatar { gap: 18px; }
-.quote-avatar-img { height: 48px; width: 48px;}
-.quote-avatar-text { flex:1 }
-  .quote-avatar-text span { }
+
 
 
 

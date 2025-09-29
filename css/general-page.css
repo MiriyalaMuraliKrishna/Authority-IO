@@ -13,10 +13,15 @@
 
 @import "./sections/default-banner-section.css";
 @import "./sections/default-intro-section.css";
+@import "./sections/default-content-section.css";
 @import "./sections/value-props-section.css";
 @import "./sections/optional-repeater-section.css";
 @import "./sections/large-cta-section.css";
 @import "./elements/_statsmain.css";
+@import "./elements/_image-caption.css";
+@import "./elements/_avatar.css";
+
+
 
 
 

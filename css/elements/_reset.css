@@ -14,14 +14,14 @@ a:focus {outline: none;}
 a:hover, a:active {outline: 0;}
 a:hover{color: var(--Sky-Blue);}
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{clear: both; margin: 0; color: var(--Base-Foreground); font-weight: 700; font-family: var(--heading-font); text-transform: none;}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{clear: both; margin: 0; color: var(--Charcoal-Black); font-weight: 700; font-family: var(--heading-font); text-transform: none;}
 .h1, h1{font-size: 48px; line-height: 52px; margin-bottom: 25px; letter-spacing: -0.96px;}
 .h2, h2{font-size: 40px; line-height: 48px; margin-bottom: 23px; letter-spacing: -0.8px;}
 .h3, h3{font-size: 32px; line-height: 48px; margin-bottom: 19px; letter-spacing: -0.64px;}
 .h4, h4{font-size: 24px; line-height: 38px; margin-bottom: 20px; letter-spacing: -0.24px;}
 .h5, h5{font-size: 20px; line-height: 28px; margin-bottom: 19px; letter-spacing: -0.2px;}
 .h6, h6{font-size: 16px; line-height: 24px; margin-bottom: 18px; letter-spacing: -0.2px;}
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color: var(--Base-Foreground);}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color: var(--Charcoal-Black);}
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color: var(--Muted-Ochre);}
 address{font-size: 1.125rem; line-height: 1.5rem; margin-bottom: 24px;}
 abbr[title] {border-bottom: 1px dotted var(--Navy); cursor: help;}
@@ -32,9 +32,12 @@ p:last-child{margin-bottom: 0;}
 code, kbd, tt, var, samp, pre {font-size: 0.938rem; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; line-height: 1.6;}
 pre {border: 1px solid rgba(0, 0, 0, 0.1); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 24px; max-width: 100%; overflow: auto; padding: 12px; white-space: pre; white-space: pre-wrap; word-wrap: break-word;}
 blockquote, q{-webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; quotes: none; }
-blockquote{font-size: 1.75rem;line-height: 2.625rem; font-weight: 400; font-style: normal; position: relative;}
-blockquote p::before{content: "“";}
-blockquote p::after{content: "”";}
+blockquote{font-size: 32px; line-height: 48px; font-weight: 700; letter-spacing: -0.64px; font-style: normal; position: relative; padding: 20px 0 24px 54px;}
+blockquote svg{max-width: 28px; margin-bottom: 13px; object-fit: contain;}
+.blockquote-line{width: 4px; height: 100%; top: 0; left: 0; background-color: var( --Bluish-Gray);}
+
+blockquote p::before{content: "“"; display: none;}
+blockquote p::after{content: "”"; display: none;}
 blockquote cite, blockquote small {font-size: 1rem;}
 small{font-size: 0.875rem; line-height: 1.313rem; display: block;}/*-- dont change fs --*/
 big {font-size: 125%;}
@@ -43,16 +46,16 @@ sup {bottom: 1ex;}
 sub {top: 0;}
 dl{margin-bottom: 24px; font-size: 1rem; line-height: 1.75rem; font-weight: 600;}
 dl:last-child{margin-bottom: 0;}
-dl dt::before{width: 29px; height: 1px; margin-right: 11px; background-color: var(--Base-Foreground); content: ""; display: inline-block; vertical-align: middle;}
+dl dt::before{width: 29px; height: 1px; margin-right: 11px; background-color: var(--Charcoal-Black); content: ""; display: inline-block; vertical-align: middle;}
 blockquote dl dt::before{background-color: var(--White);}
 dd {margin-bottom: 24px;}
 ul {list-style: none; margin: 0 0 26px 26px;}
 ul > li {counter-increment: li; position: relative; margin-bottom: 8px;}
 ul > li::before{top: 13px; left: -16px; width: 5px; height: 5px; border-radius: 50%; background-color: var(--Bluish-Gray); content: ""; position: absolute;} 
 li > ul {margin: 25px 0 26px 25px;}
-ol {counter-reset: section; list-style: none; margin: 0 0 28px 28px;}
+ol {counter-reset: section; list-style: none; margin: 0 0 28px 40px;}
 ol > li {counter-increment: li; position: relative; margin-bottom: 8px;}
-ol > li:before{color: var(--Base-Foreground); counter-increment: section; content: counter(section, decimal) "."; top: 0px; left: -22px; position: absolute; font-size: 1.125rem; line-height: 1.688rem;}
+ol > li:before{width: 24px; height: 24px; border-radius: 4px; color: var(--Honey-Yellow); background-color: rgba(201, 152, 83, 0.25); counter-increment: section; content: counter(section, decimal) ""; top: 0px; left: -40px; position: absolute; font-size: 14px; line-height: 18px; font-weight: 700; display: flex; align-items: center; justify-content: center;}
 li > ol {margin: 25px 0 26px 25px;}
 ol[style='list-style-type: upper-roman;']{margin-left: 22px;}
 ol[style='list-style-type: upper-roman;'] > li::before{display: none;}
@@ -80,7 +83,7 @@ td:first-child{border-radius: 0 0 0 8px}
 td:last-child{border-radius: 0 0 8px 0;}
 
 caption, td, th{text-align: left;}
-del {color: var(--Base-Foreground);}
+del {color: var(--Charcoal-Black);}
 hr{ margin: 0 0 32px; height: 1px; width: 20px; display: block; border: none; border-radius: 0; background: var(--Bluish-Gray);}
 
 
@@ -140,7 +143,7 @@ img.aligncenter{margin: 25px auto; clear: both;}
 .txt-upper{text-transform: uppercase;}
 
 /*-- custom css starts here --*/
-body{margin: 0; padding: 0; font-size: 18px; line-height: 26px; font-weight: 400; font-family: var(--body-font); position: relative; overflow-x: hidden; color: var(--Base-Foreground);}
+body{margin: 0; padding: 0; font-size: 18px; line-height: 26px; font-weight: 400; font-family: var(--body-font); position: relative; overflow-x: hidden; color: var(--Charcoal-Black);}
 .d-block{display: block;}
 
 span.optional-text{gap: 8px; color: var(--Bluish-Gray); display: inline-flex; font-size: 24px; line-height: 28px; letter-spacing: 0; margin-bottom: 23px; text-transform: none;}
@@ -262,7 +265,7 @@ picture.object-fit{width: 100%; height: 100%; display: block;}
 .inverted-yellow, .inverted-yellow .h1, .inverted-yellow .h2, .inverted-yellow .h3, .inverted-yellow .h4, .inverted-yellow .h5, .inverted-yellow .h6, .inverted-yellow h1, .inverted-yellow h1 a, .inverted-yellow h2, .inverted-yellow h2 a, .inverted-yellow h3, .inverted-yellow h3 a, .inverted-yellow h4, .inverted-yellow h4 a, .inverted-yellow h5, .inverted-yellow h6{color: var(--Muted-Ochre);}
 
 
-.dark-text{color: var(--Base-Foreground);}
+.dark-text{color: var(--Charcoal-Black);}
 .dark-text h1, .dark-text h2, .dark-text h3, .dark-text h4, .dark-text h5, .dark-text h6{color: var(--Navy);}
 .dark-text .h1, .dark-text .h2, .dark-text .h3, .dark-text .h4, .dark-text .h5, .dark-text .h6{color: var(--Navy);}
 .dark-text h1 a, .dark-text h2 a, .dark-text h3 a, .dark-text h4 a{color: var(--Navy);}
@@ -282,6 +285,7 @@ picture.object-fit{width: 100%; height: 100%; display: block;}
 .white-bg-80{background-color: var(--White-80);}
 .white-bg-90{background-color: var(--White-90);}
 .yellow-bg{background-color: var(--Muted-Ochre);}
+.charcoal-black-bg{background-color: var(--Charcoal-Black);}
 .gray-bg{background: var(--Background);}
 
 .no-bg{background: transparent;}
@@ -400,7 +404,7 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
 
   
 
-    .slick-dots li > a{font-size: 1.5rem; line-height: normal; font-weight: 800; color: var(--Base-Foreground);}
+    .slick-dots li > a{font-size: 1.5rem; line-height: normal; font-weight: 800; color: var(--Charcoal-Black);}
 
     .play-btn-main .play-btn{width: 64px; height: 64px;}
 

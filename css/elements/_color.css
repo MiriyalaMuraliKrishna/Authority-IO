@@ -43,16 +43,24 @@
 
     --Light-Gray: #424242;
 
+    --Honey-Yellow: #C99853;
+
     --Muted-Ochre: #C6A157;
     --Text-Color: #0A0A0A;
 
     --Bluish-Gray: #789291;
     --Charcoal-Black: #1C1C1C;
+    --Charcoal-Black-75: rgba(28, 28, 28, 0.75);
     --Background: #EDEDED;
+
+    --Charleston-Green: #1E2D32;
 
     --Muted-Teal: #49636D;
 
     --Spun-Pearl: #A8AAB7;
+    --Background-Cta: #DBDFDF;
+
+    --Slate:#506461;
 }
 
 
