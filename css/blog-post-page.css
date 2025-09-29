@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+@import "./sections/post-banner-section.css";
+
+
+.related-article-title{flex: 1;}
+.related-article-link{width: fit-content;}
+
+
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .related-article-row{gap: 40px;}
+    .related-article-list{flex: 0 0 calc(33.3333333333333% - 40px);}
+
+}
+@media only screen and (max-width: 1023px) and (min-width: 760px){
+
+}
+@media only screen and (max-width: 759px) and (min-width: 0px){
+    
+}

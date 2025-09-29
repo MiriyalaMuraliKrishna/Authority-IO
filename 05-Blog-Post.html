@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-CA" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name='viewport'
+        content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=2.0'>
+    <meta name="keywords" content="HTML, CSS, XML, PHP, JavaScript, jQuery" />
+    <meta name="description" content="Authority IO Development: " />
+    <!-- Title -->
+    <title>Authority IO Development: 05 Blog Post Page</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="150x150" href="images/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="180x180" href="images/web-app-manifest-192x192.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="images/web-app-manifest-512x512.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="images/apple-touch-icon.png" />
+
+    <!-- Font Base -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" href="./style.css" media="all" />
+    <link rel="stylesheet" href="./css/blog-post-page.css?v=3344" media="all" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header radius-12 blur-5 flex flex-vcenter">
+                <div class="logo">
+                    <a href="index.html">
+                        <img width="132" height="26" src="images/logo.svg" alt="logo" />
+                    </a>
+                </div>
+                <div role="button" aria-label="Open menu"
+                    class="humburger-btn mbl-blue-bg white-bg flex flex-col flex-center">
+                    <span class="humburger-line"></span>
+                    <span class="humburger-line"></span>
+                    <span class="humburger-line"></span>
+                </div>
+                <div class="header_right flex flex-vcenter">
+                    <nav role="navigation" class="navigation flex relative">
+                        <ul class="main_menu m-0 flex">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="03-Case-Studeis.html">Case Studies</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="06-Resources.html">Resources</a></li>
+                            <li><a href="">Free Training</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+    </header>
+    <main class="site-main-cover"><!-- site starts here -->
+        <section class="post-banner-section relative">
+            <div class="post-banner-bg background-bg">
+                <picture class="object-fit">
+                    <source srcset="images/blog-post-banner@2x.jpg" media="(min-width:768px)">
+                    <img src="images/blog-post-banner-mobile@2x.jpg" alt="post-banner-mobile"
+                        title="post-banner-mobile">
+                </picture>
+                <div class="post-banner-overlay background-text"></div>
+            </div>
+            <div class="container">
+                <div class="post-banner-main flex">
+                    <div class="post-banner-text inverted fs-20 lh-30 white-70 f-500">
+                        <hr>
+                        <h1>This is the sample post heading on two lines</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="related-article-section">
+            <div class="container">
+                <div class="related-article-main">
+                    <div class="related-article-head flex">
+                        <div class="related-article-title">
+                            <h2 class="h4">Related Articles</h2>
+                        </div>
+                        <div class="related-article-link">
+                            <a href="#">View All Blog Articles</a>
+                        </div>
+                    </div>
+                    <div class="related-article-row flex">
+                        <div class="related-article-list relative">
+                            <div class="related-article-image">
+                                <figure class="object-fit radius-img-20">
+                                    <img src="images/related-thumb1@2x.jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="related-article-pos background-text flex flex-end">
+                                <div class="related-article-text">
+                                    <h3><a href="#">Post title appears here on a few lines as needed to fit the
+                                            content</a>
+                                    </h3>
+                                    <div class="flex">
+                                        <span>Category</span>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="14"
+                                                viewBox="0 0 19 14" fill="none"></svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="related-article-list relative">
+                            <div class="related-article-image">
+                                <figure class="object-fit radius-img-20">
+                                    <img src="images/related-thumb1@2x.jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="related-article-pos background-text flex flex-end">
+                                <div class="related-article-text">
+                                    <h3><a href="#">Post title appears here on a few lines as needed to fit the
+                                            content</a>
+                                    </h3>
+                                    <div class="flex">
+                                        <span>Category</span>
+                                        <a href="#">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M17.25 6.32017C14.812 6.32017 12.59 4.09916 12.59 1.66016V0.660156H10.59V1.66016C10.59 3.43416 11.368 5.09816 12.589 6.32017H0.25V8.32017H12.589C11.368 9.54217 10.59 11.2062 10.59 12.9802V13.9802H12.59V12.9802C12.59 10.5412 14.812 8.32017 17.25 8.32017H18.25V6.32017H17.25Z"
+                                                fill="#789291" /></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="related-article-list relative">
+                            <div class="related-article-image">
+                                <figure class="object-fit radius-img-20">
+                                    <img src="images/related-thumb1@2x.jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="related-article-pos background-text flex flex-end">
+                                <div class="related-article-text">
+                                    <h3><a href="#">Post title appears here on a few lines as needed to fit the
+                                            content</a>
+                                    </h3>
+                                    <div class="flex">
+                                        <span>Category</span>
+                                        <a href="#"></svg></svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main><!-- site starts here -->
+    <footer class="site-footer inverted">
+        <div class="container">
+            <div class="footer flex flex-vcenter">
+                <div class="footer-left flex flex-vcenter">
+                    <div class="footer-logo">
+                        <a class="flex" href=""><img src="images/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="copyrights fs-12 lh-12 white-60">
+                        <p>Copyright © 2025 Authority IO. All Rights Reserved. </p>
+                    </div>
+                </div>
+                <ul class="footer-links flex fs-12 lh-12">
+                    <li class="mb-0"><a href="08-General.html">Privacy Policy</a></li>
+                    <li class="mb-0"><a href="08-General.html">Terms and Conditions</a></li>
+                    <li class="mb-0"><a href="07-Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="js/core.js"></script>
+</body>
+
+</html>
