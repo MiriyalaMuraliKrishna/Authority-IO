@@ -1,0 +1,28 @@
+
+
+
+
+
+.as-seen-main{padding: 0 0 80px;}
+.as-seen-title{margin-bottom: 30px; letter-spacing: -0.48px;}
+.as-seen-thumb img{opacity: 0.5;}
+
+
+
+
+
+
+
+  
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .as-seen-slider{gap: 40px; flex-wrap: nowrap;}
+    .as-seen-slide{flex: 0 0 259px;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 760px){
+
+}
+@media only screen and (max-width: 759px) and (min-width: 0px){
+    
+}
+

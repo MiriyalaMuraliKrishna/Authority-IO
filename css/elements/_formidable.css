@@ -265,7 +265,7 @@ body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{display: f
 
   
 }
-@media only screen and (min-width: 759px) and (min-width: 200px){
+@media only screen and (max-width: 759px) and (min-width: 200px){
     .frm_form_field_wrapper{display: block;}
     body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field.vertical_radio{margin-bottom: 26px; flex: 1;}
     body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field.vertical_radio .frm_checkbox input{top: 2px;}

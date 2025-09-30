@@ -66,7 +66,7 @@
     .trust-by-gradient.left{left: 0; width: 40px;}
     .trust-by-gradient.right{right: 0; width: 40px;}
 }
-@media only screen and (min-width: 759px) and (min-width: 200px){
+@media only screen and (max-width: 759px) and (min-width: 200px){
     .home-banner-section{min-height: 570px;}
     .home-banner-wrap{padding: 0; }
     .home-banner-main{padding: 173px 0 94px;}

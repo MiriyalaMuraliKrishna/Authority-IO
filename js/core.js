@@ -7,6 +7,7 @@ import { scrollnavline } from "./elements/scrollnavline";
 import { youtube, vimeo } from "./elements/popup.js";
 import { testimonialSwiper } from "./elements/swiper.js";
 import { accordion } from "./elements/accordion.js";
+import { asSeen } from "./elements/asSlider.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   header.init();
@@ -19,4 +20,5 @@ document.addEventListener("DOMContentLoaded", () => {
   vimeo.init();
   testimonialSwiper.init();
   accordion.init();
+  asSeen.slider();
 });

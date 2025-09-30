@@ -1,14 +1,15 @@
 import { Swiper } from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
-
-class mySwiper {
+class mySlider {
   constructor(selector) {
-    this.eles = document.querySelectorAll(selector);
+    this.eles = document.querySelector(selector)
+      ? document.querySelector(selector)
+      : "";
   }
-  init() {
+  slider() {
     if (this.eles.length === 0) return;
     Array.from(this.eles).forEach((ele) => {
-      if (ele.dataset.type === "testimonialSwiper") {
+      if (ele.dataset.type === "asSeenSlider") {
         new Swiper(ele, {
           modules: [Navigation, Pagination],
           // loop: true,
@@ -25,4 +26,4 @@ class mySwiper {
     });
   }
 }
-export const testimonialSwiper = new mySwiper(".our-testimonial-swiper");
+export const asSeen = new mySlider(".as-seen-slider");
