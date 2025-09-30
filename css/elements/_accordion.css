@@ -22,10 +22,12 @@
 
 
 .accordion-content { max-height: 0; transition: max-height 0.9s; overflow: hidden; } 
-.accordion-desc {padding: 5px 24px 23px; font-size: 14px; line-height: 22px; color: var(--Charcoal-Black-75);}
+.accordion-desc {padding: 5px 24px 17px; font-size: 14px; line-height: 22px; color: var(--Charcoal-Black-75);}
+.accordion-desc p:not(:last-child){margin-bottom: 21px;}
+.accordion-desc ul{margin: 0 0 20px 12px;}
 .accordion-desc ul > li::before { top: 10px; left: -11px; width: 4px; height: 4px; } 
-.accordion-desc ol { margin: 0 0 28px 27px; }
-.accordion-desc ol > li::before { font-size: 14px; line-height: 14px; top: 3px; left: -17px; } 
+/* .accordion-desc ol { margin: 0 0 28px 27px; }
+.accordion-desc ol > li::before { font-size: 14px; line-height: 14px; top: 3px; left: -17px; }  */
 .accordion-wrap { padding: 90px 0 20px; } 
 .accordion-head { justify-content: space-between; gap: 20px; } 
 .accordion-head-lt h3 { margin-bottom: 0; font-size: 2.5rem; }

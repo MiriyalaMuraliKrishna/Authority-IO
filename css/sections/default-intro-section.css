@@ -1,5 +1,6 @@
 
 .default-intro-main{padding: 39px 0 0;}
+.default-intro-head{color: var( --Text-Gray);}
 .default-intro-head h2{margin-bottom: 19px; }
 .default-intro-btn .button{width: fit-content;}
 
