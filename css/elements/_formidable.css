@@ -180,10 +180,9 @@ body.page-template-contact .contact-form-form .frm_forms .frm_form_fields .frm_f
 body .frm_style_formidable-style.with_frm_style .frm_error_style{display: none;}
 
 
-body .frm_forms .frm_form_fields .frm_filed_wrapper{}
 body .frm_forms .frm_form_fields .frm_filed_wrapper::before{margin:1px 0 24px; width: 100%; height: 1px; opacity: 0.32; content: ""; display: block; background-image: repeating-linear-gradient( to right, transparent, transparent 5px, var(--Spun-Pearl) 5px, var(--Spun-Pearl) 10px ); }
 body .frm_forms .frm_form_fields .frm_filed_wrapper .frm_form_field{flex: 1; margin: 0; color: var(--White-60); font-size: 14px; font-weight: 500; line-height: 100%; letter-spacing: -0.14px; }
-body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{display: flex; width: fit-content; margin-left: auto;}
+body .frm_forms .frm_form_fields .frm_form_field .frm_submit button.frm_button_submit{display: flex; width: fit-content; margin-left: auto;}
 
 
 /*-- media css starts here --*/
