@@ -95,8 +95,8 @@ hr.horizontal{background-color: green; width: 100%;}
 
 
 /* Buttons */ 
-.button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit, button{padding: 10px 10px 10px 20px; gap: 11px; font-size: 16px; font-weight: 700; line-height: 24px; letter-spacing: -0.32px; font-family: var(--body-font); display: flex; border-radius: 52px; background: linear-gradient(0deg, #DBB548 0%, #F3D370 100%), #6B530B; color: var(--Text-Color); border: none;  cursor: pointer; vertical-align: middle; text-decoration: none; text-transform: capitalize;  outline: 0; position: relative; -webkit-writing-mode: horizontal-tb; -ms-writing-mode: horizontal-tb; writing-mode: horizontal-tb; text-orientation: mixed; box-shadow: none; transition: var(--b-transition); z-index: 1; margin: 0; }
-.button:hover, button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background: var(--Muted-Ochre); color: var(--Foreground);}
+.button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit, button{padding: 10px 10px 10px 20px; width: fit-content; gap: 11px; font-size: 16px; font-weight: 700; line-height: 24px; letter-spacing: -0.32px; font-family: var(--body-font); display: flex; border-radius: 52px; background: linear-gradient(0deg, #DBB548 0%, #F3D370 100%), #6B530B; color: var(--Text-Color); border: none;  cursor: pointer; vertical-align: middle; text-decoration: none; text-transform: capitalize;  outline: 0; position: relative; -webkit-writing-mode: horizontal-tb; -ms-writing-mode: horizontal-tb; writing-mode: horizontal-tb; text-orientation: mixed; box-shadow: none; transition: var(--b-transition); z-index: 1; margin: 0; }
+.button:hover, button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background-position: center top; color: var(--Foreground);}
 
 .button.reverse{flex-direction: row-reverse;}
 .button.transparent{padding: 8px 10px 9px 20px; border: 1px solid var(--Light-Gray); color: var(--White); background: transparent;}

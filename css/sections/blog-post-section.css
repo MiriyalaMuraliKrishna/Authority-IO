@@ -16,6 +16,7 @@
 
 ul.category{flex: 1;}
 #load-more{text-align: center; margin-top: 40px;}
+#load-more .button{margin: 0 auto;}
 
 .blog-post-select{width: 132px;}
 
