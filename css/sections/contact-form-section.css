@@ -15,7 +15,26 @@
 .contact-form-links{padding: 24px 24px 16px; border: 1px dashed var(--Spun-Pearl);}
 .contact-form-links::before{ content: ""; display: block; }
 .contact-form-link{gap: 24px; margin-bottom: 8px;}
-.contact-form-link svg{width: 20px; height: 20px;}
+.contact-form-link svg{width: 21px; height: 20px;}
+.contact-form-link:nth-child(2) svg{width: 20px; height: 18px;}
+.contact-form-link:nth-child(1) svg path:not(:last-child){animation: phoneAnim 2s infinite;}
+.contact-form-link:nth-child(1) svg path:nth-child(1){ animation-delay: -0.2s;}
+.contact-form-link:nth-child(1) svg path:nth-child(2){  animation-delay: -0.4s;}
+
+@keyframes phoneAnim {
+    0% {
+        opacity: 0;
+        transform: rotate(1deg) translate3d(-2px, 2px, 1px) scale(1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(2deg) translate3d(0, 0, 0) scale(1);
+    }
+}
+
 .contact-form-desc{letter-spacing: -0.2px;}
 
 /*-- media css starts here --*/
@@ -25,12 +44,13 @@
     .contact-form-rt{flex: 1; padding: 47px 48px 48px;}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px){
+    .contact-form-main{gap: 32px;}
     .contact-form-rt{padding: 32px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 760px) {
-    .contact-form-main{padding: 60px 0 40px;}
-    .contact-form-lt{flex: 100%; padding: 32px 32px 80px; border-radius: 24px 24px 0px 0px;}
-    .contact-form-rt{flex: 100%; padding: 32px; margin-top: -40px;}
+    .contact-form-main{padding: 60px 0 40px; display: block;}
+    .contact-form-lt{margin-bottom: 60px;}
+    .contact-form-rt{ padding: 32px;}
     .contact-form-rt span.optional-text{margin-bottom: 24px;}
 }
 @media screen and (max-width: 759px) and (min-width: 200px) {

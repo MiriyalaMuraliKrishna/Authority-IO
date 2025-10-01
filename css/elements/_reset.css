@@ -96,7 +96,23 @@ hr.horizontal{background-color: green; width: 100%;}
 
 /* Buttons */ 
 .button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit, button{padding: 10px 10px 10px 20px; width: fit-content; gap: 11px; font-size: 16px; font-weight: 700; line-height: 24px; letter-spacing: -0.32px; font-family: var(--body-font); display: flex; border-radius: 52px; background: linear-gradient(0deg, #DBB548 0%, #F3D370 100%), #6B530B; color: var(--Text-Color); border: none;  cursor: pointer; vertical-align: middle; text-decoration: none; text-transform: capitalize;  outline: 0; position: relative; -webkit-writing-mode: horizontal-tb; -ms-writing-mode: horizontal-tb; writing-mode: horizontal-tb; text-orientation: mixed; box-shadow: none; transition: var(--b-transition); z-index: 1; margin: 0; }
-.button:hover, button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background-position: center top; color: var(--Foreground);}
+.button:hover, button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background-position: center top; color: var(--Charcoal-Black);}
+
+.button svg, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit svg, button svg{width: 21px;  animation: animate 2s infinite;}
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: translateX(-4px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(4px);
+    }
+}
+.button svg path, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit svg path, button svg path{}
 
 .button.reverse{flex-direction: row-reverse;}
 .button.transparent{padding: 8px 10px 9px 20px; border: 1px solid var(--Light-Gray); color: var(--White); background: transparent;}
@@ -357,10 +373,10 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
     .book-demo-call{font-size: 1.125rem;}
 }
 @media only screen and (max-width: 1359px) and (min-width: 1200px){
-    .container:not(.sm){padding: 0 72px; max-width: 100%;}
+    .container:not(.sm){padding: 0 32px; max-width: 100%;}
 }
 @media only screen and (max-width: 1199px) and (min-width: 760px){
-    .container{padding: 0 72px; max-width: 100%;}
+    .container{padding: 0 32px; max-width: 100%;}
     blockquote{font-size: 20px; line-height: 30px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 760px){
