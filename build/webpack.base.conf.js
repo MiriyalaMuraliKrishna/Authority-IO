@@ -11,8 +11,7 @@ function resolve(dir) {
 module.exports = {
   mode: 'production', // Set production mode for minification
   entry: {
-    core: './js/core-common.js', // Common scripts
-    core_except_home: './js/core-except-home.js', // Non-home page scripts
+    core: './js/core.js',
     style: './css/core.css',
   },
   output: {
