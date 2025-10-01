@@ -64,8 +64,10 @@
     </header>
     <main class="site-main-cover"><!-- site starts here -->
 
-        <section class="blog-intro-section">
-            <div class="container">
+        <section class="blog-intro-section relative">
+            <div class="blog-intro-bg background-bg"></div>
+            <div class="blog-intro-overlay background-text"></div>
+            <div class="container relative">
                 <div class="blog-intro-main">
                     <div class="blog-intro-heading">
                         <h1>The Blog</h1>
@@ -76,144 +78,159 @@
                     </div>
                     <div class="blog-intro-row flex">
                         <div class="blog-intro-list">
-                            <div class="blog-intro-thumb">
+                            <div class="blog-intro-thumb w-100 h-100">
                                 <picture class="object-fit">
                                     <source srcset="images/post-blog1@2x.jpg" media="(min-width: 760px)">
                                     <img src="images/post-blog1@2x.jpg" alt="">
                                 </picture>
                             </div>
-                            <div class="background-text">
+                            <div class="background-text flex flex-end">
                                 <div class="blog-intro-text inverted">
-                                    <h2>Post title appears here on a few lines as needed</h2>
+                                    <hr>
+                                    <h2><a href="05-Blog-Post.html">Post title appears here on a few lines as needed</a>
+                                    </h2>
                                     <p>A brief introduction could appear here if necessary at netus elit convallis nibh
                                         donec in feugiat libero euismod risus egestas eu.</p>
-                                    <div class="cat-wrap">
-                                        <ul>
-                                            <li>
-                                                <a href="">Category</a>
-                                            </li>
+                                    <div class="blog-intro-category flex flex-vcenter">
+                                        <ul class="category flex m-0 no-disc">
+                                            <li class="fs-14 lh-18 f-500 mb-0">Category</li>
                                         </ul>
+                                        <div class="blog-intro-link">
+                                            <a class="" href=""><span class="hide">Read More</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                    viewBox="0 0 25 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                        fill="white" />
+                                                </svg></a>
+                                        </div>
                                     </div>
-                                    <svg width="19" height="14" viewBox="0 0 19 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M17.25 6.0001C14.812 6.0001 12.59 3.77909 12.59 1.34009V0.340088H10.59V1.34009C10.59 3.11409 11.368 4.77809 12.589 6.0001H0.25V8.0001H12.589C11.368 9.2221 10.59 10.8861 10.59 12.6601V13.6601H12.59V12.6601C12.59 10.2211 14.812 8.0001 17.25 8.0001H18.25V6.0001H17.25Z"
-                                            fill="#789291" />
-                                    </svg>
                                 </div>
                             </div>
                         </div>
                         <div class="blog-intro-list">
-                            <div class="blog-intro-thumb">
+                            <div class="blog-intro-thumb w-100 h-100">
                                 <picture class="object-fit">
                                     <source srcset="images/post-blog2@2x.jpg" media="(min-width: 760px)">
                                     <img src="images/post-blog2@2x.jpg" alt="">
                                 </picture>
                             </div>
-                            <div class="background-text">
+                            <div class="background-text flex flex-end">
                                 <div class="blog-intro-text inverted">
-                                    <h2>Post title appears here on a few lines as needed</h2>
-                                    <p>A brief introduction could appear here if necessary at netus elit convallis nibh
-                                        donec in feugiat libero euismod risus egestas eu.</p>
-                                    <div class="cat-wrap">
-                                        <ul>
-                                            <li>
-                                                <a href="">Category</a>
-                                            </li>
+                                    <hr>
+                                    <h2><a href="05-Blog-Post.html">Post title appears here on a few lines as needed</a>
+                                    </h2>
+
+                                    <div class="blog-intro-category flex flex-vcenter">
+                                        <ul class="category flex m-0 no-disc">
+                                            <li class="fs-14 lh-18 f-500 mb-0">Category</li>
                                         </ul>
+                                        <div class="blog-intro-link">
+                                            <a class="" href=""><span class="hide">Read More</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                    viewBox="0 0 25 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                        fill="white" />
+                                                </svg></a>
+                                        </div>
                                     </div>
-                                    <svg width="19" height="14" viewBox="0 0 19 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M17.25 6.0001C14.812 6.0001 12.59 3.77909 12.59 1.34009V0.340088H10.59V1.34009C10.59 3.11409 11.368 4.77809 12.589 6.0001H0.25V8.0001H12.589C11.368 9.2221 10.59 10.8861 10.59 12.6601V13.6601H12.59V12.6601C12.59 10.2211 14.812 8.0001 17.25 8.0001H18.25V6.0001H17.25Z"
-                                            fill="#789291" />
-                                    </svg>
                                 </div>
                             </div>
                         </div>
                         <div class="blog-intro-list">
-                            <div class="blog-intro-thumb">
-                                <picture class="object-fit">
-                                    <source srcset="images/post-blog3@2x.jpg" media="(min-width: 760px)">
-                                    <img src="images/post-blog3@2x.jpg" alt="">
-                                </picture>
-                            </div>
-                            <div class="background-text">
-                                <div class="blog-intro-text inverted">
-                                    <h2>Post title appears here on a few lines as needed</h2>
-                                    <p>A brief introduction could appear here if necessary at netus elit convallis nibh
-                                        donec in feugiat libero euismod risus egestas eu.</p>
-                                    <div class="cat-wrap">
-                                        <ul>
-                                            <li>
-                                                <a href="">Category</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <svg width="19" height="14" viewBox="0 0 19 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M17.25 6.0001C14.812 6.0001 12.59 3.77909 12.59 1.34009V0.340088H10.59V1.34009C10.59 3.11409 11.368 4.77809 12.589 6.0001H0.25V8.0001H12.589C11.368 9.2221 10.59 10.8861 10.59 12.6601V13.6601H12.59V12.6601C12.59 10.2211 14.812 8.0001 17.25 8.0001H18.25V6.0001H17.25Z"
-                                            fill="#789291" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="blog-intro-list2">
-                                <div class="blog-intro-thumb">
+                            <div class="blog-intro-sub-list relative">
+                                <div class="blog-intro-thumb w-100 h-100">
                                     <picture class="object-fit">
                                         <source srcset="images/post-blog4@2x.jpg" media="(min-width: 760px)">
                                         <img src="images/post-blog4@2x.jpg" alt="">
                                     </picture>
                                 </div>
-                                <div class="background-text">
+                                <div class="background-text flex flex-end">
                                     <div class="blog-intro-text inverted">
-                                        <h2>Post title appears here on a few lines as needed</h2>
-                                        <p>A brief introduction could appear here if necessary at netus elit convallis
-                                            nibh
-                                            donec in feugiat libero euismod risus egestas eu.</p>
-                                        <div class="cat-wrap">
-                                            <ul>
-                                                <li>
-                                                    <a href="">Category</a>
-                                                </li>
+                                        <hr>
+                                        <h2><a href="05-Blog-Post.html">Post title appears here on a few lines as
+                                                needed</a>
+                                        </h2>
+
+                                        <div class="blog-intro-category flex flex-vcenter">
+                                            <ul class="category flex m-0 no-disc">
+                                                <li class="fs-14 lh-18 f-500 mb-0">Category</li>
                                             </ul>
+                                            <div class="blog-intro-link">
+                                                <a class="" href=""><span class="hide">Read More</span><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                        viewBox="0 0 25 24" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                            fill="white" />
+                                                    </svg></a>
+                                            </div>
                                         </div>
-                                        <svg width="19" height="14" viewBox="0 0 19 14" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M17.25 6.0001C14.812 6.0001 12.59 3.77909 12.59 1.34009V0.340088H10.59V1.34009C10.59 3.11409 11.368 4.77809 12.589 6.0001H0.25V8.0001H12.589C11.368 9.2221 10.59 10.8861 10.59 12.6601V13.6601H12.59V12.6601C12.59 10.2211 14.812 8.0001 17.25 8.0001H18.25V6.0001H17.25Z"
-                                                fill="#789291" />
-                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-intro-sub-list relative">
+                                <div class="blog-intro-thumb w-100 h-100">
+                                    <picture class="object-fit">
+                                        <source srcset="images/post-blog4@2x.jpg" media="(min-width: 760px)">
+                                        <img src="images/post-blog4@2x.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="background-text flex flex-end">
+                                    <div class="blog-intro-text inverted">
+                                        <hr>
+                                        <h2><a href="05-Blog-Post.html">Post title appears here on a few lines as
+                                                needed</a>
+                                        </h2>
+
+                                        <div class="blog-intro-category flex flex-vcenter">
+                                            <ul class="category flex m-0 no-disc">
+                                                <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                            </ul>
+                                            <div class="blog-intro-link">
+                                                <a class="" href=""><span class="hide">Read More</span><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                        viewBox="0 0 25 24" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                            fill="white" />
+                                                    </svg></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="blog-intro-list">
-                            <div class="blog-intro-thumb">
+                            <div class="blog-intro-thumb w-100 h-100">
                                 <picture class="object-fit">
                                     <source srcset="images/post-blog5@2x.jpg" media="(min-width: 760px)">
                                     <img src="images/post-blog5@2x.jpg" alt="">
                                 </picture>
                             </div>
-                            <div class="background-text">
+                            <div class="background-text flex flex-end">
                                 <div class="blog-intro-text inverted">
-                                    <h2>Post title appears here on a few lines as needed</h2>
+                                    <hr>
+                                    <h2><a href="05-Blog-Post.html">Post title appears here on a few lines as needed</a>
+                                    </h2>
                                     <p>A brief introduction could appear here if necessary at netus elit convallis nibh
                                         donec in feugiat libero euismod risus egestas eu.</p>
-                                    <div class="cat-wrap">
-                                        <ul>
-                                            <li>
-                                                <a href="">Category</a>
-                                            </li>
+                                    <div class="blog-intro-category flex flex-vcenter">
+                                        <ul class="category flex m-0 no-disc">
+                                            <li class="fs-14 lh-18 f-500 mb-0">Category</li>
                                         </ul>
+                                        <div class="blog-intro-link">
+                                            <a class="" href=""><span class="hide">Read More</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                    viewBox="0 0 25 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                        fill="white" />
+                                                </svg></a>
+                                        </div>
                                     </div>
-                                    <svg width="19" height="14" viewBox="0 0 19 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M17.25 6.0001C14.812 6.0001 12.59 3.77909 12.59 1.34009V0.340088H10.59V1.34009C10.59 3.11409 11.368 4.77809 12.589 6.0001H0.25V8.0001H12.589C11.368 9.2221 10.59 10.8861 10.59 12.6601V13.6601H12.59V12.6601C12.59 10.2211 14.812 8.0001 17.25 8.0001H18.25V6.0001H17.25Z"
-                                            fill="#789291" />
-                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -221,89 +238,325 @@
                 </div>
             </div>
         </section>
-
-        <section class="blog-post-section">
+        <section class="blog-post-section gray-bg">
             <div class="container">
                 <div class="blog-post-main">
-                    <div class="blog-post-row">
+                    <div class="blog-post-right flex flex-end">
+                        <div class="blog-post-select">
+                            <select name="" id="">
+                                <option value="Categories">Categories</option>
+                                <option value="Categories">Categories</option>
+                                <option value="Categories">Categories</option>
+                                <option value="Categories">Categories</option>
+                                <option value="Categories">Categories</option>
+                                <option value="Categories">Categories</option>
+                                <option value="Categories">Categories</option>
+                            </select>
+                        </div>
+                        <div class="blog-post-select">
+                            <select name="" id="">
+                                <option value="Categories">Categories</option>
+                                <option value="Categories">Categories</option>
+                                <option value="Categories">Categories</option>
+                                <option value="Categories">Categories</option>
+                                <option value="Categories">Categories</option>
+                                <option value="Categories">Categories</option>
+                                <option value="Categories">Categories</option>
+                            </select>
+                        </div>
+                        <form class="blog-post-form relative" action="">
+                            <input type="text" name="" id="" placeholder="Search">
+                            <button class="absolute"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"
+                                    viewBox="0 0 15 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.13415 2.32927C4.20335 2.32927 1.82927 4.70213 1.82927 7.62695C1.82927 10.5518 4.20335 12.9247 7.13415 12.9247C8.59636 12.9247 9.91876 12.3351 10.8791 11.3791C11.8439 10.4188 12.4391 9.09306 12.4391 7.62695C12.4391 4.70213 10.0649 2.32927 7.13415 2.32927ZM0 7.62695C0 3.68986 3.19506 0.5 7.13415 0.5C11.0732 0.5 14.2683 3.68986 14.2683 7.62695C14.2683 9.26893 13.7117 10.7821 12.7781 11.9868L14.7317 13.9383C15.0891 14.2952 15.0895 14.8744 14.7325 15.2317C14.3755 15.5891 13.7964 15.5895 13.439 15.2325L11.4821 13.2778C10.2786 14.203 8.77013 14.7539 7.13415 14.7539C3.19506 14.7539 0 11.5641 0 7.62695Z"
+                                        fill="#789291" />
+                                </svg></button>
+                        </form>
+                    </div>
+                    <div class="blog-post-row flex">
                         <div class="blog-post-list radius-20 relative">
-                            <div class="blog-post-image">
-                                <picture class="object-fit"></picture>
+                            <div class="blog-post-image relative">
+                                <picture class="object-fit radius-img-20">
+                                    <img src="images/event-thumb1@2x.jpg" alt="">
+                                </picture>
+                                <div class="blog-post-overlay background-text radius-20"></div>
                             </div>
-                            <div class="blog-post-pos background-text">
-                                <div class="blog-post-text">
+                            <div class="blog-post-pos background-text flex flex-end">
+                                <div class="blog-post-text inverted">
                                     <hr>
-                                    <h2><a href="">Post title appears here on a few lines as needed to fit the
+                                    <h2 class="h4"><a href="">Post title appears here on a few lines as needed to fit
+                                            the
                                             content</a>
                                     </h2>
+                                    <div class="blog-post-category flex flex-vcenter">
+                                        <ul class="category flex m-0 no-disc">
+                                            <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                        </ul>
+                                        <div class="blog-post-link">
+                                            <a class="" href=""><span class="hide">Read More</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                    viewBox="0 0 25 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                        fill="white" />
+                                                </svg></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="blog-post-list radius-20 relative">
-                            <div class="blog-post-image">
-                                <picture class="object-fit"></picture>
+                            <div class="blog-post-image relative">
+                                <picture class="object-fit radius-img-20"><img src="images/event-thumb2@2x.jpg" alt="">
+                                </picture>
+                                <div class="blog-post-overlay background-text radius-20"></div>
                             </div>
-                            <div class="blog-post-pos background-text">
-                                <div class="blog-post-text">
+                            <div class="blog-post-pos background-text flex flex-end">
+                                <div class="blog-post-text inverted">
                                     <hr>
-                                    <h2><a href="">Post title appears here on a few lines as needed to fit the
+                                    <h2 class="h4"><a href="">Post title appears here on a few lines as needed to fit
+                                            the
                                             content</a>
                                     </h2>
+                                    <div class="blog-post-category flex flex-vcenter">
+                                        <ul class="category flex m-0 no-disc">
+                                            <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                        </ul>
+                                        <div class="blog-post-link">
+                                            <a class="" href=""><span class="hide">Read More</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                    viewBox="0 0 25 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                        fill="white" />
+                                                </svg></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="blog-post-list radius-20 relative">
-                            <div class="blog-post-image">
-                                <picture class="object-fit"></picture>
+                            <div class="blog-post-image relative">
+                                <picture class="object-fit radius-img-20">
+                                    <img src="images/event-thumb3@2x.jpg" alt="">
+                                </picture>
+                                <div class="blog-post-overlay background-text radius-20"></div>
                             </div>
-                            <div class="blog-post-pos background-text">
-                                <div class="blog-post-text">
+                            <div class="blog-post-pos background-text flex flex-end">
+                                <div class="blog-post-text inverted">
                                     <hr>
-                                    <h2><a href="">Post title appears here on a few lines as needed to fit the
+                                    <h2 class="h4"><a href="">Post title appears here on a few lines as needed to fit
+                                            the
                                             content</a>
                                     </h2>
+                                    <div class="blog-post-category flex flex-vcenter">
+                                        <ul class="category flex m-0 no-disc">
+                                            <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                        </ul>
+                                        <div class="blog-post-link">
+                                            <a class="" href=""><span class="hide">Read More</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                    viewBox="0 0 25 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                        fill="white" />
+                                                </svg></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="blog-post-list radius-20 relative">
-                            <div class="blog-post-image">
-                                <picture class="object-fit"></picture>
+                            <div class="blog-post-image relative">
+                                <picture class="object-fit radius-img-20">
+                                    <img src="images/event-thumb4@2x.jpg" alt="">
+                                </picture>
+                                <div class="blog-post-overlay background-text radius-20"></div>
                             </div>
-                            <div class="blog-post-pos background-text">
-                                <div class="blog-post-text">
+                            <div class="blog-post-pos background-text flex flex-end">
+                                <div class="blog-post-text inverted">
                                     <hr>
-                                    <h2><a href="">Post title appears here on a few lines as needed to fit the
+                                    <h2 class="h4"><a href="">Post title appears here on a few lines as needed to fit
+                                            the
                                             content</a>
                                     </h2>
+                                    <div class="blog-post-category flex flex-vcenter">
+                                        <ul class="category flex m-0 no-disc">
+                                            <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                        </ul>
+                                        <div class="blog-post-link">
+                                            <a class="" href=""><span class="hide">Read More</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                    viewBox="0 0 25 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                        fill="white" />
+                                                </svg></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="blog-post-list radius-20 relative">
-                            <div class="blog-post-image">
-                                <picture class="object-fit"></picture>
+                            <div class="blog-post-image relative">
+                                <picture class="object-fit radius-img-20">
+                                    <img src="images/event-thumb5@2x.jpg" alt="">
+                                </picture>
+                                <div class="blog-post-overlay background-text radius-20"></div>
                             </div>
-                            <div class="blog-post-pos background-text">
-                                <div class="blog-post-text">
+                            <div class="blog-post-pos background-text flex flex-end">
+                                <div class="blog-post-text inverted">
                                     <hr>
-                                    <h2><a href="">Post title appears here on a few lines as needed to fit the
+                                    <h2 class="h4"><a href="">Post title appears here on a few lines as needed to fit
+                                            the
                                             content</a>
                                     </h2>
+                                    <div class="blog-post-category flex flex-vcenter">
+                                        <ul class="category flex m-0 no-disc">
+                                            <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                        </ul>
+                                        <div class="blog-post-link">
+                                            <a class="" href=""><span class="hide">Read More</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                    viewBox="0 0 25 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                        fill="white" />
+                                                </svg></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="blog-post-list radius-20 relative">
-                            <div class="blog-post-image">
-                                <picture class="object-fit"></picture>
+                            <div class="blog-post-image relative">
+                                <picture class="object-fit radius-img-20">
+                                    <img src="images/event-thumb6@2x.jpg" alt="">
+                                </picture>
+                                <div class="blog-post-overlay background-text radius-20"></div>
                             </div>
-                            <div class="blog-post-pos background-text">
-                                <div class="blog-post-text">
+                            <div class="blog-post-pos background-text flex flex-end">
+                                <div class="blog-post-text inverted">
                                     <hr>
-                                    <h2><a href="">Post title appears here on a few lines as needed to fit the
+                                    <h2 class="h4"><a href="">Post title appears here on a few lines as needed to fit
+                                            the
                                             content</a>
                                     </h2>
+                                    <div class="blog-post-category flex flex-vcenter">
+                                        <ul class="category flex m-0 no-disc">
+                                            <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                        </ul>
+                                        <div class="blog-post-link">
+                                            <a class="" href=""><span class="hide">Read More</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                    viewBox="0 0 25 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                        fill="white" />
+                                                </svg></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="blog-post-list radius-20 relative">
+                            <div class="blog-post-image relative">
+                                <picture class="object-fit radius-img-20">
+                                    <img src="images/event-thumb7@2x.jpg" alt="">
+                                </picture>
+                                <div class="blog-post-overlay background-text radius-20"></div>
+                            </div>
+                            <div class="blog-post-pos background-text flex flex-end">
+                                <div class="blog-post-text inverted">
+                                    <hr>
+                                    <h2 class="h4"><a href="">Post title appears here on a few lines as needed to fit
+                                            the
+                                            content</a>
+                                    </h2>
+                                    <div class="blog-post-category flex flex-vcenter">
+                                        <ul class="category flex m-0 no-disc">
+                                            <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                        </ul>
+                                        <div class="blog-post-link">
+                                            <a class="" href=""><span class="hide">Read More</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                    viewBox="0 0 25 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                        fill="white" />
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-post-list radius-20 relative">
+                            <div class="blog-post-image relative">
+                                <picture class="object-fit radius-img-20">
+                                    <img src="images/event-thumb8@2x.jpg" alt="">
+                                </picture>
+                                <div class="blog-post-overlay background-text radius-20"></div>
+                            </div>
+                            <div class="blog-post-pos background-text flex flex-end">
+                                <div class="blog-post-text inverted">
+                                    <hr>
+                                    <h2 class="h4"><a href="">Post title appears here on a few lines as needed to fit
+                                            the
+                                            content</a>
+                                    </h2>
+                                    <div class="blog-post-category flex flex-vcenter">
+                                        <ul class="category flex m-0 no-disc">
+                                            <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                        </ul>
+                                        <div class="blog-post-link">
+                                            <a class="" href=""><span class="hide">Read More</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                    viewBox="0 0 25 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                        fill="white" />
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-post-list radius-20 relative">
+                            <div class="blog-post-image relative">
+                                <picture class="object-fit radius-img-20">
+                                    <img src="images/event-thumb9@2x.jpg" alt="">
+                                </picture>
+                                <div class="blog-post-overlay background-text radius-20"></div>
+                            </div>
+                            <div class="blog-post-pos background-text flex flex-end">
+                                <div class="blog-post-text inverted">
+                                    <hr>
+                                    <h2 class="h4"><a href="">Post title appears here on a few lines as needed to fit
+                                            the
+                                            content</a>
+                                    </h2>
+                                    <div class="blog-post-category flex flex-vcenter">
+                                        <ul class="category flex m-0 no-disc">
+                                            <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                        </ul>
+                                        <div class="blog-post-link">
+                                            <a class="" href=""><span class="hide">Read More</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                    viewBox="0 0 25 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                        fill="white" />
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="load-more" class="more blog_more"><span class="loader"></span>
+                        <div class="text button button-transparent"><span>Load more articles</span></div>
                     </div>
                 </div>
             </div>
@@ -328,6 +581,12 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/jquery.selectBox.js"></script>
+    <script src="js/selectBox.js"></script>
+
+
     <script type="module" src="js/core.js"></script>
 </body>
 

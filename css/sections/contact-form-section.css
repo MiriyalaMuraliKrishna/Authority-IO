@@ -3,7 +3,7 @@
 
 .contact-bg-overlay{background: linear-gradient(215deg, rgba(28, 28, 28, 0.00) 9.94%, #1C1C1C 50.27%);}
 
-.contact-form-lt{border-radius: 24px 0px 0px 24px; background: linear-gradient(180deg, rgba(18, 39, 80, 0.00) 0%, rgba(18, 39, 80, 0.50) 100%), var(--Accent); color: var(--White);}
+.contact-form-lt{color: var(--White);}
 .contact-form-lt h1{margin-bottom: 33px;}
 .contact-form-rt{ border-radius: 20px; border: 1px solid var(--Dark-Gray); background: rgba(19, 19, 19, 0.70); }
 
@@ -13,6 +13,7 @@
 .contact-form-lt span.optional-text{margin-bottom: 7px;}
 .contact-form-lt p{margin-bottom: 33px;}
 .contact-form-links{padding: 24px 24px 16px; border: 1px dashed var(--Spun-Pearl);}
+.contact-form-links::before{ content: ""; display: block; }
 .contact-form-link{gap: 24px; margin-bottom: 8px;}
 .contact-form-link svg{width: 20px; height: 20px;}
 .contact-form-desc{letter-spacing: -0.2px;}

@@ -6,9 +6,11 @@
 
 
 
-@import "./sections/blog-intro-section.css";
+@import "./elements/_selectBox.css";
+@import "./elements/_formidable.css";
 
-body{background-image: url('../images/blog-bg@2x.jpg');}
+@import "./sections/blog-intro-section.css";
+@import "./sections/blog-post-section.css";
 
 
 

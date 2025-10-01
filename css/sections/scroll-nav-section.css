@@ -16,7 +16,7 @@
 
 .scroll-nav-head{padding-bottom: 19px;}
 .scroll-nav-stripe{padding-left: 19px;}
-.scroll-nav-lines{ background-color: var(--Accent); border-radius: 4px; height: 100%; left: 0; top: 0; width: 2px; opacity: 0.25; }
+.scroll-nav-lines{ background-color: var(--Muted-Ochre); border-radius: 4px; height: 100%; left: 0; top: 0; width: 2px; opacity: 0.25; }
 
 ul.scroll-nav-links{margin: 0; gap: 0;}
 ul.scroll-nav-links li{margin: 0;}

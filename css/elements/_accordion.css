@@ -15,7 +15,7 @@
 
 
 
-.accordion-header.open{color: var(--Accent);} 
+.accordion-header.open{color: var(--Muted-Ochre);} 
 .accordion-title{display: block; transition: transform 0.5s ease;}
 .accordion-header:hover .accordion-title{transform: translateX(6px); color: var(--Foreground);}
 .accordion-header.open:hover .accordion-title{transform: translateX(0);}
