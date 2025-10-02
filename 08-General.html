@@ -111,7 +111,7 @@
                         <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim velit
                             curabitur
                             ultrices.</p>
-                        <a href="#" class="text-link">
+                        <a href="#" class="text-link flex flex-vcenter">
                             <span class="hide">Read More</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 19 14"
                                 fill="none">
@@ -125,7 +125,7 @@
                         <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim velit
                             curabitur
                             ultrices.</p>
-                        <a href="#" class="text-link">
+                        <a href="#" class="text-link flex flex-vcenter">
                             <span class="hide">Read More</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 19 14"
                                 fill="none">
@@ -139,7 +139,7 @@
                         <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim velit
                             curabitur
                             ultrices.</p>
-                        <a href="#" class="text-link">
+                        <a href="#" class="text-link flex flex-vcenter">
                             <span class="hide">Read More</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 19 14"
                                 fill="none">
@@ -153,7 +153,7 @@
                         <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim velit
                             curabitur
                             ultrices.</p>
-                        <a href="#" class="text-link">
+                        <a href="#" class="text-link flex flex-vcenter">
                             <span class="hide">Read More</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 19 14"
                                 fill="none">
@@ -354,16 +354,42 @@
                             sed tristique mauris auctor. Mauris nascetur nec, amet maecenas gravida. Placerat vitae
                             fermentum
                             aliquet egestas.</p>
-                        <div class="cta-module-main flex">
-                            <div class="cta-module-title h3 mb-0 f-700">Sample micro CTA module</div>
-                            <div class="cta-module-btn">
-                                <a href="/05-Blog-Post.html" class="button flex flex-vcenter w-fit">CTA Button<svg
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <path opacity="0.3"
-                                            d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
-                                            fill="#0A0A0A"></path>
-                                    </svg></a>
+                        <div class="cta-module-wrap relative">
+                            <div class="cta-module-bg background-bg"></div>
+                            <div class="cta-module-gradient background-bg z-0"></div>
+                            <div class="cta-module-overlay background-bg z-1"></div>
+                            <div class="cta-module-main flex relative z-2 o-hidden">
+                                <div class="cta-module-title h3 mb-0 f-700">Sample micro CTA module</div>
+                                <div class="cta-module-btn">
+                                    <a href="/05-Blog-Post.html" class="button flex flex-vcenter w-fit">CTA
+                                        Button<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path opacity="0.3"
+                                                d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
+                                                fill="#0A0A0A"></path>
+                                        </svg></a>
+                                </div>
+                                <div class="cta-module-ellipse absolute">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="305" height="305"
+                                        viewBox="0 0 305 305" fill="none">
+                                        <g filter="url(#filter0_f_1_179)">
+                                            <circle cx="82" cy="82" r="82"
+                                                transform="matrix(-0.999059 -0.0433648 -0.0433648 0.999059 237.957 74.1118)"
+                                                fill="#C6A157" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_f_1_179" x="0.476807" y="0.477295" width="304.003"
+                                                height="304.003" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                    result="shape" />
+                                                <feGaussianBlur stdDeviation="35"
+                                                    result="effect1_foregroundBlur_1_179" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                         <hr class="horizontal">
@@ -423,8 +449,9 @@
                                 content
                             </div>
                             <div class="article-cta-link">
-                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="14"
-                                        viewBox="0 0 18 14" fill="none">
+                                <a class="text-link flex flex-vcenter" href="#"><span class="hide">Read More</span><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
+                                        fill="none">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M17 5.99985C14.562 5.99985 12.34 3.77884 12.34 1.33984V0.339844H10.34V1.33984C10.34 3.11384 11.118 4.77784 12.339 5.99985H0V7.99985H12.339C11.118 9.22185 10.34 10.8859 10.34 12.6599V13.6599H12.34V12.6599C12.34 10.2209 14.562 7.99985 17 7.99985H18V5.99985H17Z"
                                             fill="#506461" />
@@ -461,7 +488,26 @@
                                             <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi
                                                 dignissim
                                                 ultrices.</p>
-                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="14"
+                                            <a class="text-link flex flex-vcenter" href="#"><span class="hide">Read
+                                                    More</span><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                    height="14" viewBox="0 0 18 14" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M17 5.66001C14.562 5.66001 12.34 3.439 12.34 1V0H10.34V1C10.34 2.774 11.118 4.438 12.339 5.66001H0V7.66001H12.339C11.118 8.88201 10.34 10.546 10.34 12.32V13.32H12.34V12.32C12.34 9.88101 14.562 7.66001 17 7.66001H18V5.66001H17Z"
+                                                        fill="#506461" />
+                                                </svg></a>
+                                        </div>
+                                        <div class="stats-list radius-20 relative fs-16 lh-24">
+                                            <div class="stats-line absolute"></div>
+
+                                            <div class="stats-num">
+                                                <span>123</span>
+                                            </div>
+                                            <h2 class="h4">Subhead</h2>
+                                            <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi
+                                                dignissim
+                                                ultrices.</p>
+                                            <a class="text-link flex flex-vcenter" href="#"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="18" height="14"
                                                     viewBox="0 0 18 14" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                                         d="M17 5.66001C14.562 5.66001 12.34 3.439 12.34 1V0H10.34V1C10.34 2.774 11.118 4.438 12.339 5.66001H0V7.66001H12.339C11.118 8.88201 10.34 10.546 10.34 12.32V13.32H12.34V12.32C12.34 9.88101 14.562 7.66001 17 7.66001H18V5.66001H17Z"
@@ -478,8 +524,9 @@
                                             <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi
                                                 dignissim
                                                 ultrices.</p>
-                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="14"
-                                                    viewBox="0 0 18 14" fill="none">
+                                            <a class="text-link flex flex-vcenter" href="#"> <span class="hide">Read
+                                                    More</span><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                    height="14" viewBox="0 0 18 14" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                                         d="M17 5.66001C14.562 5.66001 12.34 3.439 12.34 1V0H10.34V1C10.34 2.774 11.118 4.438 12.339 5.66001H0V7.66001H12.339C11.118 8.88201 10.34 10.546 10.34 12.32V13.32H12.34V12.32C12.34 9.88101 14.562 7.66001 17 7.66001H18V5.66001H17Z"
                                                         fill="#506461" />
@@ -495,25 +542,9 @@
                                             <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi
                                                 dignissim
                                                 ultrices.</p>
-                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="14"
-                                                    viewBox="0 0 18 14" fill="none">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M17 5.66001C14.562 5.66001 12.34 3.439 12.34 1V0H10.34V1C10.34 2.774 11.118 4.438 12.339 5.66001H0V7.66001H12.339C11.118 8.88201 10.34 10.546 10.34 12.32V13.32H12.34V12.32C12.34 9.88101 14.562 7.66001 17 7.66001H18V5.66001H17Z"
-                                                        fill="#506461" />
-                                                </svg></a>
-                                        </div>
-                                        <div class="stats-list radius-20 relative fs-16 lh-24">
-                                            <div class="stats-line absolute"></div>
-
-                                            <div class="stats-num">
-                                                <span>123</span>
-                                            </div>
-                                            <h2 class="h4">Subhead</h2>
-                                            <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi
-                                                dignissim
-                                                ultrices.</p>
-                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="14"
-                                                    viewBox="0 0 18 14" fill="none">
+                                            <a class="text-link flex flex-vcenter" href="#"><span class="hide">Read
+                                                    More</span><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                    height="14" viewBox="0 0 18 14" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                                         d="M17 5.66001C14.562 5.66001 12.34 3.439 12.34 1V0H10.34V1C10.34 2.774 11.118 4.438 12.339 5.66001H0V7.66001H12.339C11.118 8.88201 10.34 10.546 10.34 12.32V13.32H12.34V12.32C12.34 9.88101 14.562 7.66001 17 7.66001H18V5.66001H17Z"
                                                         fill="#506461" />
