@@ -1,6 +1,6 @@
 // import { animate } from "animejs";
-import $ from "jquery";
-import "is-in-viewport";
+import $ from 'jquery';
+import 'is-in-viewport';
 
 class Animate {
   constructor(selector) {
@@ -10,15 +10,21 @@ class Animate {
     const checkInView = () => {
       this.eles.forEach((ele) => {
         const $ele = $(ele);
-        const animateType = $ele.data("animate");
-        if ($ele.is(":in-viewport")) {
-          $ele.addClass(animateType + " visible");
+        const timeline = $ele[0].tl;
+        const animateType = $ele.data('animate');
+
+        if ($ele.is(':in-viewport')) {
+          $ele.addClass(animateType + ' visible');
+          if (timeline && !timeline.played) {
+            timeline.restart().play();
+            timeline.played = true; // mark as played (avoid repeat)
+          }
         }
       });
     };
     checkInView();
-    document.addEventListener("load", checkInView);
-    document.addEventListener("scroll", checkInView);
+    document.addEventListener('load', checkInView);
+    document.addEventListener('scroll', checkInView);
   }
 }
-export const anime = new Animate("[data-animate]");
+export const anime = new Animate('[data-animate]');

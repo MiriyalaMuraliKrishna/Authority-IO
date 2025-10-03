@@ -1,24 +1,34 @@
 import { header } from './elements/header.js';
 import { lenis } from './elements/lenis.js';
+import { gsapme } from './elements/gsap';
+import { scrolltriggerme } from './elements/scrollTrigger.js';
 import { anime } from './elements/animate.js';
-import { mygsap } from './elements/gsap.js';
 import { counter } from './elements/counter.js';
-import { scrollnavline } from './elements/scrollnavline';
-// import { youtube, vimeo } from "./elements/popup.js";
-import { testimonialSwiper } from './elements/swiper.js';
+import { youtube, vimeo } from './elements/popup.js';
+import {
+  testimonialSwiper,
+  valuePropsSwiper,
+  scrolNavSwiper,
+} from './elements/swiper.js';
 import { accordion } from './elements/accordion.js';
 import { asSeen } from './elements/asSlider.js';
+import { scrollnav } from './elements/scrollnav';
+import { scrollnavline } from './elements/scrollnavline';
 
 document.addEventListener('DOMContentLoaded', () => {
   header.init();
   lenis.init();
+  gsapme.init();
+  scrolltriggerme.init();
   anime.init();
-  mygsap.init();
   counter.init();
-  scrollnavline.init();
-  // youtube.init();
-  // vimeo.init();
+  youtube.init();
+  vimeo.init();
   testimonialSwiper.init();
+  valuePropsSwiper.init();
+  scrolNavSwiper.init();
   accordion.init();
   asSeen.slider();
+  scrollnav.init();
+  scrollnavline.init();
 });

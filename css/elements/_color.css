@@ -34,7 +34,7 @@
     --White: #ffffff;
   
     --Red: #f00;
-
+    --Dark-Black: #151515;
     --Dark-Gray: #262626;
     --mid-gray: #292929;
     
@@ -50,6 +50,7 @@
 
     --Bluish-Gray: #789291;
     --Charcoal-Black: #1C1C1C;
+    --Charcoal-Black-60: rgba(28, 28, 28, 0.60);
     --Charcoal-Black-75: rgba(28, 28, 28, 0.75);
     --Background: #EDEDED;
 

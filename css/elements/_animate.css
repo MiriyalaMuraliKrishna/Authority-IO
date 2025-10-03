@@ -13,7 +13,9 @@
 *[data-animate].visible {
   visibility: visible;
 }
-
+*[data-animate="lines"]{
+  perspective: 300px;
+}
 .fade-in-right {
   animation-name: fadeInRight;
 }

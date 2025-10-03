@@ -1,6 +1,6 @@
 
 header.site-header{width: 100%; height: auto; top: 0; left: 0; position: fixed; z-index: 800;  transition: top 0.5s ease-in-out, background-color 0.5s ease-in-out;}
-header.sticky-header{background-color: var(--White);}
+header.sticky-header{background-color: var(--White-50); backdrop-filter: blur(50px);}
 .header{ background-color: var(--mid-gray-80);}
 
 .site-header.sticky{background-color: var(--Charcoal-Black);}
@@ -13,9 +13,6 @@ header.sticky-header{background-color: var(--White);}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    body.home .site-main-cover{padding-top: 0;}
-
-    body.home .header{padding-left: 45px;}
     .site-header{padding: 20px 0;}
     .header{padding: 18px 40px 20px; position: relative;}
     .logo{top: 0; position: relative; flex: 0 0 209px;}
@@ -27,7 +24,7 @@ header.sticky-header{background-color: var(--White);}
     ul.main_menu > li{margin: 0;}
     ul.main_menu > li:first-child:before{display: none;}
     ul.main_menu > li::before{top: 13px; left: -34px; width: 4px; height: 4px; background: var(--Muted-Ochre);}
-    ul.main_menu > li > a{ position: relative; display: inline-block; font-size: 16; line-height: 22px; letter-spacing: -0.16px; font-weight: 700; color: var(--White); }
+    ul.main_menu > li > a{ position: relative; display: inline-block; font-size: 16px; line-height: 22px; letter-spacing: -0.16px; font-weight: 700; color: var(--White); }
     ul.main_menu > li.current-post-ancestor > a, ul.main_menu > li.current-menu-item > a, ul.main_menu > li.current-menu-parent > a, ul.main_menu > li:hover > a, ul.main_menu > li > a:hover{color: var(--Muted-Ochre);}
     
     ul.main_menu > li.button{padding: 0; top: 0px; background: none;}
@@ -157,19 +154,19 @@ header.sticky-header{background-color: var(--White);}
   body.home .site-main-cover{padding-top: 0;}
 
 
-    .header{padding: 12px 0; gap: 16px;}
+    .header{padding: 12px 16px; gap: 16px;}
     .logo{flex: 0 0 209px; margin-right: auto; z-index: 1;}
-    .humburger-btn{gap: 5px; width: 40px; height: 40px; background-color: var(--White); cursor: pointer; position: relative; z-index: 1;}
+    .humburger-btn{width: 44px; height: 44px; border-radius: 52px; border: 1px solid #A8AAB7; cursor: pointer; position: relative; z-index: 1;}
    
     .humburger-btn span{position: absolute;}
-    .humburger-btn span:first-child { top: 11px; } 
-    .humburger-btn span:nth-child(2) { top: 18px; } 
-    .humburger-btn span:nth-child(3) { top: 25px; }
+    .humburger-btn span:first-child { top: 16px; } 
+    .humburger-btn span:nth-child(2) { top: 20px; } 
+    .humburger-btn span:nth-child(3) { top: 24px; }
     .humburger-btn.open span{background-color: var(--Umber);}
     .humburger-btn.open span:first-child { top: 19px; transform:rotate(45deg) } 
     .humburger-btn.open span:nth-child(2) { transform:scale(0) } 
     .humburger-btn.open span:nth-child(3) { top: 19px; transform:rotate(-45deg) }
-    .humburger-line{width: 18px; height: 3px; display: block; background-color: var(--Charcoal-Black);}
+    .humburger-line{width: 18px; height: 2px; display: block; background-color: var(--White);}
 
     .header_right{top: 70px; transform: translateX(100%); left: 0; width: 100vw; height: 125vh; position: absolute; transition: transform 0.5s ease; display: block; flex-direction: column; background-color: var(--White); overflow-y: auto;}
     .header_right.open{transform: translateX(0);}
@@ -255,13 +252,11 @@ header.sticky-header{background-color: var(--White);}
   .site-main-cover{padding-top: 80px;}
   .nav-btn .button{padding: 13px;}
   .nav-btn{padding: 0 24px;}
-  body.home .logo{margin-left: 49px;}
 }
 @media screen and (max-width: 759px) and (min-width: 0px){
-  .site-header .container{padding: 0 12px;}
+  .site-header{padding: 16px 0;}
   .header{flex-wrap: nowrap;}
   .nav-btn{padding: 0 24px;}
-  body.home .logo{margin-left: 74px;}
 
   .nav-btn .button{padding: 14px 13px 15px; width: 100%; text-align: center; color: var(--Charcoal-Black); font-size: 18px; font-weight: 600; line-height: 100%; letter-spacing: 2.16px; text-transform: uppercase; } 
   .nav-btn .button:hover{background: var(--Charcoal-Black); color: var(--Muted-Ochre);}

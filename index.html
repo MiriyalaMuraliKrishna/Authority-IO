@@ -31,6 +31,7 @@
     <!-- CSS Base -->
     <link rel="stylesheet" href="./style.css" media="all" />
     <link rel="stylesheet" href="./css/index-page.css?v=3344" media="all" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
 </head>
 
 <body class="home">
@@ -42,8 +43,7 @@
                         <img width="132" height="26" src="images/logo.svg" alt="logo" />
                     </a>
                 </div>
-                <div role="button" aria-label="Open menu"
-                    class="humburger-btn mbl-blue-bg white-bg flex flex-col flex-center">
+                <div role="button" aria-label="Open menu" class="humburger-btn mbl-blue-bg flex flex-col flex-center">
                     <span class="humburger-line"></span>
                     <span class="humburger-line"></span>
                     <span class="humburger-line"></span>
@@ -70,20 +70,21 @@
                     <img src="images/home-banner-mobile@2x.jpg" alt="">
                 </picture>
             </div>
-            <div class="background-bg home-banner-video">
-                <!-- <div data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div> -->
-                <!-- https://vimeo.com/1098218919/8714815cac -->
-                <!-- <div data-vbg="https://vimeo.com/70459392"></div> --> <!-- Working solution -->
-                <div data-vbg="https://vimeo.com/1098218919/8714815cac"></div>
-                <!-- <video autoplay muted loop>
+            <!-- <div class="background-bg home-banner-video"> -->
+            <!-- <div data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div> -->
+            <!-- https://vimeo.com/1098218919/8714815cac -->
+            <!-- <div data-vbg="https://vimeo.com/70459392"></div> --> <!-- Working solution -->
+            <!-- <div data-vbg="https://vimeo.com/1098218919/8714815cac"></div> -->
+            <!-- <video autoplay muted loop>
                 <source src="images/landing-video.mp4" type="video/mp4" />
               </video> -->
-            </div>
-            <div class="background-text home-banner-overlay"></div>
+            <!-- </div> -->
+            <!-- <div class="background-text home-banner-gradient"></div>
+            <div class="background-text home-banner-overlay"></div> -->
             <div class="container relative z-3">
                 <div class="home-banner-main inverted">
-                    <div class="home-banner-text fs-20 lh-30 f-500 aligncenter">
-                        <h1 class="" data-animate="fade-in-up">Turn your expertise into<br />
+                    <div class="home-banner-text fs-20 lh-30 f-500 aligncenter" data-animate="fade-in-up">
+                        <h1 data-animate="lines">Turn your expertise into
                             a scalable, profitable online course business</h1>
 
 
@@ -102,8 +103,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="stat-values-main flex">
-                        <div class="stat-value">
+                    <div class="stat-values-main flex js-website-section">
+                        <div class="stat-value js-content-opacity" data-js-animate="fade-in-up" data-duration="1000">
                             <span class="stat-number f-800 fs-40 lh-40 flex">
                                 <span class="counter" data-duration="3000" data-count-to="600">600</span>
                                 <span class="stat-letter">K</span>
@@ -113,7 +114,7 @@
                                 <p>Additional text</p>
                             </div>
                         </div>
-                        <div class="stat-value">
+                        <div class="stat-value js-content-opacity" data-js-animate="fade-in-up" data-duration="2000">
                             <span class="stat-number f-800 fs-40 lh-40 flex">
                                 <span class="counter" data-duration="2500" data-count-to="100">100</span>
                                 <!-- <span class="stat-letter">K</span> -->
@@ -123,7 +124,7 @@
                                 <p>Additional text</p>
                             </div>
                         </div>
-                        <div class="stat-value">
+                        <div class="stat-value js-content-opacity" data-js-animate="fade-in-up" data-duration="3000">
                             <span class="stat-number f-800 fs-40 lh-40 flex">
                                 <span class="stat-letter">$</span>
                                 <span class="counter" data-duration="2500" data-count-to="1.5">1.5</span>
@@ -134,7 +135,7 @@
                                 <p>Additional text</p>
                             </div>
                         </div>
-                        <div class="stat-value">
+                        <div class="stat-value js-content-opacity" data-js-animate="fade-in-up" data-duration="4000">
                             <span class="stat-number f-800 fs-40 lh-40 flex">
                                 <span class="counter" data-duration="2500" data-count-to="4">4</span>
                                 <span class="stat-letter">K</span>
@@ -149,102 +150,133 @@
             </div>
             </div>
         </section>
-        <section class="short-intro-section gray-bg relative">
-            <div class="container">
-                <div class="short-intro-main" data-animate="fade-in-up">
-                    <div class="short-intro-head flex">
-                        <div class="short-intro-title">
-                            <h2>A short intro about this section appears in this spot here</h2>
-                            <div class="short-intro-btn">
+        <div class="gray-bg radius-b-40">
+            <section class="short-intro-section relative">
+                <div class="container">
+                    <div class="short-intro-main">
+                        <div class="short-intro-head flex">
+                            <div class="short-intro-title" data-animate="fade-in-left">
+                                <h2 data-animate="lines">A short intro about this section appears in this spot here</h2>
+                                <div class="short-intro-btn">
 
-                                <a href="#" class="button flex flex-center text-upper">CTA Button
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <path opacity="0.3"
-                                            d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
-                                            fill="#0A0A0A" />
-                                    </svg>
-                                </a>
+                                    <a href="#" class="button flex flex-center text-upper">About Us
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path opacity="0.3"
+                                                d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
+                                                fill="#0A0A0A" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="short-intro-desc fs-20 lh-28" data-animate="fade-in-right">
+                                <p>Augue arcu congue porttitor mauris lorem eget. Vulputate enim fermentum morbi feugiat
+                                    tincidunt
+                                    aenean accumsan integer. Sit maecenas at risus eget interdum dictum sed odio. Amet
+                                    suscipit nisl
+                                    curabitur a. Sed ipsum lectus amet aliquam morbi ac. Pellentesque cras sed placerat
+                                    velit
+                                    consectetur volutpat massa est faucibus. Cras in urna enim ut sem. Nec in odio in
+                                    vestibulum
+                                    praesent adipiscing et quam amet velit arcu est orci nulla hendrerit.</p>
                             </div>
                         </div>
-                        <div class="short-intro-desc fs-20 lh-28">
-                            <p>Augue arcu congue porttitor mauris lorem eget. Vulputate enim fermentum morbi feugiat
-                                tincidunt
-                                aenean accumsan integer. Sit maecenas at risus eget interdum dictum sed odio. Amet
-                                suscipit nisl
-                                curabitur a. Sed ipsum lectus amet aliquam morbi ac. Pellentesque cras sed placerat
-                                velit
-                                consectetur volutpat massa est faucibus. Cras in urna enim ut sem. Nec in odio in
-                                vestibulum
-                                praesent adipiscing et quam amet velit arcu est orci nulla hendrerit.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="value-props-section">
+                <div class="container">
+                    <div class="value-props-wrapper">
+                        <div class="value-props-swiper" data-type="valuePropsSwiper">
+                            <div class="swiper-wrapper value-props-main flex">
+                                <div class="swiper-slide value-props-list fs-16 lh-24 f-400" data-animate="fade-in-up">
+                                    <h2 class="h3">Feature or USP</h2>
+                                    <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim
+                                        velit
+                                        curabitur
+                                        ultrices.</p>
+                                    <a href="#" class="text-link flex flex-vcenter">
+                                        <span class="hide">Read More</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14"
+                                            viewBox="0 0 19 14" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M17.25 6.0001C14.812 6.0001 12.59 3.77909 12.59 1.34009V0.340088H10.59V1.34009C10.59 3.11409 11.368 4.77809 12.589 6.0001H0.25V8.0001H12.589C11.368 9.2221 10.59 10.8861 10.59 12.6601V13.6601H12.59V12.6601C12.59 10.2211 14.812 8.0001 17.25 8.0001H18.25V6.0001H17.25Z"
+                                                fill="#506461" />
+                                        </svg></a>
+                                </div>
+                                <div class="swiper-slide value-props-list fs-16 lh-24 f-400" data-animate="fade-in-up">
+                                    <h2 class="h3">Feature or USP</h2>
+                                    <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim
+                                        velit
+                                        curabitur
+                                        ultrices.</p>
+                                    <a href="#" class="text-link flex flex-vcenter">
+                                        <span class="hide">Read More</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14"
+                                            viewBox="0 0 19 14" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M17.25 6.0001C14.812 6.0001 12.59 3.77909 12.59 1.34009V0.340088H10.59V1.34009C10.59 3.11409 11.368 4.77809 12.589 6.0001H0.25V8.0001H12.589C11.368 9.2221 10.59 10.8861 10.59 12.6601V13.6601H12.59V12.6601C12.59 10.2211 14.812 8.0001 17.25 8.0001H18.25V6.0001H17.25Z"
+                                                fill="#506461" />
+                                        </svg></a>
+                                </div>
+                                <div class="swiper-slide value-props-list fs-16 lh-24 f-400" data-animate="fade-in-up">
+                                    <h2 class="h3">Feature or USP</h2>
+                                    <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim
+                                        velit
+                                        curabitur
+                                        ultrices.</p>
+                                    <a href="#" class="text-link flex flex-vcenter">
+                                        <span class="hide">Read More</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14"
+                                            viewBox="0 0 19 14" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M17.25 6.0001C14.812 6.0001 12.59 3.77909 12.59 1.34009V0.340088H10.59V1.34009C10.59 3.11409 11.368 4.77809 12.589 6.0001H0.25V8.0001H12.589C11.368 9.2221 10.59 10.8861 10.59 12.6601V13.6601H12.59V12.6601C12.59 10.2211 14.812 8.0001 17.25 8.0001H18.25V6.0001H17.25Z"
+                                                fill="#506461" />
+                                        </svg></a>
+                                </div>
+                                <div class="swiper-slide value-props-list fs-16 lh-24 f-400" data-animate="fade-in-up">
+                                    <h2 class="h3">Feature or USP</h2>
+                                    <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim
+                                        velit
+                                        curabitur
+                                        ultrices.</p>
+                                    <a href="#" class="text-link flex flex-vcenter">
+                                        <span class="hide">Read More</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14"
+                                            viewBox="0 0 19 14" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M17.25 6.0001C14.812 6.0001 12.59 3.77909 12.59 1.34009V0.340088H10.59V1.34009C10.59 3.11409 11.368 4.77809 12.589 6.0001H0.25V8.0001H12.589C11.368 9.2221 10.59 10.8861 10.59 12.6601V13.6601H12.59V12.6601C12.59 10.2211 14.812 8.0001 17.25 8.0001H18.25V6.0001H17.25Z"
+                                                fill="#506461" />
+                                        </svg></a>
+                                </div>
+
+                            </div>
+                            <div class="swiper-custom-nav flex flex-center relative hide-desktop">
+                                <div class="swiper-button-prev radius-50"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M4.25818 12.6575L11.1306 19.7438C11.4824 20.094 12.0428 20.0839 12.3825 19.7213C12.7139 19.3675 12.7139 18.8067 12.3825 18.4529L7.02089 12.9241H19.1147C19.6036 12.9241 20 12.5154 20 12.0112C20 11.5071 19.6036 11.0983 19.1147 11.0983H7.02089L12.3825 5.56949C12.7342 5.21924 12.744 4.64132 12.4043 4.27868C12.0646 3.91605 11.5041 3.90601 11.1524 4.25626C11.145 4.26361 11.1378 4.27108 11.1306 4.27868L4.25818 11.3654C4.21664 11.4081 4.17941 11.455 4.14707 11.5055C4.13335 11.5269 4.12361 11.5511 4.11166 11.573C4.09511 11.6025 4.08033 11.633 4.06739 11.6643C4.05649 11.6942 4.04733 11.7247 4.03995 11.7556C4.03242 11.7821 4.02224 11.8076 4.01693 11.835C3.99436 11.953 3.99436 12.0744 4.01693 12.1924C4.02224 12.2198 4.03242 12.2449 4.03995 12.2714C4.04735 12.3024 4.05651 12.3328 4.06739 12.3627C4.08033 12.394 4.09511 12.4245 4.11166 12.454C4.12361 12.4763 4.13335 12.4996 4.14707 12.5215C4.17984 12.5704 4.21704 12.6159 4.25818 12.6575Z"
+                                            fill="#1E2D32" />
+                                    </svg></div>
+                                <div class="swiper-pagination flex flex-center"></div>
+                                <div class="swiper-button-next radius-50"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M19.7418 12.6575L12.8694 19.7438C12.5176 20.094 11.9572 20.0839 11.6175 19.7213C11.2861 19.3675 11.2861 18.8067 11.6175 18.4529L16.9791 12.9241H4.88534C4.39638 12.9241 4 12.5154 4 12.0112C4 11.5071 4.39638 11.0983 4.88534 11.0983H16.9791L11.6175 5.56949C11.2658 5.21924 11.256 4.64132 11.5957 4.27868C11.9354 3.91605 12.4959 3.90601 12.8476 4.25626C12.855 4.26361 12.8622 4.27108 12.8694 4.27868L19.7418 11.3654C19.7834 11.4081 19.8206 11.455 19.8529 11.5055C19.8666 11.5269 19.8764 11.5511 19.8883 11.573C19.9049 11.6025 19.9197 11.633 19.9326 11.6643C19.9435 11.6942 19.9527 11.7247 19.9601 11.7556C19.9676 11.7821 19.9778 11.8076 19.9831 11.835C20.0056 11.953 20.0056 12.0744 19.9831 12.1924C19.9778 12.2198 19.9676 12.2449 19.9601 12.2714C19.9527 12.3024 19.9435 12.3328 19.9326 12.3627C19.9197 12.394 19.9049 12.4245 19.8883 12.454C19.8764 12.4763 19.8667 12.4996 19.8529 12.5215C19.8202 12.5704 19.783 12.6159 19.7418 12.6575Z"
+                                            fill="#1E2D32" />
+                                    </svg></div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="value-props-section gray-bg radius-b-40">
-            <div class="container">
-                <div class="value-props-main flex">
-                    <div class="value-props-list fs-16 lh-24 f-400">
-                        <h2 class="h3">Feature or USP</h2>
-                        <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim velit curabitur
-                            ultrices.</p>
-                        <a href="#" class="text-link flex flex-vcenter">
-                            <span class="hide">Read More</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 19 14"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M17.25 6.0001C14.812 6.0001 12.59 3.77909 12.59 1.34009V0.340088H10.59V1.34009C10.59 3.11409 11.368 4.77809 12.589 6.0001H0.25V8.0001H12.589C11.368 9.2221 10.59 10.8861 10.59 12.6601V13.6601H12.59V12.6601C12.59 10.2211 14.812 8.0001 17.25 8.0001H18.25V6.0001H17.25Z"
-                                    fill="#506461" />
-                            </svg></a>
-                    </div>
-                    <div class="value-props-list fs-16 lh-24 f-400">
-                        <h2 class="h3">Feature or USP</h2>
-                        <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim velit curabitur
-                            ultrices.</p>
-                        <a href="#" class="text-link flex flex-vcenter">
-                            <span class="hide">Read More</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 19 14"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M17.25 6.0001C14.812 6.0001 12.59 3.77909 12.59 1.34009V0.340088H10.59V1.34009C10.59 3.11409 11.368 4.77809 12.589 6.0001H0.25V8.0001H12.589C11.368 9.2221 10.59 10.8861 10.59 12.6601V13.6601H12.59V12.6601C12.59 10.2211 14.812 8.0001 17.25 8.0001H18.25V6.0001H17.25Z"
-                                    fill="#506461" />
-                            </svg></a>
-                    </div>
-                    <div class="value-props-list fs-16 lh-24 f-400">
-                        <h2 class="h3">Feature or USP</h2>
-                        <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim velit curabitur
-                            ultrices.</p>
-                        <a href="#" class="text-link flex flex-vcenter">
-                            <span class="hide">Read More</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 19 14"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M17.25 6.0001C14.812 6.0001 12.59 3.77909 12.59 1.34009V0.340088H10.59V1.34009C10.59 3.11409 11.368 4.77809 12.589 6.0001H0.25V8.0001H12.589C11.368 9.2221 10.59 10.8861 10.59 12.6601V13.6601H12.59V12.6601C12.59 10.2211 14.812 8.0001 17.25 8.0001H18.25V6.0001H17.25Z"
-                                    fill="#506461" />
-                            </svg></a>
-                    </div>
-                    <div class="value-props-list fs-16 lh-24 f-400">
-                        <h2 class="h3">Feature or USP</h2>
-                        <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim velit curabitur
-                            ultrices.</p>
-                        <a href="#" class="text-link flex flex-vcenter">
-                            <span class="hide">Read More</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 19 14"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M17.25 6.0001C14.812 6.0001 12.59 3.77909 12.59 1.34009V0.340088H10.59V1.34009C10.59 3.11409 11.368 4.77809 12.589 6.0001H0.25V8.0001H12.589C11.368 9.2221 10.59 10.8861 10.59 12.6601V13.6601H12.59V12.6601C12.59 10.2211 14.812 8.0001 17.25 8.0001H18.25V6.0001H17.25Z"
-                                    fill="#506461" />
-                            </svg></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <section class="scroll-nav-section">
             <div class="container">
                 <div class="scroll-nav-wrap inverted">
-                    <div class="scroll-nav-intro aligncenter fs-20 lh-30 f-500">
-                        <h2 class="fs-40 lh-40">Featured Case Studies</h2>
+                    <div class="scroll-nav-intro aligncenter fs-20 lh-30 f-500" data-animate="fade-in-up">
+                        <h2 class="fs-40 lh-40" data-animate="lines">Featured Case Studies</h2>
                         <p>Augue arcu congue porttitor mauris lorem eget. Vulputate enim fermentum morbi feugiat
                             tincidunt
                             aenean accumsan integer.</p>
@@ -252,30 +284,30 @@
                     <div class="scroll-nav-main flex">
                         <div class="scroll-nav-left">
                             <div class="sticky-widget">
-                                <div class="scroll-nav-stripe relative hide-mobile hide-tablet">
+                                <div class="scroll-nav-stripe relative">
                                     <div class="scroll-nav-lines absolute">
                                     </div>
                                     <div class="scroll-nav-line absolute">
                                     </div>
                                     <ul class="scroll-nav-links flex flex-col m-0 no-disc">
-                                        <li><a href="#Featured Case Study Title Appears Here">Featured Case Study Title
+                                        <li><a href="#Featured Case Study Title Appears Here1">Featured Case Study Title
                                                 Appears Here</a></li>
-                                        <li><a href="#The Featured Case Study Title Appears  Right Here">The Featured
+                                        <li><a href="#Featured Case Study Title Appears Here2">The Featured
                                                 Case Study Title Appears Right Here</a></li>
-                                        <li><a href="#Featured Case Study Title Appears Here">Featured Case Study Title
+                                        <li><a href="#Featured Case Study Title Appears Here3">Featured Case Study Title
                                                 Appears Here</a></li>
-                                        <li><a href="#The Featured Case Study Title Appears  Right Here">The Featured
+                                        <li><a href="#Featured Case Study Title Appears Here4">The Featured
                                                 Case Study Title Appears Right Here</a></li>
-                                        <li><a href="#Featured Case Study Title Appears Here">Featured Case Study Title
+                                        <li><a href="#Featured Case Study Title Appears Here5">Featured Case Study Title
                                                 Appears Here</a></li>
                                     </ul>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="scroll-nav-right flex flex-col">
-                            <div class="scroll-nav-lists relative" id="Featured Case Study Title Appears Here">
-                                <div class="scroll-nav-row radius-20 flex flex-vcenter relative">
+                        <div class="scroll-nav-right">
+                            <div class="scroll-nav-lists relative" id="Featured Case Study Title Appears Here1">
+                                <div class="scroll-nav-row radius-20 flex flex-vcenter relative o-hidden">
                                     <div class="scroll-nav-image relative">
                                         <figure class="object-fit radius-img-20"><img src="images/scroll-thumb1@2x.jpg"
                                                 alt="">
@@ -296,9 +328,11 @@
                                     <div class="scroll-nav-text white-70 fs-16">
                                         <hr>
                                         <h2 class="h5">The Featured Case Study Title Appears Here</h2>
-                                        <p>Pencil align subtract arrange create shadow figjam object boolean. Scale
+                                        <p>Pencil align subtract arrange create shadow figjam object boolean.
+                                            Scale
                                             vertical vector pencil community library frame thumbnail. Connection
-                                            frame horizontal thumbnail effect align link pencil clip auto undo.</p>
+                                            frame horizontal thumbnail effect align link pencil clip auto undo.
+                                        </p>
                                         <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none">
@@ -308,69 +342,30 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    <div class="scroll-nav-text white-70 hide-tablet hide-desktop">
-                                        <p>The Featured Case Study Title Appears Right Here juggle team performance,
-                                            scheduling demands, and practice
-                                            reporting.
-                                            MaxAssist equips them with the insights and tools to manage it all.</p>
-                                        <a href="#" class="text-link inline-flex f-800 black">Why admins love Max<em
-                                                class="fa-light fa-sharp fa-times" aria-hidden="true"></em><em
-                                                class="fa-light fa-sharp fa-arrow-right" aria-hidden="true"></em></a>
+                                    <div class="scroll-nav-ellipse absolute">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="220" height="200"
+                                            viewBox="0 0 220 200" fill="none">
+                                            <g filter="url(#filter0_f_36_5191)">
+                                                <circle cx="-22" cy="242.091" r="82" fill="#789291" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_f_36_5191" x="-264" y="0.0909424" width="484"
+                                                    height="484" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                        result="shape" />
+                                                    <feGaussianBlur stdDeviation="80"
+                                                        result="effect1_foregroundBlur_36_5191" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="scroll-nav-pos relative o-hidden transition">
-                                    <ul class="scroll-nav-list flex m-0 no-disc">
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Streamlined workflows</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Automated call and task lists</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Digital forms for patient use</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Reminders & confirmations</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Easy cancellation recovery</span></li>
-                                    </ul>
-                                </div>
+
                             </div>
-                            <div class="scroll-nav-lists relative"
-                                id="The Featured Case Study Title Appears  Right Here">
-                                <div class="scroll-nav-row radius-20 flex flex-vcenter relative">
+                            <div class="scroll-nav-lists relative" id="Featured Case Study Title Appears Here2">
+                                <div class="scroll-nav-row radius-20 flex flex-vcenter relative o-hidden">
                                     <div class="scroll-nav-image relative">
                                         <figure class="object-fit radius-img-20"><img src="images/scroll-thumb2@2x.jpg"
                                                 alt="">
@@ -391,9 +386,11 @@
                                     <div class="scroll-nav-text white-70 fs-16">
                                         <hr>
                                         <h2 class="h5">The Featured Case Study Title Appears Here</h2>
-                                        <p>Pencil align subtract arrange create shadow figjam object boolean. Scale
+                                        <p>Pencil align subtract arrange create shadow figjam object boolean.
+                                            Scale
                                             vertical vector pencil community library frame thumbnail. Connection
-                                            frame horizontal thumbnail effect align link pencil clip auto undo.</p>
+                                            frame horizontal thumbnail effect align link pencil clip auto undo.
+                                        </p>
                                         <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none">
@@ -403,79 +400,55 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    <div class="scroll-nav-text white-70 hide-tablet hide-desktop">
-                                        <p>The Featured Case Study Title Appears Right Here juggle team performance,
-                                            scheduling demands, and practice
-                                            reporting.
-                                            MaxAssist equips them with the insights and tools to manage it all.</p>
-                                        <a href="#" class="text-link inline-flex f-800 black">Why admins love Max<em
-                                                class="fa-light fa-sharp fa-times" aria-hidden="true"></em><em
-                                                class="fa-light fa-sharp fa-arrow-right" aria-hidden="true"></em></a>
+                                    <div class="scroll-nav-ellipse absolute">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="220" height="200"
+                                            viewBox="0 0 220 200" fill="none">
+                                            <g filter="url(#filter0_f_36_5191)">
+                                                <circle cx="-22" cy="242.091" r="82" fill="#789291" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_f_36_5191" x="-264" y="0.0909424" width="484"
+                                                    height="484" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                        result="shape" />
+                                                    <feGaussianBlur stdDeviation="80"
+                                                        result="effect1_foregroundBlur_36_5191" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="scroll-nav-pos relative o-hidden transition">
-                                    <ul class="scroll-nav-list flex m-0 no-disc">
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Streamlined workflows</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Automated call and task lists</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Digital forms for patient use</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Reminders & confirmations</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Easy cancellation recovery</span></li>
-                                    </ul>
-                                </div>
+
                             </div>
-                            <div class="scroll-nav-lists relative" id="Featured Case Study Title Appears Here">
-                                <div class="scroll-nav-row radius-20 flex flex-vcenter relative">
+                            <div class="scroll-nav-lists relative" id="Featured Case Study Title Appears Here3">
+                                <div class="scroll-nav-row radius-20 flex flex-vcenter relative o-hidden">
                                     <div class="scroll-nav-image relative">
                                         <figure class="object-fit radius-img-20"><img src="images/scroll-thumb3@2x.jpg"
                                                 alt="">
                                         </figure>
+                                        <div class="play-btn-main flex flex-center">
+                                            <div class="play-btn radius-50 flex flex-center">
+                                                <a href="https://www.youtube.com/watch?v=MJgs00HPqm8"
+                                                    class="popup-youtube" data-type="youtube"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                                                        viewBox="0 0 64 64" fill="none">
+                                                        <path
+                                                            d="M32 0C14.3541 0 0 14.3555 0 32C0 49.6445 14.3541 64 32 64C49.6459 64 64 49.6445 64 32C64 14.3555 49.6459 0 32 0ZM44.7214 33.1211L26.0548 45.1211C25.836 45.263 25.5834 45.3334 25.3334 45.3334C25.1146 45.3334 24.8932 45.2786 24.6954 45.1706C24.2656 44.9362 24 44.4883 24 44V20C24 19.5117 24.2656 19.0637 24.6954 18.8294C25.1173 18.5976 25.6459 18.6119 26.0548 18.8789L44.7214 30.8789C45.1016 31.1236 45.3334 31.5469 45.3334 32C45.3334 32.4531 45.1016 32.8762 44.7214 33.1211Z"
+                                                            fill="white" />
+                                                    </svg></a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="scroll-nav-text white-70 fs-16">
                                         <hr>
                                         <h2 class="h5">The Featured Case Study Title Appears Here</h2>
-                                        <p>Pencil align subtract arrange create shadow figjam object boolean. Scale
+                                        <p>Pencil align subtract arrange create shadow figjam object boolean.
+                                            Scale
                                             vertical vector pencil community library frame thumbnail. Connection
-                                            frame horizontal thumbnail effect align link pencil clip auto undo.</p>
+                                            frame horizontal thumbnail effect align link pencil clip auto undo.
+                                        </p>
                                         <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none">
@@ -485,80 +458,55 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    <div class="scroll-nav-text white-70 hide-tablet hide-desktop">
-                                        <p>The Featured Case Study Title Appears Right Here juggle team performance,
-                                            scheduling demands, and practice
-                                            reporting.
-                                            MaxAssist equips them with the insights and tools to manage it all.</p>
-                                        <a href="#" class="text-link inline-flex f-800 black">Why admins love Max<em
-                                                class="fa-light fa-sharp fa-times" aria-hidden="true"></em><em
-                                                class="fa-light fa-sharp fa-arrow-right" aria-hidden="true"></em></a>
+                                    <div class="scroll-nav-ellipse absolute">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="220" height="200"
+                                            viewBox="0 0 220 200" fill="none">
+                                            <g filter="url(#filter0_f_36_5191)">
+                                                <circle cx="-22" cy="242.091" r="82" fill="#789291" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_f_36_5191" x="-264" y="0.0909424" width="484"
+                                                    height="484" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                        result="shape" />
+                                                    <feGaussianBlur stdDeviation="80"
+                                                        result="effect1_foregroundBlur_36_5191" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="scroll-nav-pos relative o-hidden transition">
-                                    <ul class="scroll-nav-list flex m-0 no-disc">
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Streamlined workflows</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Automated call and task lists</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Digital forms for patient use</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Reminders & confirmations</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Easy cancellation recovery</span></li>
-                                    </ul>
-                                </div>
+
                             </div>
-                            <div class="scroll-nav-lists relative"
-                                id="The Featured Case Study Title Appears  Right Here">
-                                <div class="scroll-nav-row radius-20 flex flex-vcenter relative">
+                            <div class="scroll-nav-lists relative" id="Featured Case Study Title Appears Here4">
+                                <div class="scroll-nav-row radius-20 flex flex-vcenter relative o-hidden">
                                     <div class="scroll-nav-image relative">
                                         <figure class="object-fit radius-img-20"><img src="images/scroll-thumb4@2x.jpg"
                                                 alt="">
                                         </figure>
+                                        <div class="play-btn-main flex flex-center">
+                                            <div class="play-btn radius-50 flex flex-center">
+                                                <a href="https://www.youtube.com/watch?v=MJgs00HPqm8"
+                                                    class="popup-youtube" data-type="youtube"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                                                        viewBox="0 0 64 64" fill="none">
+                                                        <path
+                                                            d="M32 0C14.3541 0 0 14.3555 0 32C0 49.6445 14.3541 64 32 64C49.6459 64 64 49.6445 64 32C64 14.3555 49.6459 0 32 0ZM44.7214 33.1211L26.0548 45.1211C25.836 45.263 25.5834 45.3334 25.3334 45.3334C25.1146 45.3334 24.8932 45.2786 24.6954 45.1706C24.2656 44.9362 24 44.4883 24 44V20C24 19.5117 24.2656 19.0637 24.6954 18.8294C25.1173 18.5976 25.6459 18.6119 26.0548 18.8789L44.7214 30.8789C45.1016 31.1236 45.3334 31.5469 45.3334 32C45.3334 32.4531 45.1016 32.8762 44.7214 33.1211Z"
+                                                            fill="white" />
+                                                    </svg></a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="scroll-nav-text white-70 fs-16">
                                         <hr>
                                         <h2 class="h5">The Featured Case Study Title Appears Here</h2>
-                                        <p>Pencil align subtract arrange create shadow figjam object boolean. Scale
+                                        <p>Pencil align subtract arrange create shadow figjam object boolean.
+                                            Scale
                                             vertical vector pencil community library frame thumbnail. Connection
-                                            frame horizontal thumbnail effect align link pencil clip auto undo.</p>
+                                            frame horizontal thumbnail effect align link pencil clip auto undo.
+                                        </p>
                                         <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none">
@@ -568,80 +516,55 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    <div class="scroll-nav-text white-70 hide-tablet hide-desktop">
-
-                                        <p>The Featured Case Study Title Appears Right Here juggle team performance,
-                                            scheduling demands, and practice
-                                            reporting.
-                                            MaxAssist equips them with the insights and tools to manage it all.</p>
-                                        <a href="#" class="text-link inline-flex f-800 black">Why admins love Max
-                                            <em class="fa-light fa-sharp fa-times" aria-hidden="true"></em>
-                                            <em class="fa-light fa-sharp fa-arrow-right" aria-hidden="true"></em></a>
+                                    <div class="scroll-nav-ellipse absolute">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="220" height="200"
+                                            viewBox="0 0 220 200" fill="none">
+                                            <g filter="url(#filter0_f_36_5191)">
+                                                <circle cx="-22" cy="242.091" r="82" fill="#789291" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_f_36_5191" x="-264" y="0.0909424" width="484"
+                                                    height="484" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                        result="shape" />
+                                                    <feGaussianBlur stdDeviation="80"
+                                                        result="effect1_foregroundBlur_36_5191" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="scroll-nav-pos relative o-hidden transition">
-                                    <ul class="scroll-nav-list flex m-0 no-disc">
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Streamlined workflows</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Automated call and task lists</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Digital forms for patient use</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Reminders & confirmations</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Easy cancellation recovery</span></li>
-                                    </ul>
-                                </div>
+
                             </div>
-                            <div class="scroll-nav-lists relative" id="Featured Case Study Title Appears Here">
-                                <div class="scroll-nav-row radius-20 flex flex-vcenter relative">
+                            <div class="scroll-nav-lists relative" id="Featured Case Study Title Appears Here5">
+                                <div class="scroll-nav-row radius-20 flex flex-vcenter relative o-hidden">
                                     <div class="scroll-nav-image relative">
                                         <figure class="object-fit radius-img-20"><img src="images/scroll-thumb5@2x.jpg"
                                                 alt="">
                                         </figure>
+                                        <div class="play-btn-main flex flex-center">
+                                            <div class="play-btn radius-50 flex flex-center">
+                                                <a href="https://www.youtube.com/watch?v=MJgs00HPqm8"
+                                                    class="popup-youtube" data-type="youtube"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                                                        viewBox="0 0 64 64" fill="none">
+                                                        <path
+                                                            d="M32 0C14.3541 0 0 14.3555 0 32C0 49.6445 14.3541 64 32 64C49.6459 64 64 49.6445 64 32C64 14.3555 49.6459 0 32 0ZM44.7214 33.1211L26.0548 45.1211C25.836 45.263 25.5834 45.3334 25.3334 45.3334C25.1146 45.3334 24.8932 45.2786 24.6954 45.1706C24.2656 44.9362 24 44.4883 24 44V20C24 19.5117 24.2656 19.0637 24.6954 18.8294C25.1173 18.5976 25.6459 18.6119 26.0548 18.8789L44.7214 30.8789C45.1016 31.1236 45.3334 31.5469 45.3334 32C45.3334 32.4531 45.1016 32.8762 44.7214 33.1211Z"
+                                                            fill="white" />
+                                                    </svg></a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="scroll-nav-text white-70 fs-16">
                                         <hr>
                                         <h2 class="h5">The Featured Case Study Title Appears Here</h2>
-                                        <p>Pencil align subtract arrange create shadow figjam object boolean. Scale
+                                        <p>Pencil align subtract arrange create shadow figjam object boolean.
+                                            Scale
                                             vertical vector pencil community library frame thumbnail. Connection
-                                            frame horizontal thumbnail effect align link pencil clip auto undo.</p>
+                                            frame horizontal thumbnail effect align link pencil clip auto undo.
+                                        </p>
                                         <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none">
@@ -651,81 +574,393 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    <div class="scroll-nav-text white-70 hide-tablet hide-desktop">
-                                        <p>The Featured Case Study Title Appears Right Here juggle team performance,
-                                            scheduling demands, and practice
-                                            reporting.
-                                            MaxAssist equips them with the insights and tools to manage it all.</p>
-                                        <a href="#" class="text-link inline-flex f-800 black">Why admins love Max<em
-                                                class="fa-light fa-sharp fa-times" aria-hidden="true"></em><em
-                                                class="fa-light fa-sharp fa-arrow-right" aria-hidden="true"></em></a>
+                                    <div class="scroll-nav-ellipse absolute">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="220" height="200"
+                                            viewBox="0 0 220 200" fill="none">
+                                            <g filter="url(#filter0_f_36_5191)">
+                                                <circle cx="-22" cy="242.091" r="82" fill="#789291" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_f_36_5191" x="-264" y="0.0909424" width="484"
+                                                    height="484" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                        result="shape" />
+                                                    <feGaussianBlur stdDeviation="80"
+                                                        result="effect1_foregroundBlur_36_5191" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="scroll-nav-pos relative o-hidden transition">
-                                    <ul class="scroll-nav-list flex m-0 no-disc">
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Streamlined workflows</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Automated call and task lists</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Digital forms for patient use</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Reminders & confirmations</span></li>
-                                        <li class="flex flex-col"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="31" viewBox="0 0 30 31" fill="none">
-                                                <path opacity="0.3"
-                                                    d="M15 1.84644C7.2939 1.84644 1.04688 8.09346 1.04688 15.7996C1.04688 23.5057 7.2939 29.7527 15 29.7527C22.7061 29.7527 28.9531 23.5057 28.9531 15.7996C28.9531 8.09346 22.7061 1.84644 15 1.84644Z"
-                                                    fill="#A4278F" />
-                                                <path
-                                                    d="M13.7135 15.9447C13.8946 16.156 14.0426 16.3318 14.1547 16.4664L14.2262 16.3616C14.419 16.0786 14.7031 15.663 15.0685 15.1318C15.7994 14.0695 16.8557 12.5453 18.1576 10.6967C18.646 10.0034 19.5736 9.6252 20.3835 10.0937C20.8796 10.3807 21.4519 10.8108 21.9076 11.4323C22.3484 12.0335 22.2287 12.807 21.8662 13.3632C19.2888 17.3181 17.3512 19.8948 16.1388 21.4032C15.2376 22.5245 13.6267 22.6064 12.6051 21.5995C11.4922 20.5024 9.9368 18.8724 8.32613 16.8763C7.83706 16.2701 7.70804 15.3789 8.22579 14.7132C8.5647 14.2773 8.9447 13.902 9.29163 13.6002C10.0546 12.9363 11.1483 13.104 11.8009 13.8057C12.614 14.68 13.2652 15.4214 13.7135 15.9447Z"
-                                                    fill="#A4278F" />
-                                            </svg><span>Easy cancellation recovery</span></li>
-                                    </ul>
+
+                            </div>
+                            <div class="scroll-nav-swiper hide-desktop" data-type="scrollNavSlider">
+                                <div class="swiper-wrapper">
+                                    <div class="scroll-nav-lists relative swiper-slide"
+                                        id="Featured Case Study Title Appears Here1">
+                                        <div class="scroll-nav-row radius-20 flex flex-vcenter relative o-hidden">
+                                            <div class="scroll-nav-image relative">
+                                                <figure class="object-fit radius-img-20"><img
+                                                        src="images/scroll-thumb1@2x.jpg" alt="">
+                                                </figure>
+                                                <div class="play-btn-main flex flex-center">
+                                                    <div class="play-btn radius-50 flex flex-center">
+                                                        <a href="https://www.youtube.com/watch?v=MJgs00HPqm8"
+                                                            class="popup-youtube" data-type="youtube"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="64"
+                                                                height="64" viewBox="0 0 64 64" fill="none">
+                                                                <path
+                                                                    d="M32 0C14.3541 0 0 14.3555 0 32C0 49.6445 14.3541 64 32 64C49.6459 64 64 49.6445 64 32C64 14.3555 49.6459 0 32 0ZM44.7214 33.1211L26.0548 45.1211C25.836 45.263 25.5834 45.3334 25.3334 45.3334C25.1146 45.3334 24.8932 45.2786 24.6954 45.1706C24.2656 44.9362 24 44.4883 24 44V20C24 19.5117 24.2656 19.0637 24.6954 18.8294C25.1173 18.5976 25.6459 18.6119 26.0548 18.8789L44.7214 30.8789C45.1016 31.1236 45.3334 31.5469 45.3334 32C45.3334 32.4531 45.1016 32.8762 44.7214 33.1211Z"
+                                                                    fill="white" />
+                                                            </svg></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="scroll-nav-text white-70 fs-16">
+                                                <hr>
+                                                <h2 class="h5">The Featured Case Study Title Appears Here</h2>
+                                                <p>Pencil align subtract arrange create shadow figjam object boolean.
+                                                    Scale
+                                                    vertical vector pencil community library frame thumbnail. Connection
+                                                    frame horizontal thumbnail effect align link pencil clip auto undo.
+                                                </p>
+                                                <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <path opacity="0.3"
+                                                            d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
+                                                            fill="#0A0A0A" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="scroll-nav-ellipse absolute">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="220" height="200"
+                                                    viewBox="0 0 220 200" fill="none">
+                                                    <g filter="url(#filter0_f_36_5191)">
+                                                        <circle cx="-22" cy="242.091" r="82" fill="#789291" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_36_5191" x="-264" y="0.0909424"
+                                                            width="484" height="484" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="80"
+                                                                result="effect1_foregroundBlur_36_5191" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="scroll-nav-lists relative swiper-slide"
+                                        id="Featured Case Study Title Appears Here2">
+                                        <div class="scroll-nav-row radius-20 flex flex-vcenter relative o-hidden">
+                                            <div class="scroll-nav-image relative">
+                                                <figure class="object-fit radius-img-20"><img
+                                                        src="images/scroll-thumb2@2x.jpg" alt="">
+                                                </figure>
+                                                <div class="play-btn-main flex flex-center">
+                                                    <div class="play-btn radius-50 flex flex-center">
+                                                        <a href="https://vimeo.com/398137017" class="popup-vimeo"
+                                                            data-type="vimeo">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="64"
+                                                                height="64" viewBox="0 0 64 64" fill="none">
+                                                                <path
+                                                                    d="M32 0C14.3541 0 0 14.3555 0 32C0 49.6445 14.3541 64 32 64C49.6459 64 64 49.6445 64 32C64 14.3555 49.6459 0 32 0ZM44.7214 33.1211L26.0548 45.1211C25.836 45.263 25.5834 45.3334 25.3334 45.3334C25.1146 45.3334 24.8932 45.2786 24.6954 45.1706C24.2656 44.9362 24 44.4883 24 44V20C24 19.5117 24.2656 19.0637 24.6954 18.8294C25.1173 18.5976 25.6459 18.6119 26.0548 18.8789L44.7214 30.8789C45.1016 31.1236 45.3334 31.5469 45.3334 32C45.3334 32.4531 45.1016 32.8762 44.7214 33.1211Z"
+                                                                    fill="white" />
+                                                            </svg></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="scroll-nav-text white-70 fs-16">
+                                                <hr>
+                                                <h2 class="h5">The Featured Case Study Title Appears Here</h2>
+                                                <p>Pencil align subtract arrange create shadow figjam object boolean.
+                                                    Scale
+                                                    vertical vector pencil community library frame thumbnail. Connection
+                                                    frame horizontal thumbnail effect align link pencil clip auto undo.
+                                                </p>
+                                                <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <path opacity="0.3"
+                                                            d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
+                                                            fill="#0A0A0A" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="scroll-nav-ellipse absolute">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="220" height="200"
+                                                    viewBox="0 0 220 200" fill="none">
+                                                    <g filter="url(#filter0_f_36_5191)">
+                                                        <circle cx="-22" cy="242.091" r="82" fill="#789291" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_36_5191" x="-264" y="0.0909424"
+                                                            width="484" height="484" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="80"
+                                                                result="effect1_foregroundBlur_36_5191" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="scroll-nav-lists relative swiper-slide"
+                                        id="Featured Case Study Title Appears Here3">
+                                        <div class="scroll-nav-row radius-20 flex flex-vcenter relative o-hidden">
+                                            <div class="scroll-nav-image relative">
+                                                <figure class="object-fit radius-img-20"><img
+                                                        src="images/scroll-thumb3@2x.jpg" alt="">
+                                                </figure>
+                                                <div class="play-btn-main flex flex-center">
+                                                    <div class="play-btn radius-50 flex flex-center">
+                                                        <a href="https://www.youtube.com/watch?v=MJgs00HPqm8"
+                                                            class="popup-youtube" data-type="youtube"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="64"
+                                                                height="64" viewBox="0 0 64 64" fill="none">
+                                                                <path
+                                                                    d="M32 0C14.3541 0 0 14.3555 0 32C0 49.6445 14.3541 64 32 64C49.6459 64 64 49.6445 64 32C64 14.3555 49.6459 0 32 0ZM44.7214 33.1211L26.0548 45.1211C25.836 45.263 25.5834 45.3334 25.3334 45.3334C25.1146 45.3334 24.8932 45.2786 24.6954 45.1706C24.2656 44.9362 24 44.4883 24 44V20C24 19.5117 24.2656 19.0637 24.6954 18.8294C25.1173 18.5976 25.6459 18.6119 26.0548 18.8789L44.7214 30.8789C45.1016 31.1236 45.3334 31.5469 45.3334 32C45.3334 32.4531 45.1016 32.8762 44.7214 33.1211Z"
+                                                                    fill="white" />
+                                                            </svg></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="scroll-nav-text white-70 fs-16">
+                                                <hr>
+                                                <h2 class="h5">The Featured Case Study Title Appears Here</h2>
+                                                <p>Pencil align subtract arrange create shadow figjam object boolean.
+                                                    Scale
+                                                    vertical vector pencil community library frame thumbnail. Connection
+                                                    frame horizontal thumbnail effect align link pencil clip auto undo.
+                                                </p>
+                                                <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <path opacity="0.3"
+                                                            d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
+                                                            fill="#0A0A0A" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="scroll-nav-ellipse absolute">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="220" height="200"
+                                                    viewBox="0 0 220 200" fill="none">
+                                                    <g filter="url(#filter0_f_36_5191)">
+                                                        <circle cx="-22" cy="242.091" r="82" fill="#789291" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_36_5191" x="-264" y="0.0909424"
+                                                            width="484" height="484" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="80"
+                                                                result="effect1_foregroundBlur_36_5191" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="scroll-nav-lists relative swiper-slide"
+                                        id="Featured Case Study Title Appears Here4">
+                                        <div class="scroll-nav-row radius-20 flex flex-vcenter relative o-hidden">
+                                            <div class="scroll-nav-image relative">
+                                                <figure class="object-fit radius-img-20"><img
+                                                        src="images/scroll-thumb4@2x.jpg" alt="">
+                                                </figure>
+                                                <div class="play-btn-main flex flex-center">
+                                                    <div class="play-btn radius-50 flex flex-center">
+                                                        <a href="https://www.youtube.com/watch?v=MJgs00HPqm8"
+                                                            class="popup-youtube" data-type="youtube"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="64"
+                                                                height="64" viewBox="0 0 64 64" fill="none">
+                                                                <path
+                                                                    d="M32 0C14.3541 0 0 14.3555 0 32C0 49.6445 14.3541 64 32 64C49.6459 64 64 49.6445 64 32C64 14.3555 49.6459 0 32 0ZM44.7214 33.1211L26.0548 45.1211C25.836 45.263 25.5834 45.3334 25.3334 45.3334C25.1146 45.3334 24.8932 45.2786 24.6954 45.1706C24.2656 44.9362 24 44.4883 24 44V20C24 19.5117 24.2656 19.0637 24.6954 18.8294C25.1173 18.5976 25.6459 18.6119 26.0548 18.8789L44.7214 30.8789C45.1016 31.1236 45.3334 31.5469 45.3334 32C45.3334 32.4531 45.1016 32.8762 44.7214 33.1211Z"
+                                                                    fill="white" />
+                                                            </svg></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="scroll-nav-text white-70 fs-16">
+                                                <hr>
+                                                <h2 class="h5">The Featured Case Study Title Appears Here</h2>
+                                                <p>Pencil align subtract arrange create shadow figjam object boolean.
+                                                    Scale
+                                                    vertical vector pencil community library frame thumbnail. Connection
+                                                    frame horizontal thumbnail effect align link pencil clip auto undo.
+                                                </p>
+                                                <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <path opacity="0.3"
+                                                            d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
+                                                            fill="#0A0A0A" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="scroll-nav-ellipse absolute">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="220" height="200"
+                                                    viewBox="0 0 220 200" fill="none">
+                                                    <g filter="url(#filter0_f_36_5191)">
+                                                        <circle cx="-22" cy="242.091" r="82" fill="#789291" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_36_5191" x="-264" y="0.0909424"
+                                                            width="484" height="484" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="80"
+                                                                result="effect1_foregroundBlur_36_5191" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="scroll-nav-lists relative swiper-slide"
+                                        id="Featured Case Study Title Appears Here5">
+                                        <div class="scroll-nav-row radius-20 flex flex-vcenter relative o-hidden">
+                                            <div class="scroll-nav-image relative">
+                                                <figure class="object-fit radius-img-20"><img
+                                                        src="images/scroll-thumb5@2x.jpg" alt="">
+                                                </figure>
+                                                <div class="play-btn-main flex flex-center">
+                                                    <div class="play-btn radius-50 flex flex-center">
+                                                        <a href="https://www.youtube.com/watch?v=MJgs00HPqm8"
+                                                            class="popup-youtube" data-type="youtube"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="64"
+                                                                height="64" viewBox="0 0 64 64" fill="none">
+                                                                <path
+                                                                    d="M32 0C14.3541 0 0 14.3555 0 32C0 49.6445 14.3541 64 32 64C49.6459 64 64 49.6445 64 32C64 14.3555 49.6459 0 32 0ZM44.7214 33.1211L26.0548 45.1211C25.836 45.263 25.5834 45.3334 25.3334 45.3334C25.1146 45.3334 24.8932 45.2786 24.6954 45.1706C24.2656 44.9362 24 44.4883 24 44V20C24 19.5117 24.2656 19.0637 24.6954 18.8294C25.1173 18.5976 25.6459 18.6119 26.0548 18.8789L44.7214 30.8789C45.1016 31.1236 45.3334 31.5469 45.3334 32C45.3334 32.4531 45.1016 32.8762 44.7214 33.1211Z"
+                                                                    fill="white" />
+                                                            </svg></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="scroll-nav-text white-70 fs-16">
+                                                <hr>
+                                                <h2 class="h5">The Featured Case Study Title Appears Here</h2>
+                                                <p>Pencil align subtract arrange create shadow figjam object boolean.
+                                                    Scale
+                                                    vertical vector pencil community library frame thumbnail. Connection
+                                                    frame horizontal thumbnail effect align link pencil clip auto undo.
+                                                </p>
+                                                <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <path opacity="0.3"
+                                                            d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
+                                                            fill="#0A0A0A" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="scroll-nav-ellipse absolute">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="220" height="200"
+                                                    viewBox="0 0 220 200" fill="none">
+                                                    <g filter="url(#filter0_f_36_5191)">
+                                                        <circle cx="-22" cy="242.091" r="82" fill="#789291" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_36_5191" x="-264" y="0.0909424"
+                                                            width="484" height="484" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="80"
+                                                                result="effect1_foregroundBlur_36_5191" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-custom-nav-white flex flex-center relative hide-desktop">
+                                    <div class="swiper-button-prev radius-50"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                            <path
+                                                d="M0.258183 8.99201L7.13065 16.0782C7.48236 16.4285 8.04284 16.4184 8.38252 16.0558C8.71387 15.702 8.71387 15.1412 8.38252 14.7874L3.02089 9.25857H15.1147C15.6036 9.25857 16 8.84986 16 8.34569C16 7.84152 15.6036 7.43281 15.1147 7.43281H3.02089L8.38252 1.90397C8.73422 1.55371 8.74396 0.975796 8.40426 0.613157C8.06457 0.250519 7.50409 0.24048 7.15239 0.590736C7.14502 0.59808 7.13777 0.605554 7.13065 0.613157L0.258183 7.69983C0.216636 7.74254 0.179407 7.78949 0.147074 7.83996C0.133351 7.86141 0.12361 7.8856 0.111659 7.90751C0.0951118 7.93698 0.0803289 7.96747 0.0673923 7.9988C0.0564947 8.02864 0.0473309 8.05912 0.0399456 8.09009C0.0324211 8.11656 0.0222397 8.14212 0.0169287 8.16951C-0.00564384 8.2875 -0.00564384 8.4089 0.0169287 8.5269C0.0222406 8.55429 0.0324211 8.57939 0.0399456 8.60586C0.0473461 8.63682 0.0565119 8.6673 0.0673923 8.69715C0.0803289 8.72848 0.0951118 8.75897 0.111659 8.78844C0.12361 8.8108 0.133348 8.83408 0.147074 8.85599C0.17984 8.90487 0.217044 8.95041 0.258183 8.99201Z"
+                                                fill="white" />
+                                        </svg></div>
+                                    <div class="swiper-pagination flex flex-center"></div>
+                                    <div class="swiper-button-next radius-50"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                            <path
+                                                d="M15.7418 8.99201L8.86935 16.0782C8.51764 16.4285 7.95716 16.4184 7.61748 16.0558C7.28613 15.702 7.28613 15.1412 7.61748 14.7874L12.9791 9.25857H0.885342C0.396381 9.25857 0 8.84986 0 8.34569C0 7.84152 0.396381 7.43281 0.885342 7.43281H12.9791L7.61748 1.90397C7.26578 1.55371 7.25604 0.975796 7.59574 0.613157C7.93543 0.250519 8.49591 0.24048 8.84761 0.590736C8.85498 0.59808 8.86223 0.605554 8.86935 0.613157L15.7418 7.69983C15.7834 7.74254 15.8206 7.78949 15.8529 7.83996C15.8666 7.86141 15.8764 7.8856 15.8883 7.90751C15.9049 7.93698 15.9197 7.96747 15.9326 7.9988C15.9435 8.02864 15.9527 8.05912 15.9601 8.09009C15.9676 8.11656 15.9778 8.14212 15.9831 8.16951C16.0056 8.2875 16.0056 8.4089 15.9831 8.5269C15.9778 8.55429 15.9676 8.57939 15.9601 8.60586C15.9527 8.63682 15.9435 8.6673 15.9326 8.69715C15.9197 8.72848 15.9049 8.75897 15.8883 8.78844C15.8764 8.8108 15.8667 8.83408 15.8529 8.85599C15.8202 8.90487 15.783 8.95041 15.7418 8.99201Z"
+                                                fill="white" />
+                                        </svg></div>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="hide-desktop">
-                            <div class="scroll-nav-btns flex flex-col radius-28">
-                                <a href="#" class="button">Book a Demo</a>
-                                <a href="#"
-                                    class="scroll-link-btn inline-flex raisin-black fs-16 f-800 flex-center"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
-                                        fill="none">
-                                        <path
-                                            d="M1.7267 8.2746C1.99408 16.7736 8.96758 23.5811 17.5312 23.5811C20.8054 23.5811 23.2812 21.0248 23.2812 17.798C23.2812 16.9163 22.7444 16.1234 21.9258 15.796L18.9716 14.6144C17.9928 14.2228 16.8748 14.4523 16.1294 15.1977L14.6552 16.6719C14.59 16.7371 14.5169 16.7448 14.4722 16.7312C11.6516 15.8747 9.42514 13.6482 8.56858 10.8276C8.55502 10.7829 8.56274 10.7098 8.6279 10.6446L10.1021 9.17045C10.8475 8.42501 11.077 7.30702 10.6854 6.32818L9.50377 3.37399C9.17636 2.55536 8.38348 2.01855 7.50176 2.01855C3.97294 2.01855 1.67203 4.82716 1.7267 8.2746Z"
-                                            fill="#D28BC7" />
-                                        <path
-                                            d="M15.8721 2.11864C17.6398 1.97208 19.6053 2.00753 21.2375 2.09118C22.3042 2.14585 23.1539 2.99543 23.2086 4.06218C23.2928 5.70538 23.3282 7.68633 23.1782 9.46322C23.1313 10.0185 22.8189 10.4418 22.3885 10.629C21.9574 10.8165 21.4363 10.7546 21.0024 10.4018C20.5877 10.0647 20.0864 9.63438 19.4927 9.08895C17.8268 10.612 16.5718 11.5878 15.8805 12.0952C15.4537 12.4086 14.8613 12.5486 14.3573 12.217C14.1557 12.0845 13.9231 11.9015 13.6697 11.6497C13.4088 11.3903 13.22 11.1501 13.0839 10.942C12.7548 10.4393 12.8856 9.84632 13.1955 9.41488C13.6973 8.71611 14.6672 7.45139 16.2001 5.78994C15.6758 5.21688 15.257 4.72862 14.9253 4.32151C14.5683 3.88337 14.5063 3.35559 14.695 2.91918C14.8834 2.4833 15.3104 2.16521 15.8721 2.11864Z"
-                                            fill="#A4278F" />
-                                    </svg>1-800-651-8603</a>
+                            <div class="scroll-nav-cta-main flex flex-vcenter dark-black-bg relative o-hidden">
+                                <div class="scroll-nav-cta-line absolute"></div>
+                                <div class="scroll-nav-cta-title">
+                                    <h2 class="h3 mb-0">Watch more case studies CTA module...</h2>
+                                </div>
+                                <div class="scroll-nav-cta-link">
+                                    <a href="#" class="button flex flex-center text-upper w-fit">View More Case
+                                        Studies
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path opacity="0.3"
+                                                d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
+                                                fill="#0A0A0A"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="scroll-nav-cta-ellipse absolute">
+                                    <svg class="hide-mobile" xmlns="http://www.w3.org/2000/svg" width="245" height="109"
+                                        viewBox="0 0 245 109" fill="none">
+                                        <g filter="url(#filter0_f_86_1805)">
+                                            <circle cx="242" cy="54.0911" r="82" fill="#789291" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_f_86_1805" x="0" y="-187.909" width="484" height="484"
+                                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                    result="shape" />
+                                                <feGaussianBlur stdDeviation="80"
+                                                    result="effect1_foregroundBlur_86_1805" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                    <svg class="hide-tablet hide-desktop" xmlns="http://www.w3.org/2000/svg" width="245"
+                                        height="268" viewBox="0 0 245 268" fill="none">
+                                        <g filter="url(#filter0_f_155_367)">
+                                            <circle cx="242" cy="133.757" r="82" fill="#789291" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_f_155_367" x="0" y="-108.243" width="484" height="484"
+                                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                    result="shape" />
+                                                <feGaussianBlur stdDeviation="80"
+                                                    result="effect1_foregroundBlur_155_367" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -734,9 +969,11 @@
         </section>
         <section class="our-testimonials-section">
             <div class="container">
-                <div class="our-testimonial-main">
-                    <h2>A short headline appears here highlighting the incredible impact
-                        the brand is making with people around the world.</h2>
+                <div class="our-testimonials-wrap">
+                    <div class="our-testimonial-head inverted">
+                        <h2 data-animate="lines">A short headline appears here highlighting the incredible impact
+                            the brand is making with people around the world.</h2>
+                    </div>
                     <!-- Swiper -->
                     <div class="swiper our-testimonial-swiper" data-type="testimonialSwiper">
                         <div class="swiper-wrapper">
@@ -748,7 +985,7 @@
                                     </div>
                                     <div class="our-testimonials-text white-70 fs-18 lh-28 inverted"
                                         data-animate="fade-in-right">
-                                        <span class="optional-text">What our clients say...</span>
+                                        <span class="optional-text fs-24 lh-28 f-500">What our clients say...</span>
                                         <h2 class="fs-40 lh-48">A short headline about First Lastname a featured person
                                             appears here</h2>
                                         <p>A short excerpt for this profile appears here spanning up to four lines as
@@ -783,13 +1020,12 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="our-testimonials-main flex flex-vcenter row-reverse">
-                                    <div class="our-testimonials-image radius-img-20" data-animate="fade-in-up">
+                                    <div class="our-testimonials-image radius-img-20">
                                         <figure class="object-fit"><img src="images/our-testimonials@2x.jpg" alt="">
                                         </figure>
                                     </div>
-                                    <div class="our-testimonials-text white-70 fs-18 lh-28 inverted"
-                                        data-animate="fade-in-right">
-                                        <span class="optional-text">What our clients say...</span>
+                                    <div class="our-testimonials-text white-70 fs-18 lh-28 inverted">
+                                        <span class="optional-text fs-24 lh-28 f-500">What our clients say...</span>
                                         <h2 class="fs-40 lh-48">A short headline about First Lastname a featured person
                                             appears here</h2>
                                         <p>A short excerpt for this profile appears here spanning up to four lines as
@@ -824,13 +1060,12 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="our-testimonials-main flex flex-vcenter row-reverse">
-                                    <div class="our-testimonials-image radius-img-20" data-animate="fade-in-up">
+                                    <div class="our-testimonials-image radius-img-20">
                                         <figure class="object-fit"><img src="images/our-testimonials@2x.jpg" alt="">
                                         </figure>
                                     </div>
-                                    <div class="our-testimonials-text white-70 fs-18 lh-28 inverted"
-                                        data-animate="fade-in-right">
-                                        <span class="optional-text">What our clients say...</span>
+                                    <div class="our-testimonials-text white-70 fs-18 lh-28 inverted">
+                                        <span class="optional-text fs-24 lh-28 f-500">What our clients say...</span>
                                         <h2 class="fs-40 lh-48">A short headline about First Lastname a featured person
                                             appears here</h2>
                                         <p>A short excerpt for this profile appears here spanning up to four lines as
@@ -864,7 +1099,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="our-testimonial-nav flex flex-center relative">
+                        <div class="swiper-custom-nav-white flex flex-center relative">
                             <div class="swiper-button-prev radius-50"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                     height="17" viewBox="0 0 16 17" fill="none">
                                     <path
@@ -885,71 +1120,284 @@
             </div>
         </section>
         <div class="gray-bg radius-t-40">
+            <section class="featured-intro-section">
+                <div class="container">
+                    <div class="featured-intro-main">
+                        <div class="featured-intro-head flex">
+                            <div class="featured-intro-title fs-24 lh-36">
+                                <h2 data-animate="lines">Featured Blog Articles</h2>
+                                <div data-animate="fade-in-up">
+                                    <p>Stroke community figma edit scale thumbnail ipsum boolean font. Clip fill shadow
+                                        stroke bullet style text horizontal. </p>
+                                </div>
+                            </div>
+                            <div class="featured-intro-link">
+                                <a href="#" class="text-link flex flex-vcenter"><span class="text-link-text">More Blog
+                                        Articles</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 19 14"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17.25 6.32017C14.812 6.32017 12.59 4.09916 12.59 1.66016V0.660156H10.59V1.66016C10.59 3.43416 11.368 5.09816 12.589 6.32017H0.25V8.32017H12.589C11.368 9.54217 10.59 11.2062 10.59 12.9802V13.9802H12.59V12.9802C12.59 10.5412 14.812 8.32017 17.25 8.32017H18.25V6.32017H17.25Z"
+                                            fill="#1C1C1C" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="featured-intro-row flex">
+                            <div class="featured-intro-list no_featured_image">
+                                <!-- <div class="featured-intro-thumb w-100 h-100">
+                                    <picture class="object-fit">
+                                        <source srcset="images/post-blog1@2x.jpg" media="(min-width: 760px)">
+                                        <img src="images/post-blog1@2x.jpg" alt="">
+                                    </picture>
+                                </div> -->
+                                <div class="featured-intro-pos background-text flex flex-end">
+                                    <div class="featured-intro-text dark-text">
+                                        <hr>
+                                        <h2><a href="05-Blog-Post.html">Post title appears here on a few lines as
+                                                needed</a>
+                                        </h2>
+                                        <p>A brief introduction could appear here if necessary at netus elit convallis
+                                            nibh
+                                            donec in feugiat libero euismod risus egestas eu.</p>
+                                        <div class="featured-intro-category flex flex-vcenter">
+                                            <ul class="category flex m-0 no-disc">
+                                                <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                            </ul>
+                                            <div class="featured-intro-link">
+                                                <a class="text-link flex flex-vcenter" href=""><span class="hide">Read
+                                                        More</span><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                                        height="24" viewBox="0 0 25 24" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                            fill="white" />
+                                                    </svg></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-intro-list">
+                                <div class="featured-intro-thumb w-100 h-100">
+                                    <picture class="object-fit">
+                                        <source srcset="images/featured-post-blog2@2x.jpg" media="(min-width: 760px)">
+                                        <img src="images/featured-post-blog2-mbl@2x.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="featured-intro-pos background-text flex flex-end">
+                                    <div class="featured-intro-text inverted">
+                                        <hr>
+                                        <h2><a href="05-Blog-Post.html">Post title appears here on a few lines as
+                                                needed</a>
+                                        </h2>
+
+                                        <div class="featured-intro-category flex flex-vcenter">
+                                            <ul class="category flex m-0 no-disc">
+                                                <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                            </ul>
+                                            <div class="featured-intro-link">
+                                                <a class="text-link flex flex-vcenter" href=""><span class="hide">Read
+                                                        More</span><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                                        height="24" viewBox="0 0 25 24" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                            fill="white" />
+                                                    </svg></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-intro-list">
+                                <div class="featured-intro-sub-list relative">
+                                    <div class="featured-intro-thumb w-100 h-100">
+                                        <picture class="object-fit">
+                                            <source srcset="images/featured-post-blog4@2x.jpg"
+                                                media="(min-width: 760px)">
+                                            <img src="images/featured-post-blog4-mbl@2x.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="featured-intro-pos background-text flex flex-end">
+                                        <div class="featured-intro-text inverted">
+                                            <hr>
+                                            <h2><a href="05-Blog-Post.html">Post title appears here on a few lines as
+                                                    needed</a>
+                                            </h2>
+
+                                            <div class="featured-intro-category flex flex-vcenter">
+                                                <ul class="category flex m-0 no-disc">
+                                                    <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                                </ul>
+                                                <div class="featured-intro-link">
+                                                    <a class="text-link flex flex-vcenter" href=""><span
+                                                            class="hide">Read
+                                                            More</span><svg xmlns="http://www.w3.org/2000/svg"
+                                                            width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                                fill="white" />
+                                                        </svg></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="featured-intro-sub-list relative no_featured_image">
+                                    <!-- <div class="featured-intro-thumb w-100 h-100">
+                                        <picture class="object-fit">
+                                            <source srcset="images/post-blog4@2x.jpg" media="(min-width: 760px)">
+                                            <img src="images/post-blog4@2x.jpg" alt="">
+                                        </picture>
+                                    </div> -->
+                                    <div class="featured-intro-pos background-text flex flex-end">
+                                        <div class="featured-intro-text dark-text">
+                                            <hr>
+                                            <h2><a href="05-Blog-Post.html">Post title appears here on a few lines as
+                                                    needed</a>
+                                            </h2>
+
+                                            <div class="featured-intro-category flex flex-vcenter">
+                                                <ul class="category flex m-0 no-disc">
+                                                    <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                                </ul>
+                                                <div class="featured-intro-link">
+                                                    <a class="text-link flex flex-vcenter" href=""><span
+                                                            class="hide">Read
+                                                            More</span><svg xmlns="http://www.w3.org/2000/svg"
+                                                            width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                                fill="white" />
+                                                        </svg></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="featured-intro-list">
+                                <div class="featured-intro-thumb w-100 h-100">
+                                    <picture class="object-fit">
+                                        <source srcset="images/featured-post-blog5@2x.jpg" media="(min-width: 760px)">
+                                        <img src="images/post-blog5@2x.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="featured-intro-pos background-text flex flex-end">
+                                    <div class="featured-intro-text inverted">
+                                        <hr>
+                                        <h2><a href="05-Blog-Post.html">Post title appears here on a few lines as
+                                                needed</a>
+                                        </h2>
+                                        <p>A brief introduction could appear here if necessary at netus elit convallis
+                                            nibh
+                                            donec in feugiat libero euismod risus egestas eu.</p>
+                                        <div class="featured-intro-category flex flex-vcenter">
+                                            <ul class="category flex m-0 no-disc">
+                                                <li class="fs-14 lh-18 f-500 mb-0">Category</li>
+                                            </ul>
+                                            <div class="featured-intro-link">
+                                                <a class="text-link flex flex-vcenter" href=""><span class="hide">Read
+                                                        More</span><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                                        height="24" viewBox="0 0 25 24" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M20.25 11.0003C17.812 11.0003 15.59 8.77933 15.59 6.34033V5.34033H13.59V6.34033C13.59 8.11433 14.368 9.77833 15.589 11.0003H3.25V13.0003H15.589C14.368 14.2223 13.59 15.8863 13.59 17.6603V18.6603H15.59V17.6603C15.59 15.2213 17.812 13.0003 20.25 13.0003H21.25V11.0003H20.25Z"
+                                                            fill="white" />
+                                                    </svg></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="as-seen-section">
                 <div class="container">
                     <div class="as-seen-main">
                         <div class="as-seen-title">
                             <span class="fs-24 lh-28 f-500 d-block">As seen on...</span>
                         </div>
-                        <div class="as-seen-slider flex" data-type="asSeenSlider">
-                            <div class="as-seen-slide">
-                                <figure class="object-fit as-seen-thumb">
-                                    <img src="images/fast-company-b@2x.png" alt="">
-                                </figure>
-                            </div>
-                            <div class="as-seen-slide">
-                                <figure class="object-fit as-seen-thumb">
-                                    <img src="images/the-huffington-b@2x.png" alt="">
-                                </figure>
-                            </div>
-                            <div class="as-seen-slide">
-                                <figure class="object-fit as-seen-thumb">
-                                    <img src="images/entrepreneur-b@2x.png" alt="">
-                                </figure>
-                            </div>
-                            <div class="as-seen-slide">
-                                <figure class="object-fit as-seen-thumb">
-                                    <img src="images/digital-trends-b@2x.png" alt="">
-                                </figure>
-                            </div>
-                            <div class="as-seen-slide">
-                                <figure class="object-fit as-seen-thumb">
-                                    <img src="images/forbes-b@2x.png" alt="">
-                                </figure>
+                        <div class="splide as-seen-slider" data-speed="1" data-direction="normal"
+                            data-type="asSeenSlider">
+                            <div class="splide__track">
+                                <div class="splide__list as-seen-slider-row flex">
+                                    <div class="as-seen-slide splide__slide">
+                                        <figure class="object-fit as-seen-thumb">
+                                            <img src="images/fast-company-b@2x.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="as-seen-slide splide__slide">
+                                        <figure class="object-fit as-seen-thumb">
+                                            <img src="images/the-huffington-b@2x.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="as-seen-slide splide__slide">
+                                        <figure class="object-fit as-seen-thumb">
+                                            <img src="images/entrepreneur-b@2x.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="as-seen-slide splide__slide">
+                                        <figure class="object-fit as-seen-thumb">
+                                            <img src="images/digital-trends-b@2x.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="as-seen-slide splide__slide">
+                                        <figure class="object-fit as-seen-thumb">
+                                            <img src="images/forbes-b@2x.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="as-seen-slide splide__slide">
+                                        <figure class="object-fit as-seen-thumb">
+                                            <img src="images/forbes-b@2x.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="as-seen-slide splide__slide">
+                                        <figure class="object-fit as-seen-thumb">
+                                            <img src="images/forbes-b@2x.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="as-seen-slide splide__slide">
+                                        <figure class="object-fit as-seen-thumb">
+                                            <img src="images/forbes-b@2x.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="large-cta-section relative">
         </div>
-        <div class="large-cta-bg background-bg">
-            <picture class="object-fit">
-                <source srcset="images/large-cta@2x.jpg" media="(min-width:768px)">
-                <img src="images/large-cta-mobile@2x.jpg" alt="large-cta-mobile" title="large-cta-mobile">
-            </picture>
-            <div class="large-cta-overlay background-text"></div>
-        </div>
-        <div class="container">
-            <div class="large-cta-main flex">
-                <div class="large-cta-text inverted fs-16 lh-24 white-80">
-                    <span class="optional-text fs-16 f-700">Optional Preheader</span>
-                    <h2>Optional and Flexible CTA Module</h2>
-                    <p>Mollis arcu viverra platea iaculis nisl. Faucibus sed volutpat nulla nec sed ipsum. Sit nulla
-                        faucibus ultrices sit nunc. Amet lectus nulla ac sed fermentum condimentum vestibulum. Amet
-                        fermentum integer tristique quam nulla duis volutpat etiam.</p>
-                    <div class="large-cta-btns flex">
-                        <a href="" class="button flex flex-vcenter">Primary CTA<svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path opacity="0.3"
-                                    d="M12 0.000244141C5.37224 0.000244141 0 5.37248 0 12.0002C0 18.628 5.37224 24.0002 12 24.0002C18.6278 24.0002 24 18.6272 24 12.0002C24 5.37326 18.6278 0.000244141 12 0.000244141ZM16.902 12.6595L12.6593 16.9022C12.366 17.1955 11.8913 17.1955 11.5988 16.9022C11.3055 16.609 11.3055 16.1342 11.5988 15.8417L14.6895 12.7502H6.75C6.336 12.7502 6 12.4142 6 12.0002C6 11.5862 6.336 11.2502 6.75 11.2502H14.6895L11.5987 8.1595C11.3055 7.86624 11.3055 7.3915 11.5987 7.09899C11.892 6.80573 12.3667 6.80573 12.6592 7.09899L16.902 11.3417C17.082 11.5217 17.1375 11.7677 17.097 12.001C17.1375 12.2328 17.0813 12.4795 16.902 12.6595Z"
-                                    fill="#0A0A0A" />
-                            </svg></a>
-                        <a href="#" class="button c-black-bg">Optional CTA Button</a>
+        <section class="large-cta-section relative">
+            <div class="large-cta-bg background-bg">
+                <picture class="object-fit">
+                    <source srcset="images/large-cta@2x.jpg" media="(min-width:768px)">
+                    <img src="images/large-cta-mobile@2x.jpg" alt="large-cta-mobile" title="large-cta-mobile">
+                </picture>
+                <div class="large-cta-overlay background-text"></div>
+            </div>
+            <div class="container">
+                <div class="large-cta-main flex">
+                    <div class="large-cta-text inverted fs-16 lh-24 white-80" data-animate="fade-in-up">
+                        <span class="optional-text fs-16 f-700">Optional Preheader</span>
+                        <h2 data-animate="lines">Optional and Flexible CTA Module</h2>
+                        <p>Mollis arcu viverra platea iaculis nisl. Faucibus sed volutpat nulla nec sed ipsum. Sit nulla
+                            faucibus ultrices sit nunc. Amet lectus nulla ac sed fermentum condimentum vestibulum. Amet
+                            fermentum integer tristique quam nulla duis volutpat etiam.</p>
+                        <div class="large-cta-btns flex">
+                            <a href="" class="button flex flex-vcenter">Primary CTA<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path opacity="0.3"
+                                        d="M12 0.000244141C5.37224 0.000244141 0 5.37248 0 12.0002C0 18.628 5.37224 24.0002 12 24.0002C18.6278 24.0002 24 18.6272 24 12.0002C24 5.37326 18.6278 0.000244141 12 0.000244141ZM16.902 12.6595L12.6593 16.9022C12.366 17.1955 11.8913 17.1955 11.5988 16.9022C11.3055 16.609 11.3055 16.1342 11.5988 15.8417L14.6895 12.7502H6.75C6.336 12.7502 6 12.4142 6 12.0002C6 11.5862 6.336 11.2502 6.75 11.2502H14.6895L11.5987 8.1595C11.3055 7.86624 11.3055 7.3915 11.5987 7.09899C11.892 6.80573 12.3667 6.80573 12.6592 7.09899L16.902 11.3417C17.082 11.5217 17.1375 11.7677 17.097 12.001C17.1375 12.2328 17.0813 12.4795 16.902 12.6595Z"
+                                        fill="#0A0A0A" />
+                                </svg></a>
+                            <a href="#" class="button c-black-bg">Optional CTA Button</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </section>
     </main><!-- site starts here -->
     <footer class="site-footer inverted">
@@ -959,7 +1407,7 @@
                     <div class="footer-logo">
                         <a class="flex" href=""><img src="images/logo.svg" alt="logo"></a>
                     </div>
-                    <div class="copyrights fs-12 lh-12 white-60">
+                    <div class="copyrights fs-12 lh-12 white-60 hide-mobile">
                         <p>Copyright © 2025 Authority IO. All Rights Reserved. </p>
                     </div>
                 </div>
@@ -968,9 +1416,14 @@
                     <li class="mb-0"><a href="08-General.html">Terms and Conditions</a></li>
                     <li class="mb-0"><a href="07-Contact.html">Contact Us</a></li>
                 </ul>
+                <div class="copyrights fs-12 lh-12 white-60 hide-tablet hide-desktop">
+                    <p>Copyright © 2025 Authority IO. All Rights Reserved. </p>
+                </div>
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/ScrollTrigger.min.js?ver=3.13.0"></script>
     <script src="dist/core.bundle.js"></script>
 </body>
 

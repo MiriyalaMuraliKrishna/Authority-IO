@@ -13,14 +13,20 @@
     .value-props-list{flex: 0  0 calc(25% - 36px); flex-grow: 1;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 760px){
-    .value-props-main{gap: 32px; padding: 48px 0;}
-    .value-props-list{flex: 0 0 calc(50% - 16px);}
+    .value-props-wrapper{padding: 0 0 29px;}
+    .value-props-main{gap: 0; padding: 48px 0 0;}
+    .value-props-list{width: 330px; margin-right: 32px;}
+    .value-props-main.swiper-wrapper{flex-wrap: nowrap;}
+    /* .value-props-list:not(.swiper-slide-active){opacity: 0; visibility: hidden;} */
 }
 @media only screen and (max-width: 759px) and (min-width: 0px){
-    .value-props-main{gap: 28px 0; padding: 16px 0 38px; flex-direction: column;}
-    .value-props-list{flex: 0 0 100%; width: 100%; font-size: 18px; line-height: 27px;}
+    .value-props-wrapper{padding: 0 0 19px;}
+    .value-props-main:not(.swiper-wrapper){gap: 28px 0; padding: 16px 0 38px; flex-direction: column;}
+    .value-props-main.swiper-wrapper{flex-wrap: nowrap;}
+    .value-props-list{flex: 0 0 100%; width: 100%; font-size: 16px; line-height: 24px;}
+    .value-props-list:not(.swiper-slide-active){opacity: 0; visibility: hidden;}
     .value-props-icon{margin-bottom: 6px;}
-    .value-props-list h2{margin-bottom: 9px;}
+    .value-props-list h2{margin-bottom: 13px;}
 }
 
 

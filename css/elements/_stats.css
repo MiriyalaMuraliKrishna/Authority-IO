@@ -1,6 +1,19 @@
+.stat-number{justify-content: center; color: var(--Bluish-Gray);}
 
 
-.stat-number{padding-top: 79px; color: var(--Bluish-Gray);}
-.stat-values-main{justify-content: center;}
-.stat-value{flex: 0 0 calc(25% - 20px); text-align: center;}
-.stat-number{justify-content: center;}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .stat-values-main{padding-top: 79px; gap: 32px; justify-content: center;}
+    .stat-value{flex: 0 0 calc(25% - 24px); text-align: center;}
+
+}
+@media only screen and (max-width: 1023px) and (min-width: 760px){
+    .stat-values-main{gap: 39px 0; padding: 39px 0 0;}
+    .stat-value{flex: 0 0 calc(25%); text-align: center;}
+}
+@media only screen and (max-width: 759px) and (min-width: 0px){
+    .stat-values-main{gap: 39px 0; padding: 39px 0 0;}
+    .stat-value{flex: 0 0 calc(50%); text-align: center;}
+    
+}

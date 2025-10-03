@@ -1,100 +1,28 @@
 
 .home-banner-video video{width: 100%; height: 100%;}
-.home-banner-overlay{ background-image: linear-gradient(0deg, var(--Black) 0%,rgba(115, 115, 115, 0.00) 100%); }
+.home-banner-gradient{ background: linear-gradient(180deg, rgba(28, 28, 28, 0.00) 55.34%, #1C1C1C 92.24%); }
+.home-banner-overlay{ background-color: #1C1C1C; opacity: 0.5; }
 .home-banner-main{padding: 197px 0 40px;}
-.home-banner-text{max-width: 780px;}
 .home-banner-text h1{margin-bottom: 25px; font-size: 48px; line-height: 52px; letter-spacing: -0.96px; }
-.home-banner-text p{margin: 0 auto 33px; max-width: 580px; letter-spacing: -0.4px;}
-.home-banner-btns{width: fit-content;}
-
-.trust-by-gradient.left{background: var(--Black); z-index: 2;}
-.trust-by-gradient.left::before { top: 0; right: -100px; width: 100px; height: 100%; background-image: linear-gradient(270deg, transparent, var(--Black)); content: ""; position: absolute; }
-
-.trust-by-gradient.right{background: var(--Black); left: auto; z-index: 2;}
-.trust-by-gradient.right::before { top: 0; left: -100px; width: 100px; height: 100%; background-image: linear-gradient(270deg, var(--Black), transparent); content: ""; position: absolute; }
-
-.trust-by-logos .splide__track{overflow: inherit;}
-.trust-by-logos .splide__list{gap: 10px; align-items: center; flex-wrap: nowrap;}
-.trust-by-logos .splide__slide{width: 180px;}
-.trust-by-logo img{object-fit: contain; max-width: 140px; margin: 0 auto; display: block;}
-
-.trust-by-logo img[data-logo="awwards@2x"]{max-width: 132px;}
-.trust-by-logo img[data-logo="dan@2x"]{max-width: 148px;}
-.trust-by-logo img[data-logo="css-winner@2x"]{max-width: 154.5px;}
-.trust-by-logo img[data-logo="clutch@2x"]{max-width: 86px;}
-
-.no_image.home-endless-pos{padding-top: 55px;}
-.no_image .home-endless-bg{height: 100%;}
-.home-endless-svg{width: 357px; height: 198px; bottom: -72px; right: 0; z-index: 1;}
-.home-endless-bg{height: calc(100% - 98px); top: auto; bottom: 0;}
-.home-endless-ellipse{ bottom: 0; left: 50%; transform: translateX(-50%); width: 511px; height: 511px; opacity: 0.23; background: radial-gradient(50% 50% at 50% 50%, var(--Purple) 0%, rgba(139, 82, 252, 0.00) 100%); }
-.home-endless-image{max-width: 124px; margin-bottom: 13px; top: -84px; left: 45px;}
-.home-endless-main span.fs-22{margin-bottom: 20px;}
-.home-endless-lines{ bottom: 25px; width: 234px; height: 172px; left: 85px; display: none; }
-.home-endless-lines svg{opacity: 0.1; width: 100%; height: 100%; object-fit: contain;}
-
-.home-endless-dot{width: 11px; height: 10px; top: -15px; left: 173px; display: none;}
-.home-endless-graph{right: -6px;}
 
 /* media css starts here */
 @media only screen and (min-width: 1024px){
-    .trust-by-main{max-width: 870px;}
-    .trust-by-main.no_right_side{max-width: 100%;}
-    .home-endless-pos{position: absolute; max-width: 320px; min-width: 320px; top: auto; right: 0; bottom: 8px; z-index: 1; }
-    .home-endless-main{padding: 0px 37px 148px 47px; }
-    .trust-by-gradient.left{width: 5%; left: 0%;}
-    .trust-by-gradient.right{width: 15%; right: -15%;}
+    .home-banner-text{max-width: 780px;}
+    .home-banner-btns{width: fit-content;}
 }
-@media only screen and (max-width: 1359px) and (min-width: 1024px){
-    .trust-by-main{width: calc(100% - 320px);}
-    .trust-by-gradient.right{right: 0;}
-}
-@media only screen and (max-width: 1299px) and (min-width: 1024px){
-    .home-endless-pos{bottom: 80px; right: 40px;}
+@media only screen and (min-width: 760px){
+    .home-banner-text p{margin: 0 auto 33px; max-width: 580px; letter-spacing: -0.4px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 760px){
-    .home-banner-text h1{font-size: 66px; line-height: 78px;}
-    .home-endless-pos{margin: 88px 0 10px; padding: 0 37px 0 40px; max-width: 335px; position: relative;}
-    .home-endless-main{overflow: inherit;}
-    .home-endless-pos-main{max-width: 335px; position: relative; overflow: hidden;}
-    .home-endless-text{padding: 0px 0 189px 7px; }
-    .home-endless-graph{right: -40px; bottom: 35px;}
-    .home-endless-lines{left: 106px; bottom: 41px; width: 274px; height: 202px;} 
-    .home-endless-dot{top: -49px; left: 210px;}
-    .trust-by-main{width: calc(100% + 80px); left: -40px;}
-    .trust-by-main span.optional-text{padding: 0 40px;}
-    .trust-by-gradient.left{left: 0; width: 40px;}
-    .trust-by-gradient.right{right: 0; width: 40px;}
+    .home-banner-text{padding-bottom: 30px;}
+    .home-banner-btns{width: fit-content;}
 }
 @media only screen and (max-width: 759px) and (min-width: 200px){
     .home-banner-section{min-height: 570px;}
     .home-banner-wrap{padding: 0; }
-    .home-banner-main{padding: 173px 0 94px;}
-    .home-banner-text h1{font-size: 56px; letter-spacing: -0.56px; line-height: 68px; margin-bottom: 22px;}
+    .home-banner-main{padding: 169px 0 40px;}
+    .home-banner-text{text-align: left;}
+    .home-banner-text h1{font-size: 38px; letter-spacing: -0.76px; line-height:41.8px; margin-bottom: 22px;}
     .home-banner-text h1 br{display: none;}
-    .trust-by-main{width: calc(100% + 40px); left: -20px;}
-    .trust-by-main span.optional-text{padding: 0 20px; font-size: 12px; line-height: 18px; letter-spacing: 3px;}
-    .trust-by-gradient.left { left: -100%; width: 100%; }
-    .trust-by-gradient.right { right: -100%; width: 100%; }
-    .trust-by-gradient.left::before { right: -40px; width: 40px; }
-    .trust-by-gradient.right::before { left: -40px; width: 40px; }
-    .trust-by-logos .splide__list{gap: 40px;}
-    .trust-by-logos .splide__slide{width: fit-content;}
-    .trust-by-logo img{max-width: 120px;}
-    .trust-by-logo img[data-logo="awwards@2x"]{max-width: 86px;}
-    .trust-by-logo img[data-logo="dan@2x"]{max-width: 120px;}
-    .trust-by-logo img[data-logo="css-winner@2x"]{max-width: 132px;}
-    .home-endless-pos{margin: 88px 0 10px; padding: 0 37px 0 40px; max-width: 335px; position: relative;}
-    .home-endless-pos-main{overflow: hidden;}
-    .home-endless-main{overflow: inherit;}
-    .home-endless-text{padding: 0px 0 189px 7px; }
-    .home-endless-graph{right: -20px; bottom: 35px;}
-    .home-endless-lines{left: 76px; bottom: 41px; width: 274px; height: 202px;} 
-    .home-endless-dot{top: -47px; left: 180px;}
-}
-@media only screen and (max-width: 414px) and (min-width: 200px){
-    .home-banner-text h1 br{display: block;}
-}
-@media only screen and (max-width: 374px) and (min-width: 200px){
-    .home-banner-text h1{font-size: 50px; line-height: 62px;}
+    .home-banner-text p{margin-bottom: 24px;}
 }

@@ -3,26 +3,34 @@
 
 
 
-.as-seen-main{padding: 0 0 80px;}
 .as-seen-title{margin-bottom: 30px; letter-spacing: -0.48px;}
 .as-seen-thumb img{opacity: 0.5;}
+.swiper-free-mode .swiper-wrapper { transition-timing-function: linear; margin: 0 auto; }
+  
 
 
 
-
+.as-seen-slider-row{flex-wrap: nowrap;}
 
 
 
   
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .as-seen-slider{gap: 40px; flex-wrap: nowrap;}
+    .as-seen-main{padding: 0 0 80px;}
+    .as-seen-slider-row{gap: 40px;}
     .as-seen-slide{flex: 0 0 259px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 760px){
-
+    .as-seen-main{padding: 0 0 60px;}
+    .as-seen-slider-row{gap: 40px;}
+    .as-seen-slide{flex: 0 0 259px;}
 }
 @media only screen and (max-width: 759px) and (min-width: 0px){
-    
+    .as-seen-main{padding: 0 0 22px;}
+    .as-seen-title{margin-bottom: 21px;}
+    .as-seen-title span{font-size: 16px; line-height: 24px; letter-spacing: -0.32px;}
+    .as-seen-slider-row{gap: 20px;}
+    .as-seen-slide{flex: 0 0 128px;}   
 }
 
