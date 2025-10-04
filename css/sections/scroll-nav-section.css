@@ -15,8 +15,7 @@
 .scroll-nav-text a.text-link.open em.fa-times{display: block;}
 
 .scroll-nav-head{padding-bottom: 19px;}
-.scroll-nav-stripe{padding-left: 19px;}
-.scroll-nav-lines{ background-color: var(--White); border-radius: 4px; height: 100%; left: 0; top: 0; width: 2px; opacity: 0.25; }
+
 
 ul.scroll-nav-links{margin: 0; gap: 0;}
 ul.scroll-nav-links li{margin: 0;}
@@ -24,25 +23,7 @@ ul.scroll-nav-links li::before{display: none;}
 ul.scroll-nav-links li a{padding: 21px 10px 17px; display: block; color: var(--White-50); font-size: 16px; font-weight: 500; line-height: 20px; position: relative;}
 ul.scroll-nav-links li:first-child a{padding-top: 13px;}
 ul.scroll-nav-links li a:hover, ul.scroll-nav-links li a.active{color: var(--White);}
-ul.scroll-nav-links li a::before {
-  content: "";
-  position: absolute;
-  left: -20px;
-  top: 50%;
-  transform: translateY(-50%) scaleY(0); 
-  transform-origin: top; 
-  width: 4px;
-  height: 96px;
-  background-color: var(--Muted-Ochre);
-  border-radius: 30px;
-  opacity: 1;
-}
 
-ul.scroll-nav-links li a.active::before {
-  transition: transform 1s ease;
-  transform: translateY(-50%) scaleY(1);
-
-}
 
 .scroll-nav-btns{margin-top: 40px; padding: 4px 4px 9px; gap: 10px; background: rgba(165, 24, 144, 0.15); }
 .scroll-link-btn{gap: 6px;}
@@ -74,38 +55,71 @@ ul.scroll-nav-list li svg{width: 30px;}
 @media screen and (min-width: 1024px) {
   
   .scroll-nav-main{gap: 80px; padding: 80px 0 80px;}
-  
-  .scroll-nav-left{flex: 0 0 200px;}
-  .scroll-nav-right{flex: 1; gap: 40px 0;}
+
   .scroll-nav-swiper .swiper-wrapper{height: auto; flex-direction: column; display: block;}
   .scroll-nav-swiper .swiper-slide{height: auto;}
-  .scroll-nav-lists:not(:last-child){margin-bottom: 40px;}
   .scroll-nav-row{gap: 40px 80px; padding: 32px; flex-direction: row-reverse;}
   .scroll-nav-image{flex: 0 0 520px;}
   .scroll-nav-text{flex: 1;}
 
   ul.scroll-nav-list{gap: 40px;}
   ul.scroll-nav-list li{flex: 0 0 calc(20% - 32px); gap: 7px;}
-}
-@media screen and (min-width: 760px) {
+
   .scroll-nav-cta-main{padding: 32px; gap: 16px; border-radius: 0 90px 90px 0;}
   .scroll-nav-cta-title{flex: 1;}
   .scroll-nav-cta-link{width: fit-content;}
+}
+@media screen and (min-width: 760px) {
+
+  .scroll-nav-stripe{padding-left: 19px;}
+  .scroll-nav-lines{ background-color: var(--White); border-radius: 4px; height: 100%; left: 0; top: 0; width: 2px; opacity: 0.25; }
+  
+  .scroll-nav-left{flex: 0 0 200px;}
+  .scroll-nav-right{flex: 1; gap: 40px 0;}
+  .scroll-nav-lists{margin-bottom: 40px;}
+
+
   .scroll-nav-cta-ellipse{width: 164px; height: 164px; top: 50%; transform: translateY(-50%); right: 0;}
+
+  ul.scroll-nav-links li a::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%) scaleY(0); 
+    transform-origin: top; 
+    width: 4px;
+    height: 96px;
+    background-color: var(--Muted-Ochre);
+    border-radius: 30px;
+    opacity: 1;
+  }
+  
+  ul.scroll-nav-links li a.active::before {
+    transition: transform 1s ease;
+    transform: translateY(-50%) scaleY(1);
+  
+  }
 }
 @media screen and (max-width: 1023px) and (min-width: 760px){
-  .scroll-nav-main{padding: 41px 0 39px; flex-direction: column;}
+  .scroll-nav-main{padding: 41px 0 39px; gap: 16px;}
   .scroll-nav-btns{margin-top: 32px;}
   .scroll-nav-head{padding-bottom: 11px;}
 
-  .scroll-nav-right{gap: 32px 0;}
-  .scroll-nav-row{gap: 32px; padding: 32px;}
-  .scroll-nav-image{flex: 0 0 224px;}
-  .scroll-nav-text{flex: 1;}
+  .scroll-nav-row{gap: 32px; padding: 32px; flex-direction: column;}
+  .scroll-nav-image{flex: 0 0 100%;}
+  .scroll-nav-text{flex: 0 0 100%;}
 
 
   ul.scroll-nav-list{gap: 30px;}
   ul.scroll-nav-list li{flex: 0 0 calc(33.33333% - 20px); gap: 7px; margin: 0;}
+
+  
+  .scroll-nav-cta-main{padding: 32px; margin-top: 40px; border-radius: 0 20px 20px 0; display: block;}
+  .scroll-nav-cta-title{margin-bottom: 20px;}
+  .scroll-nav-cta-title h2{font-size: 28px; line-height: 40px; letter-spacing: -0.46px;} 
+  .scroll-nav-cta-link{width: fit-content;}
+  .scroll-nav-cta-ellipse{width: 245px; height: 268px; top: 50%; transform: translateY(-50%); right: 0;}
 }
 
 @media screen and (max-width: 759px) and (min-width: 200px){
@@ -114,7 +128,7 @@ ul.scroll-nav-list li svg{width: 30px;}
   .scroll-nav-head{padding-bottom: 11px;}
   .scroll-nav-image figure img{min-height: 141px; max-height: 141px; border-radius: 10px;}
   .scroll-nav-text{padding-top: 20px;}
-  .scroll-nav-right{display: block;}
+  .scroll-nav-right{display: block; padding-top: 21px;}
   .scroll-nav-row{padding: 20px; display: block;}
   .scroll-nav-text h2{margin-bottom: 25px; font-size: 24px; line-height: 26px; letter-spacing: -0.48px;}
   .scroll-nav-text span.optional-text{margin-bottom: 0;}
@@ -126,11 +140,18 @@ ul.scroll-nav-list li svg{width: 30px;}
 
   .scroll-nav-wrap{padding: 20px 0 0;}
   .scroll-nav-intro{font-size: 18px; line-height: 30px;}
-  .scroll-nav-intro h2{margin-bottom: 20px; font-size: 34px; line-height: 40.8px; letter-spacing: -0.68px;}
+  .scroll-nav-intro h2{margin: 0 auto 20px; max-width: 290px; font-size: 34px; line-height: 40.8px; letter-spacing: -0.68px;}
 
-  .scroll-nav-lists:not(.swiper-slide){display: none;}
 
-  .scroll-nav-cta-main{padding: 32px; gap: 16px; border-radius: 0 20px 20px 0; display: block;}
+  .scroll-nav-lines{ background-color: var(--White); border-radius: 4px; height: 2px; left: 0; top: 0; width: calc(100% + 16px); opacity: 0.25; }
+  /* .scroll-nav-line{width: 0; height: 5px; top: -2px; background-color: var(--Muted-Ochre); transition: var(--b-transition); border-radius: 30px;} */
+  ul.scroll-nav-links .slick-list{overflow: inherit;}
+  ul.scroll-nav-links .slick-slide{width: 229px; position: relative;}
+  ul.scroll-nav-links .slick-slide::before{width: 0%; height: 5px; top: -2px; left: 0; position: absolute; content: ""; display: block; background-color: var(--Muted-Ochre); border-radius: 30px;}
+  ul.scroll-nav-links .slick-active::before{width: 100%; transition: width 2s ease; transition-delay: 1s;}
+  ul.scroll-nav-links .slick-active li a{color: var(--White);}
+
+  .scroll-nav-cta-main{padding: 32px; margin-top: 40px; border-radius: 0 20px 20px 0; display: block;}
   .scroll-nav-cta-title{margin-bottom: 40px;}
   .scroll-nav-cta-title h2{font-size: 28px; line-height: 40px; letter-spacing: -0.46px;} 
   .scroll-nav-cta-link{width: fit-content;}

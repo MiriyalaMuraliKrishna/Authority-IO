@@ -67,45 +67,6 @@ class mySwiper {
         checkMySwiper();
         media.addEventListener('change', checkMySwiper);
       }
-      if (ele.dataset.type === 'scrollNavSlider') {
-        let navSwiper = null;
-        function scrollNavSwiper() {
-          if (!media.matches) {
-            if (!navSwiper) {
-              navSwiper = new Swiper(ele, {
-                slidesPerView: 1,
-                modules: [Navigation, Pagination],
-                pagination: {
-                  el: ele.querySelector('.swiper-pagination'),
-                  clickable: true,
-                },
-                navigation: {
-                  nextEl: ele.querySelector('.swiper-button-next'),
-                  prevEl: ele.querySelector('.swiper-button-prev'),
-                },
-                on: {
-                  slideChange: function (e) {
-                    Array.from(e.slidesEl.children).forEach((ele) => {
-                      if (!ele.classList.contains('visible')) {
-                        const animationClass = ele.dataset.animate;
-                        ele.classList.add('visible');
-                        ele.classList.add(animationClass);
-                      }
-                    });
-                  },
-                },
-              });
-            }
-          } else {
-            if (navSwiper) {
-              navSwiper.destroy(true, true);
-              navSwiper = null;
-            }
-          }
-        }
-        scrollNavSwiper();
-        media.addEventListener('change', scrollNavSwiper);
-      }
     });
   }
 }

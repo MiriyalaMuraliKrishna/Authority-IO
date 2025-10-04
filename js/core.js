@@ -3,17 +3,14 @@ import { lenis } from './elements/lenis.js';
 import { gsapme } from './elements/gsap';
 import { scrolltriggerme } from './elements/scrollTrigger.js';
 import { anime } from './elements/animate.js';
-import { counter } from './elements/counter.js';
+// import { counter } from './elements/counter.js';
 import { youtube, vimeo } from './elements/popup.js';
-import {
-  testimonialSwiper,
-  valuePropsSwiper,
-  scrolNavSwiper,
-} from './elements/swiper.js';
+import { testimonialSwiper, valuePropsSwiper } from './elements/swiper.js';
 import { accordion } from './elements/accordion.js';
 import { asSeen } from './elements/asSlider.js';
 import { scrollnav } from './elements/scrollnav';
 import { scrollnavline } from './elements/scrollnavline';
+import { slickme } from './elements/customSlick.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   header.init();
@@ -21,14 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
   gsapme.init();
   scrolltriggerme.init();
   anime.init();
-  counter.init();
+  // counter.init();
   youtube.init();
   vimeo.init();
   testimonialSwiper.init();
   valuePropsSwiper.init();
-  scrolNavSwiper.init();
   accordion.init();
   asSeen.slider();
   scrollnav.init();
   scrollnavline.init();
+  slickme.init();
 });
