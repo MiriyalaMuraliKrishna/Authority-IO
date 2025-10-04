@@ -122,6 +122,7 @@ hr.horizontal{background-color: green; width: 100%;}
 .button.transparent svg path{transition: var(--b-transition);}
 .button.c-black-bg{padding: 9px 19px 9px; background: var(--Charcoal-Black); border: 1px solid var(--Light-Gray); color: var(--White);}
 
+.button:hover:not(:has(svg)){background-color: var(--Muted-Ochre); border-color: var(--Muted-Ochre); color: var(--Charcoal-Black);}
 
 a.text-link{gap: 11px; color: var(--Charcoal-Black); font-size: 16px; line-height: 24px; letter-spacing: -0.32px; font-weight: 500; position: relative;}
 span.text-link-text{flex: 1;}

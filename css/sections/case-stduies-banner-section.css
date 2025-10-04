@@ -1,12 +1,12 @@
 .case-stduies-banner-main {padding: 282px 0 101px;}
-.case-stduies-banner-overlay{ opacity: 0.7; background-color: var(--Text-Color);}
+.case-stduies-banner-gradient{ background: linear-gradient(270deg, rgba(28, 28, 28, 0.00) 50%, #1C1C1C 83.65%); }
+.case-stduies-banner-overlay{ opacity: 0.5; background-color: var(--Charcoal-Black);}
 .case-stduies-banner-text {max-width: 630px; width: 100%; letter-spacing: -0.4px;}
 .case-stduies-banner-text h1{margin-bottom: 15px; font-size: 46px; line-height: 56px; letter-spacing: -0.92px;}
 .case-stduies-banner-text p{margin-bottom: 25px;}
 .case-stduies-banner-btns{gap: 32px;}
 
-
-
+.case-stduies-banner-ellipse{ border-radius: 388.261px; background: var(--Muted-Ochre); filter: blur(75px); width: 388.261px; height: 388.261px; transform: rotate(-2.485deg); left: -266px; bottom: -266px; }
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
