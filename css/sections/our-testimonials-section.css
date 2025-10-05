@@ -8,24 +8,30 @@
 .our-testimonials-btns{gap: 13px;}
 .our-testimonials-text:first-child:last-child{width: 100%; flex: 0 0 100%;}
 .our-testimonials-image:first-child:last-child{width: 100%; flex: 0 0 100%;}
-
+.our-testimonial-title:nth-child(1):last-child{max-width: 100%;}
+.our-testimonial-mountain svg{width: 100%; height: 100%; object-fit: contain;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .our-testimonials-wrap{padding: 0 0 19px;}
+    .our-testimonials-wrap{padding: 78px 0 19px;}
     .our-testimonials-main{gap: 80px; padding: 40px 0 50px; flex-direction: row;}
     .our-testimonials-main:not(.row-reverse){padding: 80px 0 40px; flex-direction: row-reverse;}
     .our-testimonials-text{flex: 1; max-width: 584px;} 
     .our-testimonials-image{flex: 0 0 430px;}
-    .our-testimonial-head{max-width: 668px; padding-bottom: 48px;}
+    .our-testimonial-head{min-height: 260px; padding-bottom: 48px;}
+    .our-testimonial-title{max-width: 668px;}
+    .our-testimonial-mountain{right: -81px; top: -78px; z-index: -1; width: 815px; height: 424px;}
+    .our-testimonial-swiper .swiper-wrapper{max-width: 1090px; margin: 0 auto;}
 }
 @media screen and (max-width: 1023px) and (min-width: 760px){
-    .our-testimonials-wrap{padding: 0 0 20px;}
+    .our-testimonials-wrap{padding: 78px 0 20px;}
     .our-testimonials-main{padding: 16px 0 29px; display: block;}
     .our-testimonial-head h2{font-size: 34px; line-height: 40.8px; letter-spacing: -0.68px;}
     .our-testimonials-text{letter-spacing: -0.18px;}
     .our-testimonials-text h2{font-size: 34px; line-height: 40.8px; letter-spacing: -0.68px;}
     .our-testimonials-image{max-width: 120px; margin-bottom: 22px;}
+    .our-testimonial-head{min-height: 260px; padding-bottom: 28px;}
+    .our-testimonial-mountain{right: -118px; top: 118px; z-index: -1; width: 715px; height: 314px;}
 
 }
 @media screen and (max-width: 759px) and (min-width: 0px){
@@ -38,6 +44,7 @@
     .our-testimonials-btns{display: block; padding-top: 9px;}
     .our-testimonials-btns .button{width: 100%;}
     .our-testimonials-btns .button:not(:last-child){margin-bottom: 20px;}
+    .our-testimonial-mountain{position: static;}
 }
 
 

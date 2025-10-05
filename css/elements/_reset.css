@@ -131,6 +131,7 @@ a.text-link svg{object-fit: contain; animation: bounceRight 2s infinite; }
 @keyframes bounceRight { 0%, 20%, 50%, 80%, 100% { transform: translateX(0); } 40% { transform: translateX(-10px); } 60% { transform: translateX(-5px); } }
 
 
+
 /* Responsive images. Fluid images for posts, comments, and widgets */
 embed, iframe, object, video{margin: 0; max-width: 100%; border-radius: 0; display: block; object-fit: cover;}
 p > embed, p > iframe, p > object, span > embed, span > iframe, span > object {margin-bottom: 0;}
@@ -471,7 +472,7 @@ ul.category{flex: 1;}
     .radius-b-40{border-radius: 0 0 20px 20px;}
 
     span.optional-text{font-size: 20px; line-height: 28px;}
-
+    .button.mbl-btn-100, button.mbl-btn-100{width: 100%; justify-content: center;}
 
 }
 @media screen and (max-width: 389px) and (min-width: 200px){

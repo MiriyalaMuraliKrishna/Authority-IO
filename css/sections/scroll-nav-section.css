@@ -46,6 +46,7 @@ ul.scroll-nav-list li svg{width: 30px;}
 .scroll-nav-text hr{width: 20px; margin-bottom: 21px; background: var(--Bluish-Gray);}
 
 .scroll-nav-ellipse{width: 164px; height: 164px; bottom: 0; left: 0;}
+.scroll-nav-ellipse svg{width: 100%; height: 100%; object-fit: contain;}
 .scroll-nav-cta-line{width: 3px; height: 100%; top: 0; left: 0; background-color: var(--Bluish-Gray);}
 .scroll-nav-cta-ellipse{z-index: -1;}
 .scroll-nav-cta-ellipse svg{width: 100%; height: 100%; object-fit: contain;}

@@ -1,6 +1,13 @@
 
 
+@import "./elements/_avatar.css";
+@import "./elements/_case-studies-cta.css";
+
+
 @import "./sections/case-stduies-banner-section.css";
 @import "./sections/reviews-section.css";
 @import "./sections/large-cta-section.css";
+
+
+body{background-color: var(--Charcoal-Black);}
 

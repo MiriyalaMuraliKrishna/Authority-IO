@@ -1,7 +1,6 @@
 
 
 
-.reviews-main{padding: 80px 0;}
 .reviews-thumb img{border-radius: 20px 20px 0 0;}
 .reviews-text{padding: 31px 32px 32px;}
 .reviews-text hr{margin-bottom: 20px;}
@@ -9,24 +8,29 @@
 .reviews-text p:not(.quote-avatar-text p){margin-bottom: 21px;}
 .reviews-text svg:not(.button svg){margin-bottom: 9px; max-width: 28px; max-height: 20px; object-fit: contain;}
 
-.reviews-row{gap: 40px;}
-.reviews-list{flex: 0 0 calc(33.33333% - 27px);}
 
 .reviews-stripe{width: 4px; height: 0%; top: 0; left: 0; transition: height 2s ease; transition-delay: 1s; background-color: var(--Muted-Teal);}
 .reviews-stripe.visible{height: 100%;}
-
+.reviews-overlay{opacity: 0.5; background-color: var(--Charcoal-Black); border-radius: 20px 20px 0 0;}
 
 
   
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-
+    
+.reviews-main{padding: 80px 0 51px;}
+    .reviews-row{gap: 40px;}
+    .reviews-list{flex: 0 0 calc(33.33333% - 27px);}
 }
 @media only screen and (max-width: 1023px) and (min-width: 760px){
-
+    .reviews-row{gap: 32px;}
+    .reviews-list{flex: 0 0 calc(50% - 16px);}
 }
 @media only screen and (max-width: 759px) and (min-width: 0px){
-    
+.reviews-main{padding: 40px 0 40px;}
+.reviews-row{display: block;}
+.reviews-list:not(:last-child){margin-bottom: 20px;}
+.reviews-text .button{width: 100%; justify-content: center;}
 }
 
 
