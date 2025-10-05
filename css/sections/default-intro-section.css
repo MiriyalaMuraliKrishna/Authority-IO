@@ -1,6 +1,6 @@
 
 .default-intro-main{padding: 39px 0 0;}
-.default-intro-head{color: var( --Text-Gray);}
+.default-intro-head{color: var(--Text-Color-70);}
 .default-intro-head h2{margin-bottom: 19px; }
 .default-intro-btn .button{width: fit-content;}
 
@@ -8,8 +8,6 @@
 .default-intro-icon svg, .default-intro-icon img{object-fit: contain; max-height: 48px;}
 .default-intro-list h2{margin-bottom: 17px; font-size: 24px; font-weight: 700; line-height: 28px; letter-spacing: -0.24px; }
 .default-intro-list p{margin-bottom: 16px;}
-
-
 
 
 /*-- media css starts here --*/
@@ -25,6 +23,7 @@
     .default-intro-list{flex: 0 0 calc(50% - 16px);}
 }
 @media only screen and (max-width: 759px) and (min-width: 0px){
+    .default-intro-main{padding: 39px 0 40px;}
     .default-intro-row{gap: 28px 0; padding: 16px 0 38px; flex-direction: column;}
     .default-intro-list{flex: 0 0 100%; width: 100%; font-size: 18px; line-height: 27px;}
     .default-intro-icon{margin-bottom: 6px;}

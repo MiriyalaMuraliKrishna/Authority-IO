@@ -80,7 +80,7 @@ ul.scroll-nav-list li svg{width: 30px;}
   .scroll-nav-lists{margin-bottom: 40px;}
 
 
-  .scroll-nav-cta-ellipse{width: 164px; height: 164px; top: 50%; transform: translateY(-50%); right: 0;}
+  .scroll-nav-cta-ellipse{width: 245px; height: 110px; top: 50%; transform: translateY(-50%); right: 0;}
 
   ul.scroll-nav-links li a::before {
     content: "";

@@ -17,23 +17,52 @@
 
 
 
-.stats-main{padding: 80px; margin: 0 0 64px;}
+/* .stats-bg{opacity: 0.5; background-image: url('../../images/stats-bg@2x.png'); background-repeat: no-repeat; background-size: cover;} */
+/* .stats-gradient{background: linear-gradient(215deg, rgba(255, 255, 255, 0.00) 9.94%, #FFF 50.27%); } */
+/* .stats-overlay{opacity: 0.5; background-color: var(--White); } */
+.stats-bg{background-position: center top; background-repeat: no-repeat; background-size: cover;}
+
 .stats-head{margin-bottom: 41px;}
 .stats-title hr{margin-bottom: 23px;}
-.stats-num{margin-bottom: 11px;}
-.stats-list h2{margin-bottom: 12px;}
+.stats-num{margin-bottom: 11px; font-size: 64px; font-weight: 800; line-height: 100%; letter-spacing: -1.28px; color: var(--Bluish-Gray);}
+
+.stats-list h2{margin-bottom: 15px; font-size: 24px; line-height: 28px; letter-spacing: 0;}
 .stats-list p{margin-bottom: 11px;}
+.stats-list{padding: 32px; border: 1px dashed red;} 
+
+
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
+    .stats-main{padding: 80px; margin: 0 0 64px;}
+    .stats-bg{background-image: url('../../images/stats-bg@2x.jpg');}
     .stats-head{gap: 0 256px;}
     .stats-title{flex: 1;}
     .stats-btn{width: fit-content;}
     .stats-row{gap: 32px;}
-    .stats-list{flex: 0 0 calc(25% - 24px); padding: 32px; border: 1px dashed red;} 
-    .stats-num{ color: var(--Bluish-Gray); font-size: 64px; font-weight: 800; line-height: 100%; letter-spacing: -1.28px; }
+    .stats-list{flex: 0 0 calc(25% - 24px);} 
 }
+@media only screen and (max-width: 1023px) and (min-width: 760px){
+    .stats-main{padding: 60px 40px; margin: 0 0 64px;}
+    .stats-bg{background-image: url('../../images/stats-bg@2x.jpg');}
+    .stats-head{gap: 0 32px;}
+    .stats-title{flex: 1;}
+    .stats-btn{width: fit-content;}
+    .stats-row{gap: 32px;}
+    .stats-list{flex: 0 0 calc(50% - 16px);} 
 
+}
+@media only screen and (max-width: 759px) and (min-width: 0px){
+    .stats-main{padding: 40px 24px; margin: 0 0 40px; }
+    .stats-bg{background-image: url('../../images/stats-bg-mobile@2x.jpg');}
+
+    .stats-head{display: block;}
+    .stats-title{margin-bottom: 21px;}
+    .stats-btn{width: fit-content;}
+    .stats-row{display: block;}
+    .stats-list{padding: 40px 24px;} 
+    .stats-list:not(:last-child){margin-bottom: 32px;}
+}
 
 
 

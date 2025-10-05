@@ -1,21 +1,26 @@
 .resources-banner-main {padding: 197px 0 80px;}
-.resources-banner-gradient{ background: linear-gradient(270deg, rgba(28, 28, 28, 0.00) 50%, rgba(28, 28, 28, 0.50) 83.65%); }
 .resources-banner-overlay{ opacity: 0.5; background-color: var(--Charcoal-Black);}
 .resources-banner-text {max-width: 560px; width: 100%; letter-spacing: -0.4px;}
-.resources-banner-text h2{margin-bottom: 14px; max-width: 500px; font-size: 46px; line-height: 56px; letter-spacing: -0.92px;}
-.resources-banner-text p{margin-bottom: 33px;}
-.resources-banner-btns{gap: 32px;}
 
 
 
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-
+    .resources-banner-gradient{ background: linear-gradient(270deg, rgba(28, 28, 28, 0.00) 50%, rgba(28, 28, 28, 0.50) 83.65%); }
+    .resources-banner-text h1{margin-bottom: 14px; max-width: 500px; font-size: 46px; line-height: 56px; letter-spacing: -0.92px;}
+    .resources-banner-text p{margin-bottom: 33px;}
+    .resources-banner-btns{gap: 32px;}
+    
 }
 @media only screen and (max-width: 1023px) and (min-width: 760px){
-
+    .resources-banner-btns{gap: 32px;}
 }
 @media only screen and (max-width: 759px) and (min-width: 0px){
-    
+    .resources-banner-gradient{ background: linear-gradient(185deg, rgba(28, 28, 28, 0.00) 29.75%, #1C1C1C 52.46%); }
+    .resources-banner-main{padding: 172px 0 40px;}
+    .resources-banner-text h1{margin-bottom: 18px; max-width: 500px; font-size: 38px; line-height: 41.5px; letter-spacing: -0.76px;}
+    .resources-banner-text p{margin-bottom: 24px;}
+    .resources-banner-btns{display: block;}
+    .resources-banner-btns .button:not(:last-child){margin-bottom: 16px;}
 }

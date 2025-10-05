@@ -23,7 +23,6 @@ article h1, article h2, article h3, article h4, article h5, article h6{color: va
 .article-cta-link{width: fit-content;}
 
 .divider{margin: 62px 0 64px;}
-.divide{width: 100%; height: 2px; background-color: red;}
 
 .fluid-blockquote{ margin: 0 0 62px; border-radius: 0 10px 10px 0; background: rgba(120, 146, 145, 0.25); color: var(--Slate); }
 .fluid-blockquote blockquote{padding: 53px 0 54px 54px; }
@@ -53,7 +52,9 @@ article h1, article h2, article h3, article h4, article h5, article h6{color: va
 
 }
 @media only screen and (max-width: 759px) and (min-width: 0px){
-    
+    .default-content-main{padding: 39px 0 0;}
+    .default-content hr{margin-bottom: 20px;}
+    .full-image-caption{margin: 43px 0 37px;}
 }
 
 

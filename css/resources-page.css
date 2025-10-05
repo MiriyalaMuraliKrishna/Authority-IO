@@ -4,18 +4,24 @@
 @import "./sections/default-intro-section.css";
 @import "./sections/optional-repeater-section.css";
 @import "./sections/bilateral-content-section.css";
+@import "./sections/our-testimonials-section.css";
 @import "./sections/large-cta-section.css";
 
 
 
 body{background: var(--Charcoal-Black); }
 
-.default-intro-main{padding: 79px 0 1px;}
 
 
 
 
-
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .default-intro-main{padding: 79px 0 1px;}
+}
+@media only screen and (max-width: 759px) and (min-width: 0px){
+    .default-intro-head h2{margin-bottom: 20px;}
+}
 
 
 
