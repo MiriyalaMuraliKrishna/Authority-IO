@@ -10,14 +10,11 @@ input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hove
 input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {outline: none;}
 
 
-body .white-popup-block .frm_forms h3.frm_form_title{display: none;}
 body .frm_forms .frm_form_fields fieldset{margin: 0; padding: 0; border: none;}
 body .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 24px; position: relative; clear: both; width: 100%;}
 body .frm_forms .frm_form_fields .frm_form_field.hide_label .frm_primary_label{display: none;}
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio{margin-bottom: 24px;}
-body .become-partner-form .frm_forms .frm_form_fields .frm_form_field#frm_field_21_container{margin-bottom: 24px;}
-body .flyout-form-overlay .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 25px;}
-body .become-partner-form .frm_forms .frm_error_style{display: none;}
+
 body .frm_forms .frm_form_fields .frm_description{display: none;}
 body .frm_forms .frm_required{display: none;}
 body .frm_forms #frm_field_7_container .frm_required{display: block;}
@@ -38,11 +35,7 @@ textarea:focus{background-color: var(--White); border: 1px solid var(--Dark-Gray
 
 body .frm_forms.with_frm_style .frm_fields_container .frm_radio input[type="radio"]:not([disabled]):checked, 
 body .frm_forms.with_frm_style .frm_fields_container .frm_scale input[type="radio"]:not([disabled]):checked, 
-body .frm_forms.with_frm_style .frm_fields_container .frm_checkbox input[type="checkbox"]:not([disabled]):checked{
-    border-color: var(--Dark-Gray) !important;
-    background: var(--Charcoal-Black);
-    box-shadow: none !important;
-}
+body .frm_forms.with_frm_style .frm_fields_container .frm_checkbox input[type="checkbox"]:not([disabled]):checked{ border-color: var(--Dark-Gray) !important; background: var(--Charcoal-Black); box-shadow: none !important; }
 
 body .frm_forms .frm_form_fields .frm_form_field input::-webkit-input-placeholder, body .frm_forms .frm_form_fields .frm_form_field textarea::-webkit-input-placeholder {color: var(--White); font-family: var(--body-font);}
 body .frm_forms .frm_form_fields .frm_form_field input:-moz-placeholder, body .frm_forms .frm_form_fields .frm_form_field textarea:-moz-placeholder {color: var(--White); font-family: var(--body-font);}
@@ -52,20 +45,6 @@ body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_primary_lab
 
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]{width: 20px; height: 20px; top: 50%; left: 0; transform: translateY(-50%); padding: 0; cursor: pointer; position: absolute; margin: 0; border-radius: 4px; border: 1px solid var(--Dark-Gray); opacity: 1; background-color: var(--Charcoal-Black);}
 /* body .frm_forms.with_frm_style .frm_fields_container .frm_checkbox input[type="checkbox"]:not([disabled]):checked{ border-color: transparent !important; background: var(--White) !important;} */
-
-body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field:not(.vertical_radio) .frm_primary_label{display: none;}
-body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio{margin-left: 24px;}
-body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio:nth-child(2){margin-left: 16px;}
-body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label{padding-left: 29px;}
-body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]{width: 21px; height: 21px; top: 1px; border-radius: 4px;}
-body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]:checked{background: var(--Muted-Ochre);}
-body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"]:checked::before{display: none;}
-body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper{gap: 16px;}
-body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_opt_container{align-items: center; display: flex; flex-wrap: wrap; gap: 0 24px; margin-left: 16px;}
-body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field{margin: 0;}
-body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio{ flex: 1; display: flex; flex-wrap: wrap;}
-body .affiliate-partner-rt .frm_forms .frm_form_fields .form_field_wrapper .frm_form_field.vertical_radio label{padding: 0; font-size: 1rem; line-height: 1.5rem; text-transform: capitalize;}
-body .affiliate-partner-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input[type='checkbox']{top: -2px;}
 
 
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input{top: 12px; left: 8px; width: 20px; height: 20px; margin: 0; border-radius: 2px; border: solid 1px transparent; background-color: var(--White); }
@@ -151,29 +130,12 @@ body .frm_forms .frm_form_fields .frm_new_flex .frm_form_field label small{font-
 body .frm_forms .frm_form_fields .frm_submit button span{font-size: 1rem;}
 #frm_field_17_container .frm_primary_label span{display: none;}
 
-body .flyout-form-overlay .h3{margin-bottom: 24px; text-align: left;}
-body .flyout-form-overlay .frm_form_field_wrapper{display: block;}
-body .flyout-form-overlay .frm_form_field_wrapper .last-checkbox{padding-bottom: 24px; margin-bottom: 24px;}
-body .flyout-form-overlay .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_submit{padding-top: 24px; margin-top: 24px;}
-body .flyout-form-overlay .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_submit::before{content: ""; width: 100%; height: 2px; top: 0; left: 0; position: absolute; display: block; opacity: 0.5; background-image: linear-gradient(to right,var(--Light-Blue) 25%,rgba(255,255,255,0) 0); background-position: bottom; background-size: 8px 2px; background-repeat: repeat-x;}
-body .flyout-form-overlay .frm_forms .frm_form_fields .frm_form_field_wrapper button.frm_button_submit{width: fit-content;}
-body .white-popup-block .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 23px;}
+
 body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field  div.frm_primary_label{display: none;}
 
 
 body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field.vertical_radio .frm_checkbox label.open{background-color: transparent;}
 body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field.vertical_checkbox .frm_opt_container .frm_checkbox{flex: 1;} 
-
-body.page-template-contact .frm_forms .frm_filed_wrapper{gap: 16px; justify-content: space-between;}
-body.page-template-contact .frm_forms .frm_filed_wrapper .frm_form_field{margin: 0;}
-body.page-template-contact .frm_forms .frm_filed_wrapper .frm_form_field label{cursor: auto !important;}
-body.page-template-contact .frm_forms .frm_filed_wrapper .plane-text{flex: 1; font-size: 1rem; line-height: 1.5rem; opacity: 0.75;}
-body.page-template-contact .contact-form-form .frm_forms .frm_filed_wrapper .vertical_radio{gap: 0;}
-body.page-template-contact .contact-form-form .frm_forms .frm_filed_wrapper .vertical_radio .frm_radio label{padding: 0; color: rgba(48, 33, 53, 0.75);}
-body.page-template-contact .contact-form-form .frm_forms .frm_filed_wrapper .vertical_radio .frm_radio input{display: none !important;}
-body.page-template-contact .contact-form-form .frm_error_style{display: none;}
-body.page-template-contact .contact-form-form .frm_forms .frm_form_fields .frm_form_field .frm_primary_label{display: none;}
-body.page-template-contact .contact-form-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_primary_label{display: flex;}
 
 .with_frm_style input::placeholder, .with_frm_style textarea::placeholder { font-size: var(--body-font); }
 

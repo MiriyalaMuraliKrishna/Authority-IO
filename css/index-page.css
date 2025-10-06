@@ -2,16 +2,15 @@
 
 
 
-@import "./sections/home-banner-section.css";
-@import "./elements/_stats.css";
-@import "./sections/short-intro-section.css";
-@import "./sections/value-props-section.css";
-@import "./sections/scroll-nav-section.css";
-@import "./sections/our-testimonials-section.css";
-@import "./sections/large-cta-section.css";
-@import "./sections/as-seen-section.css";
-@import "./sections/featured-blog-section.css";
-
+@import url("./elements/_stats.css?v=3");
+@import url("./sections/home-banner-section.css?v=3");
+@import url("./sections/short-intro-section.css?v=3");
+@import url("./sections/value-props-section.css?v=3");
+@import url("./sections/scroll-nav-section.css?v=3");
+@import url("./sections/our-testimonials-section.css?v=3");
+@import url("./sections/large-cta-section.css?v=3");
+@import url("./sections/as-seen-section.css?v=3");
+@import url("./sections/featured-blog-section.css?v=3");
 
 
 

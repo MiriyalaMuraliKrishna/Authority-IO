@@ -1,12 +1,12 @@
 
 
-@import "./elements/_avatar.css";
-@import "./elements/_case-studies-cta.css";
+@import "./elements/_avatar.css?v=6";
+@import "./elements/_case-studies-cta.css?v=6";
 
 
-@import "./sections/case-stduies-banner-section.css";
-@import "./sections/reviews-section.css";
-@import "./sections/large-cta-section.css";
+@import "./sections/case-stduies-banner-section.css?v=6";
+@import "./sections/reviews-section.css?v=6";
+@import "./sections/large-cta-section.css?v=6";
 
 
 body{background-color: var(--Charcoal-Black);}

@@ -32,6 +32,8 @@
     .contact-form-main{padding: 183px 0 80px; gap: 80px;}
     .contact-form-lt{flex: 0 0 350px;}
     .contact-form-rt{flex: 1; padding: 47px 48px 48px;}
+    .contact-form-ellipse { left: -384px; bottom: -196px; width: 484px; height: 484px; z-index: -1;}
+    .contact-rt-ellipse{bottom: 0; right: 0; width: 234px; height: 237px; z-index: -1;}
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px){
     .contact-form-main{gap: 32px;}

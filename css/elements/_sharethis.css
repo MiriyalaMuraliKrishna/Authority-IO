@@ -58,7 +58,7 @@ body.single-post .share-inline-arrow{padding: 35px 0 0 ;}
     body.single-post .share-icons #st-1.st-animated{margin-bottom: 0;}
     .share-icons #st-1.st-animated .st-btn[data-network="sharethis"]  {  width: 42px;  margin-right: 7px;}
     body.page-template-default .share-icons {margin-top: 55px;}
-    body.single-post   .share-icons #st-1.st-animated .st-btn[data-network="sharethis"] {margin-right: 0;}
+    body.single-post .share-icons #st-1.st-animated .st-btn[data-network="sharethis"] {margin-right: 0;}
 
 }
 
@@ -71,7 +71,7 @@ body.single-post .share-inline-arrow{padding: 35px 0 0 ;}
 /* .share-icons-main{min-height: 300px;} */
 .share-icons{margin: 0; background-color: var(--Umber);}
 .share-icons #st-2.st-animated{gap: 8px; flex-direction: column; display: flex; flex-wrap: nowrap; z-index: 1; flex: 1;}
-.share-icons #st-2.st-animated .st-btn{padding: 0; margin: 0; width: 56px; height: 56px; min-width: 56px; font-size: 24px; line-height: 24px; position: relative; z-index: 1; font-family: "Font Awesome 6 Brands"; font-weight: 400; display: flex !important; align-items: center; justify-content: center; transition: var(--b-transition); background: none; color: var(--White);}
+.share-icons #st-2.st-animated .st-btn{padding: 0; margin: 0; width: 56px; height: 56px; min-width: 56px; font-size: 24px; line-height: 24px; position: relative; z-index: 1; font-family: "Font Awesome 6 Brands"; font-weight: 400; display: flex !important; align-items: center; justify-content: center; transition: var(--b-transition); background: var(--Muted-Ochre); color: var(--White); border-radius: 20px;}
 .share-icons #st-2.st-animated .st-btn:hover{ opacity: 1;}
 .share-icons #st-2.st-animated span.st-label{display: none;}
 .share-icons #st-2.st-animated .st-btn[data-network="sharethis"]::after {display: none; content: "\f1e0"; font-family: "Font Awesome 6 Pro"; } 

@@ -6,11 +6,11 @@
 
 
 
-@import "./elements/_selectBox.css";
-@import "./elements/_formidable.css";
+@import "./elements/_selectBox.css?v=6";
+@import "./elements/_formidable.css?v=6";
 
-@import "./sections/blog-intro-section.css";
-@import "./sections/blog-post-section.css";
+@import "./sections/blog-intro-section.css?v=6";
+@import "./sections/blog-post-section.css?v=6";
 
 
 

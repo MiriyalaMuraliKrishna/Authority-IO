@@ -6,7 +6,10 @@
 
 
 
-.blog-post-right{gap: 80px; margin-bottom: 99px; justify-content: flex-end;}
+.blog-post-right{margin-bottom: 99px;}
+ul.blog-post-order{gap: 41px 82px; justify-content: flex-end;}
+ul.blog-post-order > li::before{top: 50%; transform: translateY(-50%); left: -41px;}
+ul.blog-post-order > li:first-child::before{display: none;}
 
 .blog-post-overlay{background-color: var(--Black-60);}
 .blog-post-text{padding: 32px;}
@@ -14,15 +17,17 @@
 .blog-post-text hr{margin-bottom: 19px;}
 
 
-#load-more{text-align: center; margin-top: 40px;}
-#load-more .button{margin: 0 auto;}
+#load-more{text-align: center; gap: 24px; margin-top: 40px;}
+#load-more .button{width: fit-content;}
+#load-more hr{flex: 1;}
+#load-more hr{flex: 1;}
 
 .blog-post-select{width: 132px;}
 
 .blog-post-form{width: 104px;}
-.blog-post-form input{background-color: var(--White); width: 100%; font-weight: 600; font-size: 14px; line-height: 18px; border: none; border-radius: 10px;}
+.blog-post-form input{padding: 8px 16px 10px; background-color: var(--White); width: 100%; font-weight: 600; font-size: 14px; line-height: 18px; border: none; border-radius: 10px;}
 .blog-post-form button{top: 50%; right: 10px; transform: translateY(-50%); border: none; background: none; margin: 0; padding: 0;}
-
+.blog-post-form button svg{animation: none;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
@@ -30,9 +35,19 @@
     .blog-post-row{gap: 40px;}
     .blog-post-list{flex: 0 0 calc(33.33333% - 27px);}
 }   
+@media only screen and (max-width: 1199px) and (min-width: 1024px){
+    .blog-post-row{gap: 32px;}
+    .blog-post-list{flex: 0 0 calc(33.33333% - 22px);}
+}
 @media only screen and (max-width: 1023px) and (min-width: 760px){
-
+    .blog-post-main{padding: 0 0 40px;}
+    .blog-post-row{gap: 32px; justify-content: center;}
+    .blog-post-list{flex: 0 0 calc(50% - 16px);}
 }
 @media only screen and (max-width: 759px) and (min-width: 0px){
-    
+    .blog-post-main{padding: 0 0 40px;}
+    .blog-post-right{margin-bottom: 20px;}
+    .blog-post-row{display: block;}
+    .blog-post-list:not(:last-child){margin-bottom: 20px;}
+    .blog-post-text h2{ margin-bottom: 19px; font-size: 24px; line-height: 32px; letter-spacing: -0.48px;}
 }

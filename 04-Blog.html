@@ -29,7 +29,7 @@
     <!-- Icon Base -->
 
     <!-- CSS Base -->
-    <link rel="stylesheet" href="./style.css" media="all" />
+    <link rel="stylesheet" href="./style.css?v=1" media="all" />
     <link rel="stylesheet" href="./css/blog-page.css?v=3344" media="all" />
 </head>
 
@@ -240,38 +240,46 @@
         <section class="blog-post-section gray-bg">
             <div class="container">
                 <div class="blog-post-main">
-                    <div class="blog-post-right flex flex-end">
-                        <div class="blog-post-select">
-                            <select name="" id="">
-                                <option value="Categories">Categories</option>
-                                <option value="Categories">Categories</option>
-                                <option value="Categories">Categories</option>
-                                <option value="Categories">Categories</option>
-                                <option value="Categories">Categories</option>
-                                <option value="Categories">Categories</option>
-                                <option value="Categories">Categories</option>
-                            </select>
-                        </div>
-                        <div class="blog-post-select">
-                            <select name="" id="">
-                                <option value="Categories">Categories</option>
-                                <option value="Categories">Categories</option>
-                                <option value="Categories">Categories</option>
-                                <option value="Categories">Categories</option>
-                                <option value="Categories">Categories</option>
-                                <option value="Categories">Categories</option>
-                                <option value="Categories">Categories</option>
-                            </select>
-                        </div>
-                        <form class="blog-post-form relative" action="">
-                            <input type="text" name="" id="" placeholder="Search">
-                            <button class="absolute"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"
-                                    viewBox="0 0 15 16" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M7.13415 2.32927C4.20335 2.32927 1.82927 4.70213 1.82927 7.62695C1.82927 10.5518 4.20335 12.9247 7.13415 12.9247C8.59636 12.9247 9.91876 12.3351 10.8791 11.3791C11.8439 10.4188 12.4391 9.09306 12.4391 7.62695C12.4391 4.70213 10.0649 2.32927 7.13415 2.32927ZM0 7.62695C0 3.68986 3.19506 0.5 7.13415 0.5C11.0732 0.5 14.2683 3.68986 14.2683 7.62695C14.2683 9.26893 13.7117 10.7821 12.7781 11.9868L14.7317 13.9383C15.0891 14.2952 15.0895 14.8744 14.7325 15.2317C14.3755 15.5891 13.7964 15.5895 13.439 15.2325L11.4821 13.2778C10.2786 14.203 8.77013 14.7539 7.13415 14.7539C3.19506 14.7539 0 11.5641 0 7.62695Z"
-                                        fill="#789291" />
-                                </svg></button>
-                        </form>
+                    <div class="blog-post-right">
+                        <ul class="blog-post-order m-0 flex flex-end">
+                            <!-- <li>  -->
+                            <!-- <div class="blog-post-select">
+                                <select name="" id="">
+                                    <option value="Categories">Categories</option>
+                                    <option value="Categories">Categories</option>
+                                    <option value="Categories">Categories</option>
+                                    <option value="Categories">Categories</option>
+                                    <option value="Categories">Categories</option>
+                                    <option value="Categories">Categories</option>
+                                    <option value="Categories">Categories</option>
+                                </select>
+                            </div> -->
+                            <!-- </li> -->
+                            <li>
+                                <div class="blog-post-select">
+                                    <select name="" id="">
+                                        <option value="Categories">Categories</option>
+                                        <option value="Categories">Categories</option>
+                                        <option value="Categories">Categories</option>
+                                        <option value="Categories">Categories</option>
+                                        <option value="Categories">Categories</option>
+                                        <option value="Categories">Categories</option>
+                                        <option value="Categories">Categories</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <form class="blog-post-form relative" action="">
+                                    <input type="text" name="" id="" placeholder="Search">
+                                    <button class="absolute"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                            height="16" viewBox="0 0 15 16" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M7.13415 2.32927C4.20335 2.32927 1.82927 4.70213 1.82927 7.62695C1.82927 10.5518 4.20335 12.9247 7.13415 12.9247C8.59636 12.9247 9.91876 12.3351 10.8791 11.3791C11.8439 10.4188 12.4391 9.09306 12.4391 7.62695C12.4391 4.70213 10.0649 2.32927 7.13415 2.32927ZM0 7.62695C0 3.68986 3.19506 0.5 7.13415 0.5C11.0732 0.5 14.2683 3.68986 14.2683 7.62695C14.2683 9.26893 13.7117 10.7821 12.7781 11.9868L14.7317 13.9383C15.0891 14.2952 15.0895 14.8744 14.7325 15.2317C14.3755 15.5891 13.7964 15.5895 13.439 15.2325L11.4821 13.2778C10.2786 14.203 8.77013 14.7539 7.13415 14.7539C3.19506 14.7539 0 11.5641 0 7.62695Z"
+                                                fill="#789291" />
+                                        </svg></button>
+                                </form>
+                            </li>
+                        </ul>
                     </div>
                     <div class="blog-post-row flex">
                         <div class="blog-post-list radius-20 relative">
@@ -554,8 +562,13 @@
                         </div>
 
                     </div>
-                    <div id="load-more" class="more blog_more"><span class="loader"></span>
-                        <div class="text button button-transparent"><span>Load more articles</span></div>
+                    <div id="load-more" class="more blog_more flex flex-vcenter relative"><span
+                            class="loader absolute"></span>
+                        <hr class="horizontal m-0">
+                        <div class="text button btn-hover-black">
+                            <span>View More Articles</span>
+                        </div>
+                        <hr class="horizontal m-0">
                     </div>
                 </div>
             </div>

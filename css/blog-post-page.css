@@ -5,8 +5,8 @@
 
 
 
-@import "./sections/post-banner-section.css";
-@import "./general-page.css";
+@import "./sections/post-banner-section.css?v=6";
+@import "./general-page.css?v=6";
 
 
 .related-article-title{flex: 1;}

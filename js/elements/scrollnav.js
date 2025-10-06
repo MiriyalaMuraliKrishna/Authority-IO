@@ -9,6 +9,7 @@ export const scrollnav = {
 
     const height = +document.querySelector('header').getBoundingClientRect()
       .height;
+    console.log('test2');
 
     const eventHandler = (e) => {
       e.preventDefault();

@@ -7,7 +7,7 @@ export const scrollnavline = {
     if (!this.nav) return;
     const height = +document.querySelector('header').getBoundingClientRect()
       .height;
-
+    console.log('test1');
     scrollSpy(this.nav, {
       sectionClass: '.scroll-nav-lists',
       menuActiveTarget: 'a',

@@ -11,6 +11,7 @@ import { asSeen } from './elements/asSlider.js';
 import { scrollnav } from './elements/scrollnav';
 import { scrollnavline } from './elements/scrollnavline';
 import { slickme } from './elements/customSlick.js';
+import { stickme } from './elements/sticksy.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   header.init();
@@ -28,4 +29,5 @@ document.addEventListener('DOMContentLoaded', () => {
   scrollnav.init();
   scrollnavline.init();
   slickme.init();
+  stickme.init();
 });

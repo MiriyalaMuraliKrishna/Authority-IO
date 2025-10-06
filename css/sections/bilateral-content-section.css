@@ -14,6 +14,9 @@ background: #151515;
 .bilateral-text svg:not(.gelatine) g{opacity: 1;}
 
 
+.bilateral-ellipse{width: 212px; height: 207px; bottom: 0; left: 0;}
+.bilateral-ellipse svg{width: 100%; height: 100%; object-fit: contain;}
+
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){

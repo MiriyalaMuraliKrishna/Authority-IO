@@ -28,7 +28,7 @@
 
 .stats-list h2{margin-bottom: 15px; font-size: 24px; line-height: 28px; letter-spacing: 0;}
 .stats-list p{margin-bottom: 11px;}
-.stats-list{padding: 32px; border: 1px dashed red;} 
+.stats-list{padding: 32px; border: 1.5px dashed var(--Spun-Pearl);} 
 
 
 
