@@ -2,8 +2,10 @@
 .short-intro-main{padding: 79px 0 0;}
 .short-intro-title h2{margin-bottom: 25px; color: var(--Charcoal-Black); font-size: 40px; font-weight: 700; line-height: 48px; letter-spacing: -0.8px; }
 .short-intro-btn .button{width: fit-content;}
+.short-intro-title:nth-child(1):last-child{flex: 0 0 100%;}
 
 
+.short-intro-main.no_features{padding-bottom: 80px;}
 
 
 

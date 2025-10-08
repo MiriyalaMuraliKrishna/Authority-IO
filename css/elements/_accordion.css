@@ -2,9 +2,7 @@
 
 .accordion-list{margin-bottom: 8px; }
 .accordion-header {font-size: 18px; line-height: 22px; letter-spacing: -0.18px; padding: 20px 48px 20px 24px; cursor: pointer; position: relative; } 
-
 .accordion-icon{transition: var(--b-transition); position: absolute; right: 31px; top: 50%; transform: translateY(-50%); width: 10px; height: 11px;}
-.accordion-header.open .accordion-icon{background-color: var(--Umber);} 
 .accordion-icon svg{top: 50%; left: 50%; transform: translate(-50%,-50%); transition: all 0.5s ease; position: absolute;}
 .accordion-icon svg:not(:first-child){opacity: 0;}
 .accordion-header:hover .accordion-icon svg:first-child{opacity: 0;}
@@ -45,8 +43,8 @@
 }
 @media screen and (max-width: 759px) and (min-width: 0px){
     .accordion-main{padding: 24px 0 40px;}
-    .accordion-header{padding: 16px 64px 16px 24px;}
-    .accordion-desc{padding: 3px 0 22px;}
+    .accordion-header{padding: 16px 48px 16px 24px;}
+    .accordion-desc {padding: 5px 24px 17px;}
     .accordion-wrap { padding: 50px 0 20px; }
     .accordion-head-lt h3 {font-size: 2rem;}
 }

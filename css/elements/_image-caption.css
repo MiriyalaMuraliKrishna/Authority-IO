@@ -1,26 +1,24 @@
 
 
 
-.full-image-caption{}
-
-
-
 
 
 
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    
+    .full-image-caption{margin: 67px 0 62px;}
 }
 @media only screen and (min-width: 760px){
     .image-captions{gap: 21px; margin: 64px 0 62px;}
     .image-caption{flex: 0 0 calc(50% - 10.5px);}
 }
 @media only screen and (max-width: 1023px) and (min-width: 760px){
+    .full-image-caption{margin: 47px 0 42px;}
 
 }
 @media only screen and (max-width: 759px) and (min-width: 0px){
+    .full-image-caption{margin: 43px 0 37px;}
     .image-captions{display: block; margin: 40px 0 39px;}
     .image-caption:not(:last-child){margin-bottom: 20px;}
 }

@@ -29,7 +29,7 @@
 
     <!-- CSS Base -->
     <link rel="stylesheet" href="./style.css?v=1" media="all" />
-    <link rel="stylesheet" href="./css/index-page.css?v=3344" media="all" />
+    <link rel="stylesheet" href="./css/page-not-found.css?v=3344" media="all" />
 </head>
 
 <body>
@@ -61,35 +61,74 @@
             </div>
     </header>
     <main class="site-main-cover"><!-- site starts here -->
-
-    </main>
-    <footer id="main_footer">
-        <div class="footer relative">
+        <section class="page-not-section">
             <div class="container">
-                <div class="footer-wrap-main">
+                <div class="page-not-main aligncenter">
+                    <div class="page-not-text inverted">
+                        <span class="optional-text green">404 page not found</span>
+                        <h1 data-animate="words">Oops !</h1>
+                        <p>The page you are looking for might have been removed had its name changed or is temporarily
+                            unavailable.</p>
+                        <div class="flex flex-center">
 
-                    <div class="footer-cp-rights flex">
-                        <div class="footer-cp-lt flex">
-                            <div class="footer-logo">
-                                <figure class="object-fit">
-                                    <!-- <a href=""><img src="images/footer-logo.svg" alt="footer logo"></a> -->
-                                </figure>
-                            </div>
-                            <p>Copyright © 2025 Whiteoaks Communications Group Ltd. All Rights Reserved. </p>
+                            <a href="index.html" class="button back">Back to Home</a>
                         </div>
-                        <div class="privacy-links">
-                            <ul>
-                                <li><a href="08-General.html">Privacy Policy</a></li>
-                                <li><a href="#">Accessibility Policy</a></li>
-                            </ul>
-                        </div>
-                        <!-- end of privacy links -->
-
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="large-cta-section relative">
+            <div class="large-cta-bg background-bg">
+                <picture class="object-fit">
+                    <source srcset="images/large-cta@2x.jpg" media="(min-width:760px)">
+                    <img src="images/large-cta-mobile@2x.jpg" alt="large-cta-mobile" title="large-cta-mobile">
+                </picture>
+                <div class="large-cta-overlay background-text"></div>
+            </div>
+            <div class="container">
+                <div class="large-cta-main flex">
+                    <div class="large-cta-text inverted fs-16 lh-24 white-80" data-animate="fade-in-up">
+                        <span class="optional-text fs-16 f-700">Optional Preheader</span>
+                        <h2 data-animate="lines">Optional and Flexible CTA Module</h2>
+                        <p>Mollis arcu viverra platea iaculis nisl. Faucibus sed volutpat nulla nec sed ipsum. Sit nulla
+                            faucibus ultrices sit nunc. Amet lectus nulla ac sed fermentum condimentum vestibulum. Amet
+                            fermentum integer tristique quam nulla duis volutpat etiam.</p>
+                        <div class="large-cta-btns flex">
+                            <a href="" class="button flex flex-vcenter">Primary CTA<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path opacity="0.3"
+                                        d="M12 0.000244141C5.37224 0.000244141 0 5.37248 0 12.0002C0 18.628 5.37224 24.0002 12 24.0002C18.6278 24.0002 24 18.6272 24 12.0002C24 5.37326 18.6278 0.000244141 12 0.000244141ZM16.902 12.6595L12.6593 16.9022C12.366 17.1955 11.8913 17.1955 11.5988 16.9022C11.3055 16.609 11.3055 16.1342 11.5988 15.8417L14.6895 12.7502H6.75C6.336 12.7502 6 12.4142 6 12.0002C6 11.5862 6.336 11.2502 6.75 11.2502H14.6895L11.5987 8.1595C11.3055 7.86624 11.3055 7.3915 11.5987 7.09899C11.892 6.80573 12.3667 6.80573 12.6592 7.09899L16.902 11.3417C17.082 11.5217 17.1375 11.7677 17.097 12.001C17.1375 12.2328 17.0813 12.4795 16.902 12.6595Z"
+                                        fill="#0A0A0A" />
+                                </svg></a>
+                            <a href="#" class="button c-black-bg">Optional CTA Button</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer inverted">
+        <div class="container">
+            <div class="footer flex flex-vcenter">
+                <div class="footer-left flex flex-vcenter">
+                    <div class="footer-logo">
+                        <a class="flex" href=""><img src="images/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="copyrights fs-12 lh-12 white-60 hide-mobile">
+                        <p>Copyright © 2025 Authority IO. All Rights Reserved. </p>
+                    </div>
+                </div>
+                <ul class="footer-links flex fs-12 lh-12">
+                    <li class="mb-0"><a href="08-General.html">Privacy Policy</a></li>
+                    <li class="mb-0"><a href="08-General.html">Terms and Conditions</a></li>
+                    <li class="mb-0"><a href="07-Contact.html">Contact Us</a></li>
+                </ul>
+                <div class="copyrights fs-12 lh-12 white-60 hide-tablet hide-desktop">
+                    <p>Copyright © 2025 Authority IO. All Rights Reserved. </p>
+                </div>
+            </div>
         </div>
-
     </footer>
     <script src="dist/core.bundle.js"></script>
 </body>

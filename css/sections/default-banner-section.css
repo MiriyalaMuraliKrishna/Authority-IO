@@ -19,7 +19,7 @@
     .default-banner-btns{gap: 32px;}
 }
 @media only screen and (max-width: 759px) and (min-width: 0px){
-    .default-banner-main {padding: 197px 0 40px;}
+    .default-banner-main {padding: 197px 0 40px; display: block;}
     .default-banner-text{color: var(--White-80);}
     .default-banner-text p{margin-bottom: 24px;}
     .default-banner-btns{display: block;}

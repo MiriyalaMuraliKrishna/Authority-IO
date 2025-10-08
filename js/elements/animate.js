@@ -19,6 +19,13 @@ class Animate {
             timeline.restart().play();
             timeline.played = true; // mark as played (avoid repeat)
           }
+          if (animateType === 'counter') {
+            const $counter = $ele[0];
+            if ($counter.counter && $counter.counter.paused) {
+              console.log($counter);
+              $counter.counter.start();
+            }
+          }
         }
       });
     };

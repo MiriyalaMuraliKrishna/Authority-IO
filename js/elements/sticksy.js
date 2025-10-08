@@ -1,3 +1,4 @@
+import 'sticksy';
 import { ResizeSensor } from 'css-element-queries';
 
 window.ResizeSensor = ResizeSensor;

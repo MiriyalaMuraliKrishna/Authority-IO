@@ -6,22 +6,26 @@
 
 .our-testimonials-text h2{margin-bottom: 23px;}
 .our-testimonials-btns{gap: 13px;}
-.our-testimonials-text:first-child:last-child{width: 100%; flex: 0 0 100%;}
+.our-testimonials-text:first-child:last-child{width: 100%; flex: 0 0 100%; max-width: 100%;}
 .our-testimonials-image:first-child:last-child{width: 100%; flex: 0 0 100%;}
 .our-testimonial-title:nth-child(1):last-child{max-width: 100%;}
 .our-testimonial-mountain svg{width: 100%; height: 100%; object-fit: contain;}
 
+.our-testimonials-main.no_image{display: block;}
+
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .our-testimonials-wrap{padding: 78px 0 19px;}
+    .our-testimonials-wrap.no_testimonial{padding-bottom: 100px;}
     .our-testimonials-main{gap: 80px; padding: 40px 0 50px; flex-direction: row;}
+    .our-testimonials-main.no_image{padding-top: 80px;}
     .our-testimonials-main:not(.row-reverse){padding: 80px 0 40px; flex-direction: row-reverse;}
     .our-testimonials-text{flex: 1; max-width: 584px;} 
     .our-testimonials-image{flex: 0 0 430px;}
     .our-testimonial-head{min-height: 260px; padding-bottom: 48px;}
     .our-testimonial-title{max-width: 668px;}
     .our-testimonial-mountain{right: -81px; top: -78px; z-index: -1; width: 815px; height: 424px;}
-    .our-testimonial-swiper .swiper-wrapper{max-width: 1090px; margin: 0 auto;}
+    .our-testimonial-swiper{max-width: 1090px; margin: 0 auto;}
 }
 @media screen and (max-width: 1023px) and (min-width: 760px){
     .our-testimonials-wrap{padding: 78px 0 20px;}
@@ -31,7 +35,7 @@
     .our-testimonials-text h2{font-size: 34px; line-height: 40.8px; letter-spacing: -0.68px;}
     .our-testimonials-image{max-width: 120px; margin-bottom: 22px;}
     .our-testimonial-head{min-height: 260px; padding-bottom: 28px;}
-    .our-testimonial-mountain{right: -118px; top: 118px; z-index: -1; width: 715px; height: 314px;}
+    .our-testimonial-mountain{width: 715px; height: 314px; position: static;}
 
 }
 @media screen and (max-width: 759px) and (min-width: 0px){

@@ -46,6 +46,7 @@
     .featured-intro-list:nth-child(2) hr{margin-bottom: 23px;}
     .featured-intro-list:nth-child(3) h2{margin-bottom: 27px; font-size: 20px; line-height: 25px; letter-spacing: -0.4px;}
     .featured-intro-list:nth-child(3) hr{margin-bottom: 19px;}
+    .featured-intro-thumb img{min-height: 490px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 760px){
     .featured-intro-row{gap: 32px; margin-bottom: 40px;}
@@ -72,7 +73,7 @@
     .featured-intro-text hr{margin-bottom: 19px;}
     .featured-intro-text h2{margin-bottom: 18px; font-size: 24px; line-height: 32px; letter-spacing: -0.48px;}
     .featured-intro-text p{display: none;}
-
+    .featured-intro-link a.text-link{width: fit-content;}
 }
 
 

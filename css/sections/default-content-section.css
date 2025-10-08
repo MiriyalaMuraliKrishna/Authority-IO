@@ -11,13 +11,13 @@
 article{color: rgba(28, 28, 28, 0.7);}
 article h1, article h2, article h3, article h4, article h5, article h6{color: var(--Charcoal-Black);} */
 
-.full-image-caption{margin: 100px 0;}
+
 
 .micro-cta-main{margin: 64px 0 63px;}
 .micro-cta-text{padding: 40px;}
 .micro-cta-thumb img{border-radius: 0 10px 10px 0;}
 
-.article-cta-main{padding: 14px 40px 16px; margin: 64px 0 64px; gap: 16px; background-color: var(--Background-Cta);}
+.article-cta-main{padding: 14px 40px 16px; margin: 64px 0 64px; gap: 16px; background-color: var(--Background);}
 .article-cta-title{flex: 1; letter-spacing: -0.48px;}
 .article-cta-link{width: fit-content;}
 
@@ -54,7 +54,7 @@ article h1, article h2, article h3, article h4, article h5, article h6{color: va
 /*-- media css starts here --*/
 @media only screen and (min-width: 1440px){
     article.default-content{width: calc(100% - 56px);}
-    aside.default-aside{width: 56px;}
+    aside.default-aside{width: 56px; right: -245px;}
 }
 @media only screen and (min-width: 1024px){
 .micro-cta-btns{gap: 32px;}
@@ -67,16 +67,24 @@ article h1, article h2, article h3, article h4, article h5, article h6{color: va
 
 
 }
+@media only screen and (max-width: 1439px) and (min-width: 1200px){
+
+article.default-content{width: calc(100% - 56px);}
+aside.default-aside{width: 56px; right: -148px;}
+}
+@media only screen and (max-width: 1199px) and (min-width: 0px){
+    .default-content-main{display: block;}
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 760px){
     .micro-cta-text .h3{font-size: 24px;  line-height: 28px;}
 .micro-cta-btns{gap: 16px;}
 .micro-cta-text{padding: 32px;}
-
+.cta-module-main{padding: 32px; }
 }
 @media only screen and (max-width: 759px) and (min-width: 0px){
-    .default-content-main{padding: 39px 0 0;}
+    .default-content-main{padding: 39px 0 40px;}
     .default-content hr{margin-bottom: 20px;}
-    .full-image-caption{margin: 43px 0 37px;}
     .micro-cta-text{padding: 38px 16px 40px;}
     .micro-cta-image{min-height: 144px; max-height: 144px;}
     .micro-cta-thumb img{border-radius: 0 0 10px 10px;}

@@ -58,7 +58,22 @@
                             <li><a href="07-Contact.html">Free Training</a></li>
                         </ul>
                     </nav>
-
+                    <div class="header_ellipse absolute hide-desktop">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="484" height="484" viewBox="0 0 484 484"
+                            fill="none">
+                            <g filter="url(#filter0_f_0_4)">
+                                <circle cx="242" cy="242" r="82" fill="#789291" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_f_0_4" x="0" y="0" width="484" height="484"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                    <feGaussianBlur stdDeviation="80" result="effect1_foregroundBlur_0_4" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
                 </div>
             </div>
     </header>
@@ -103,10 +118,12 @@
                             </a>
                         </div>
                     </div>
+
                     <div class="stat-values-main flex js-website-section">
                         <div class="stat-value js-content-opacity" data-js-animate="fade-in-up" data-duration="1000">
                             <span class="stat-number f-800 fs-40 lh-40 flex">
-                                <span class="counter" data-duration="3000" data-count-to="600">600</span>
+                                <span data-animate="counter" class="counter" data-duration="3000"
+                                    data-count-to="600">0</span>
                                 <span class="stat-letter">K</span>
                                 <span class="stat-symbol">+</span>
                             </span>
@@ -116,7 +133,8 @@
                         </div>
                         <div class="stat-value js-content-opacity" data-js-animate="fade-in-up" data-duration="2000">
                             <span class="stat-number f-800 fs-40 lh-40 flex">
-                                <span class="counter" data-duration="2500" data-count-to="100">100</span>
+                                <span data-animate="counter" class="counter" data-duration="2500"
+                                    data-count-to="100">0</span>
                                 <!-- <span class="stat-letter">K</span> -->
                                 <span class="stat-symbol">+</span>
                             </span>
@@ -127,7 +145,8 @@
                         <div class="stat-value js-content-opacity" data-js-animate="fade-in-up" data-duration="3000">
                             <span class="stat-number f-800 fs-40 lh-40 flex">
                                 <span class="stat-letter">$</span>
-                                <span class="counter" data-duration="2500" data-count-to="1.5">1.5</span>
+                                <span data-animate="counter" class="counter" data-duration="2500"
+                                    data-count-to="1.5">0</span>
                                 <span class="stat-letter">B</span>
                                 <!-- <span class="stat-symbol">+</span> -->
                             </span>
@@ -137,7 +156,8 @@
                         </div>
                         <div class="stat-value js-content-opacity" data-js-animate="fade-in-up" data-duration="4000">
                             <span class="stat-number f-800 fs-40 lh-40 flex">
-                                <span class="counter" data-duration="2500" data-count-to="4">4</span>
+                                <span data-animate="counter" class="counter" data-duration="4000"
+                                    data-count-to="4">0</span>
                                 <span class="stat-letter">K</span>
                                 <span class="stat-symbol">+</span>
                             </span>
@@ -191,10 +211,10 @@
                             <div class="swiper-wrapper value-props-main flex">
                                 <div class="swiper-slide value-props-list fs-16 lh-24 f-400" data-animate="fade-in-up">
                                     <h2 class="h3">Feature or USP</h2>
-                                    <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim
+                                    <!-- <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim
                                         velit
                                         curabitur
-                                        ultrices.</p>
+                                        ultrices.</p> -->
                                     <a href="#" class="text-link flex flex-vcenter">
                                         <span class="hide">Read More</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14"
@@ -283,25 +303,39 @@
                     </div>
                     <div class="scroll-nav-main flex">
                         <div class="scroll-nav-left">
-                            <div class="sticky-widget">
-                                <div class="scroll-nav-stripe relative">
-                                    <div class="scroll-nav-lines absolute">
-                                    </div>
-                                    <div class="scroll-nav-line absolute">
-                                    </div>
-                                    <ul class="scroll-nav-links flex flex-col m-0 no-disc">
-                                        <li><a href="#Featured Case Study Title Appears Here1">Featured Case Study Title
-                                                Appears Here 1</a></li>
-                                        <li><a href="#Featured Case Study Title Appears Here2">The Featured
-                                                Case Study Title Appears Right Here 2</a></li>
-                                        <li><a href="#Featured Case Study Title Appears Here3">Featured Case Study Title
-                                                Appears Here 3</a></li>
-                                        <li><a href="#Featured Case Study Title Appears Here4">The Featured
-                                                Case Study Title Appears Right Here 4</a></li>
-                                        <li><a href="#Featured Case Study Title Appears Here5">Featured Case Study Title
-                                                Appears Here 5</a></li>
-                                    </ul>
+                            <div class="scrolly-sidebar">
+                                <div class="scroll-nav-lines absolute">
                                 </div>
+                                <ul class="scroll-nav-links flex flex-col m-0 no-disc">
+                                    <li><a data-slide="1" href="#Featured Case Study Title Appears Here1">
+                                            <div class="scrolly-line-blue absolute hide-mobile"></div>
+                                            <div class="scrolly-line absolute hide-mobile"></div>Featured Case Study
+                                            Title
+                                            Appears Here 1
+                                        </a></li>
+                                    <li><a data-slide="2" href="#Featured Case Study Title Appears Here2">
+                                            <div class="scrolly-line-blue absolute hide-mobile"></div>
+                                            <div class="scrolly-line absolute hide-mobile"></div>The Featured
+                                            Case Study Title Appears Right Here 2
+                                        </a></li>
+                                    <li><a data-slide="3" href="#Featured Case Study Title Appears Here3">
+                                            <div class="scrolly-line-blue absolute hide-mobile"></div>
+                                            <div class="scrolly-line absolute hide-mobile"></div>Featured Case Study
+                                            Title
+                                            Appears Here 3
+                                        </a></li>
+                                    <li><a data-slide="4" href="#Featured Case Study Title Appears Here4">
+                                            <div class="scrolly-line-blue absolute hide-mobile"></div>
+                                            <div class="scrolly-line absolute hide-mobile"></div>The Featured
+                                            Case Study Title Appears Right Here 4
+                                        </a></li>
+                                    <li><a data-slide="5" href="#Featured Case Study Title Appears Here5">
+                                            <div class="scrolly-line-blue absolute hide-mobile"></div>
+                                            <div class="scrolly-line absolute hide-mobile"></div>Featured Case Study
+                                            Title
+                                            Appears Here 5
+                                        </a></li>
+                                </ul>
 
                             </div>
                         </div>
@@ -334,12 +368,13 @@
                                                 vertical vector pencil community library frame thumbnail. Connection
                                                 frame horizontal thumbnail effect align link pencil clip auto undo.
                                             </p>
-                                            <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path opacity="0.3"
-                                                        d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
-                                                        fill="#0A0A0A" />
+                                            <a href="https://www.youtube.com/watch?v=MJgs00HPqm8" data-type="youtube"
+                                                class="button popup-youtube flex flex-center text-upper w-fit">Watch Now
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                    viewBox="0 0 24 25" fill="none">
+                                                    <path opacity="0.4"
+                                                        d="M12 0.333374C5.3828 0.333374 0 5.71669 0 12.3334C0 18.9501 5.3828 24.3334 12 24.3334C18.6172 24.3334 24 18.9501 24 12.3334C24 5.71669 18.6172 0.333374 12 0.333374ZM16.7705 12.7538L9.77053 17.2538C9.6885 17.307 9.59377 17.3334 9.50002 17.3334C9.41798 17.3334 9.33497 17.3129 9.26077 17.2724C9.09961 17.1845 9 17.0165 9 16.8334V7.83337C9 7.65028 9.09961 7.48228 9.26077 7.39439C9.41897 7.30748 9.6172 7.31283 9.77053 7.41295L16.7705 11.913C16.9131 12.0047 17 12.1635 17 12.3334C17 12.5033 16.9131 12.662 16.7705 12.7538Z"
+                                                        fill="#1C1C1C" />
                                                 </svg>
                                             </a>
                                         </div>
@@ -394,11 +429,11 @@
                                                 frame horizontal thumbnail effect align link pencil clip auto undo.
                                             </p>
                                             <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path opacity="0.3"
-                                                        d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
-                                                        fill="#0A0A0A" />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                    viewBox="0 0 24 25" fill="none">
+                                                    <path opacity="0.4"
+                                                        d="M12 0.333374C5.3828 0.333374 0 5.71669 0 12.3334C0 18.9501 5.3828 24.3334 12 24.3334C18.6172 24.3334 24 18.9501 24 12.3334C24 5.71669 18.6172 0.333374 12 0.333374ZM16.7705 12.7538L9.77053 17.2538C9.6885 17.307 9.59377 17.3334 9.50002 17.3334C9.41798 17.3334 9.33497 17.3129 9.26077 17.2724C9.09961 17.1845 9 17.0165 9 16.8334V7.83337C9 7.65028 9.09961 7.48228 9.26077 7.39439C9.41897 7.30748 9.6172 7.31283 9.77053 7.41295L16.7705 11.913C16.9131 12.0047 17 12.1635 17 12.3334C17 12.5033 16.9131 12.662 16.7705 12.7538Z"
+                                                        fill="#1C1C1C" />
                                                 </svg>
                                             </a>
                                         </div>
@@ -453,11 +488,11 @@
                                                 frame horizontal thumbnail effect align link pencil clip auto undo.
                                             </p>
                                             <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path opacity="0.3"
-                                                        d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
-                                                        fill="#0A0A0A" />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                    viewBox="0 0 24 25" fill="none">
+                                                    <path opacity="0.4"
+                                                        d="M12 0.333374C5.3828 0.333374 0 5.71669 0 12.3334C0 18.9501 5.3828 24.3334 12 24.3334C18.6172 24.3334 24 18.9501 24 12.3334C24 5.71669 18.6172 0.333374 12 0.333374ZM16.7705 12.7538L9.77053 17.2538C9.6885 17.307 9.59377 17.3334 9.50002 17.3334C9.41798 17.3334 9.33497 17.3129 9.26077 17.2724C9.09961 17.1845 9 17.0165 9 16.8334V7.83337C9 7.65028 9.09961 7.48228 9.26077 7.39439C9.41897 7.30748 9.6172 7.31283 9.77053 7.41295L16.7705 11.913C16.9131 12.0047 17 12.1635 17 12.3334C17 12.5033 16.9131 12.662 16.7705 12.7538Z"
+                                                        fill="#1C1C1C" />
                                                 </svg>
                                             </a>
                                         </div>
@@ -512,11 +547,11 @@
                                                 frame horizontal thumbnail effect align link pencil clip auto undo.
                                             </p>
                                             <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path opacity="0.3"
-                                                        d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
-                                                        fill="#0A0A0A" />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                    viewBox="0 0 24 25" fill="none">
+                                                    <path opacity="0.4"
+                                                        d="M12 0.333374C5.3828 0.333374 0 5.71669 0 12.3334C0 18.9501 5.3828 24.3334 12 24.3334C18.6172 24.3334 24 18.9501 24 12.3334C24 5.71669 18.6172 0.333374 12 0.333374ZM16.7705 12.7538L9.77053 17.2538C9.6885 17.307 9.59377 17.3334 9.50002 17.3334C9.41798 17.3334 9.33497 17.3129 9.26077 17.2724C9.09961 17.1845 9 17.0165 9 16.8334V7.83337C9 7.65028 9.09961 7.48228 9.26077 7.39439C9.41897 7.30748 9.6172 7.31283 9.77053 7.41295L16.7705 11.913C16.9131 12.0047 17 12.1635 17 12.3334C17 12.5033 16.9131 12.662 16.7705 12.7538Z"
+                                                        fill="#1C1C1C" />
                                                 </svg>
                                             </a>
                                         </div>
@@ -571,11 +606,11 @@
                                                 frame horizontal thumbnail effect align link pencil clip auto undo.
                                             </p>
                                             <a href="#" class="button flex flex-center text-upper w-fit">Watch Now
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path opacity="0.3"
-                                                        d="M12 0C5.37224 0 0 5.37224 0 12C0 18.6278 5.37224 24 12 24C18.6278 24 24 18.627 24 12C24 5.37302 18.6278 0 12 0ZM16.902 12.6593L12.6593 16.902C12.366 17.1953 11.8913 17.1953 11.5988 16.902C11.3055 16.6087 11.3055 16.134 11.5988 15.8415L14.6895 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H14.6895L11.5987 8.15926C11.3055 7.866 11.3055 7.39126 11.5987 7.09875C11.892 6.80549 12.3667 6.80549 12.6592 7.09875L16.902 11.3415C17.082 11.5215 17.1375 11.7675 17.097 12.0008C17.1375 12.2325 17.0813 12.4793 16.902 12.6593Z"
-                                                        fill="#0A0A0A" />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                    viewBox="0 0 24 25" fill="none">
+                                                    <path opacity="0.4"
+                                                        d="M12 0.333374C5.3828 0.333374 0 5.71669 0 12.3334C0 18.9501 5.3828 24.3334 12 24.3334C18.6172 24.3334 24 18.9501 24 12.3334C24 5.71669 18.6172 0.333374 12 0.333374ZM16.7705 12.7538L9.77053 17.2538C9.6885 17.307 9.59377 17.3334 9.50002 17.3334C9.41798 17.3334 9.33497 17.3129 9.26077 17.2724C9.09961 17.1845 9 17.0165 9 16.8334V7.83337C9 7.65028 9.09961 7.48228 9.26077 7.39439C9.41897 7.30748 9.6172 7.31283 9.77053 7.41295L16.7705 11.913C16.9131 12.0047 17 12.1635 17 12.3334C17 12.5033 16.9131 12.662 16.7705 12.7538Z"
+                                                        fill="#1C1C1C" />
                                                 </svg>
                                             </a>
                                         </div>
@@ -606,7 +641,7 @@
                                 <div class="scroll-nav-cta-line absolute z-2" data-animate="roll-in animate-once"></div>
                                 <div class="scroll-nav-cta-main flex flex-vcenter dark-black-bg relative o-hidden">
                                     <div class="scroll-nav-cta-title inverted">
-                                        <h2 class="h3 mb-0">Watch more case studies CTA module...</h2>
+                                        <h2 class="h3 mb-0 f-700">Watch more case studies CTA module...</h2>
                                     </div>
                                     <div class="scroll-nav-cta-link">
                                         <a href="#" class="button flex flex-center text-upper w-fit">View More Case
@@ -670,7 +705,7 @@
                             <h2 data-animate="lines">A short headline appears here highlighting the incredible impact
                                 the brand is making with people around the world.</h2>
                         </div>
-                        <div class="our-testimonial-mountain absolute">
+                        <div class="our-testimonial-mountain absolute" data-animate="">
                             <!-- <picture class="object-fit">
                                 <source srcset="images/mountain.svg" media="(min-width: 760px)">
                                 <img src="images/mountain.svg" alt="">
@@ -799,11 +834,11 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="our-testimonials-main flex flex-vcenter row-reverse">
-                                    <div class="our-testimonials-image radius-img-20">
+                                <div class="our-testimonials-main no_image flex flex-vcenter row-reverse">
+                                    <!-- <div class="our-testimonials-image radius-img-20">
                                         <figure class="object-fit"><img src="images/our-testimonials@2x.jpg" alt="">
                                         </figure>
-                                    </div>
+                                    </div> -->
                                     <div class="our-testimonials-text white-70 fs-18 lh-28 inverted">
                                         <span class="optional-text fs-24 lh-28 f-500">What our clients say...</span>
                                         <h2 class="fs-40 lh-48">A short headline about First Lastname a featured person
@@ -1152,7 +1187,7 @@
         <section class="large-cta-section relative">
             <div class="large-cta-bg background-bg">
                 <picture class="object-fit">
-                    <source srcset="images/large-cta@2x.jpg" media="(min-width:768px)">
+                    <source srcset="images/large-cta@2x.jpg" media="(min-width:760px)">
                     <img src="images/large-cta-mobile@2x.jpg" alt="large-cta-mobile" title="large-cta-mobile">
                 </picture>
                 <div class="large-cta-overlay background-text"></div>

@@ -1,12 +1,12 @@
 
 
-@import "./elements/_avatar.css?v=6";
-@import "./elements/_case-studies-cta.css?v=6";
+@import "./elements/_avatar.css?v=77661";
+@import "./elements/_case-studies-cta.css?v=77661";
 
 
-@import "./sections/case-stduies-banner-section.css?v=6";
-@import "./sections/reviews-section.css?v=6";
-@import "./sections/large-cta-section.css?v=6";
+@import "./sections/case-stduies-banner-section.css?v=77661";
+@import "./sections/reviews-section.css?v=77661";
+@import "./sections/large-cta-section.css?v=77661";
 
 
 body{background-color: var(--Charcoal-Black);}

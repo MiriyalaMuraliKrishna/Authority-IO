@@ -4,118 +4,59 @@
 
 
 
-/* .share-icons-main{min-height: 300px;} */
-.share-icons{margin: 0; padding: 20px 0 20px; background-color: var(--Umber);}
-.share-icons #st-1.st-animated{gap: 8px; flex-direction: column; display: flex; flex-wrap: nowrap; z-index: 1; flex: 1;}
-.share-icons #st-1.st-animated .st-btn{padding: 0; margin: 0; width: 100%; height: 44px; min-width: 100%; font-size: 24px; line-height: 24px; position: relative; z-index: 1; font-family: "Font Awesome 6 Brands"; font-weight: 400; display: flex !important; align-items: center; justify-content: center; transition: var(--b-transition); background: none; color: var(--White);}
-.share-icons #st-1.st-animated .st-btn:hover{background: var(--Orange) !important; color: var(--White) !important; opacity: 1;}
-.share-icons #st-1.st-animated span.st-label{display: none;}
-.share-icons #st-1.st-animated .st-btn[data-network="sharethis"]::after {display: none; content: "\f1e0"; font-family: "Font Awesome 6 Pro"; } 
-.share-icons #st-1.st-animated .st-btn[data-network="facebook"]::after {content: "\f09a"; } 
-.share-icons #st-1.st-animated .st-btn[data-network="twitter"]::after {content: "\e61b"; } 
-.share-icons #st-1.st-animated .st-btn[data-network="whatsapp"]::after {content: "\f232"; } 
-.share-icons #st-1.st-animated .st-btn[data-network="linkedin"]::after{content: "\f0e1"; }
-.share-icons #st-1.st-animated .st-btn[data-network="email"]::after{content: "\40"; font-family: "Font Awesome 6 Pro"; font-weight: 400;}
-.share-icons #st-1.st-animated .st-btn[data-network="mailru"]::after{content: "\40"; font-family: "Font Awesome\ 6 Pro"; }
-.share-icons #st-1.st-animated .st-btn[data-network="blogger"]::after{content: "\e1e5"; }
+/* body .share-icons-main{min-height: 300px;} */
+body .share-icons{margin: 0; padding: 20px 0 20px;}
+body .share-icons div.st-animated{gap: 8px; display: flex; flex-wrap: nowrap; z-index: 1; flex: 1;}
+body .share-icons div.st-animated .st-btn{padding: 0 !important; margin: 0 !important; width: 100%; height: 56px !important; flex: 0 0 56px !important; min-width: 56px !important; min-height: 56px !important; position: relative; z-index: 1; display: flex !important; align-items: center; justify-content: center; transition: var(--b-transition); border-radius: 20px !important; color: var(--White); border: none !important; background: var(--White) !important; transition: var(--b-transition) !important;}
+body .share-icons div.st-animated .st-btn:hover{background: var(--Muted-Ochre) !important; color: var(--White) !important; top: 0 !important; opacity: 1 !important;}
+body .share-icons div.st-animated span.st-label{display: none !important;}
+body .share-icons div.st-animated .st-btn::after{content: ""; display: block; background-repeat: no-repeat; background-size: contain;}
+body .share-icons div.st-animated .st-btn[data-network="sharethis"]::after {width: 17px; height: 20px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='21' viewBox='0 0 18 21' fill='none'%3E%3Cpath d='M14 13.0002C15.0156 13.0002 15.9141 13.3909 16.6562 14.094C17.3594 14.8362 17.75 15.7346 17.75 16.7502C17.75 17.8049 17.3594 18.7034 16.6562 19.4065C15.9141 20.1487 15.0156 20.5002 14 20.5002C12.9453 20.5002 12.0469 20.1487 11.3438 19.4065C10.6016 18.7034 10.25 17.8049 10.25 16.7502C10.25 16.4768 10.25 16.2034 10.3281 15.9299L6.34375 13.4299C5.64062 13.9768 4.85938 14.2502 4 14.2502C2.94531 14.2502 2.04688 13.8987 1.34375 13.1565C0.601562 12.4534 0.25 11.5549 0.25 10.5002C0.25 9.48462 0.601562 8.58618 1.34375 7.84399C2.04688 7.14087 2.94531 6.75024 4 6.75024C4.85938 6.75024 5.64062 7.02368 6.34375 7.57056L10.3281 5.07056C10.25 4.83618 10.25 4.56274 10.25 4.25024C10.25 3.23462 10.6016 2.33618 11.3438 1.59399C12.0469 0.890869 12.9453 0.500244 14 0.500244C15.0156 0.500244 15.9141 0.890869 16.6562 1.59399C17.3594 2.33618 17.75 3.23462 17.75 4.25024C17.75 5.30493 17.3594 6.20337 16.6562 6.90649C15.9141 7.64868 15.0156 8.00024 14 8.00024C13.1016 8.00024 12.3203 7.72681 11.6562 7.17993L7.67188 9.67993C7.75 10.2268 7.75 10.7737 7.67188 11.3206L11.6562 13.8206C12.3203 13.2737 13.1016 13.0002 14 13.0002Z' fill='%23506461'/%3E%3C/svg%3E");} 
+body .share-icons div.st-animated .st-btn[data-network="facebook"]::after{width: 13px; height: 24px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='24' viewBox='0 0 13 24' fill='none'%3E%3Cpath d='M12.0781 13.5002L12.7344 9.18774H8.5625V6.37524C8.5625 5.15649 9.125 4.03149 11 4.03149H12.9219V0.328369C12.9219 0.328369 11.1875 0.000244141 9.54688 0.000244141C6.125 0.000244141 3.875 2.10962 3.875 5.85962V9.18774H0.03125V13.5002H3.875V24.0002H8.5625V13.5002H12.0781Z' fill='%23506461'/%3E%3C/svg%3E");} 
+body .share-icons div.st-animated .st-btn[data-network="twitter"]::after {width: 23px; height: 19px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='20' viewBox='0 0 24 20' fill='none'%3E%3Cpath d='M21.5156 5.12524C21.5156 5.35962 21.5156 5.54712 21.5156 5.78149C21.5156 12.2971 16.5938 19.7502 7.54688 19.7502C4.73438 19.7502 2.15625 18.9534 0 17.5471C0.375 17.594 0.75 17.6409 1.17188 17.6409C3.46875 17.6409 5.57812 16.844 7.26562 15.5315C5.10938 15.4846 3.28125 14.0784 2.67188 12.1096C3 12.1565 3.28125 12.2034 3.60938 12.2034C4.03125 12.2034 4.5 12.1096 4.875 12.0159C2.625 11.5471 0.9375 9.57837 0.9375 7.18774V7.14087C1.59375 7.51587 2.39062 7.70337 3.1875 7.75024C1.82812 6.85962 0.984375 5.35962 0.984375 3.67212C0.984375 2.73462 1.21875 1.89087 1.64062 1.18774C4.07812 4.14087 7.73438 6.10962 11.8125 6.34399C11.7188 5.96899 11.6719 5.59399 11.6719 5.21899C11.6719 2.50024 13.875 0.297119 16.5938 0.297119C18 0.297119 19.2656 0.859619 20.2031 1.84399C21.2812 1.60962 22.3594 1.18774 23.2969 0.625244C22.9219 1.79712 22.1719 2.73462 21.1406 3.34399C22.125 3.25024 23.1094 2.96899 23.9531 2.59399C23.2969 3.57837 22.4531 4.42212 21.5156 5.12524Z' fill='%23506461'/%3E%3C/svg%3E");} 
+body .share-icons div.st-animated .st-btn[data-network="linkedin"]::after{width: 21px; height: 20px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21' fill='none'%3E%3Cpath d='M4.6875 21.0002H0.328125V6.9846H4.6875V21.0002ZM2.48438 5.1096C1.125 5.1096 0 3.93773 0 2.53148C0 0.6096 2.0625 -0.60915 3.75 0.375225C4.54688 0.7971 5.01562 1.64085 5.01562 2.53148C5.01562 3.93773 3.89062 5.1096 2.48438 5.1096ZM16.6406 21.0002V14.2034C16.6406 12.5627 16.5938 10.5002 14.3438 10.5002C12.0938 10.5002 11.7656 12.2346 11.7656 14.0627V21.0002H7.40625V6.9846H11.5781V8.90648H11.625C12.2344 7.82835 13.6406 6.65648 15.75 6.65648C20.1562 6.65648 21 9.56273 21 13.3127V21.0002H16.6406Z' fill='%23506461'/%3E%3C/svg%3E"); }
+body .share-icons div.st-animated .st-btn[data-network="email"]::after{width: 24px; height: 18px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='18' viewBox='0 0 24 18' fill='none'%3E%3Cpath d='M23.5312 5.95337C22.4062 6.84399 19.9688 8.62524 16.3125 11.2502L15.8438 11.6252C15.0938 12.1877 14.5312 12.6096 14.0625 12.844C13.3125 13.3127 12.6094 13.5002 12 13.5002C11.3438 13.5002 10.6875 13.3127 9.9375 12.8909C9.46875 12.6565 8.90625 12.2346 8.15625 11.6721L7.6875 11.2502C3.89062 8.53149 1.5 6.75024 0.46875 5.95337C0.375 5.90649 0.234375 5.90649 0.140625 5.95337C0.046875 6.00024 0 6.09399 0 6.18774V15.7502C0 16.4065 0.1875 16.9221 0.65625 17.344C1.07812 17.8127 1.59375 18.0002 2.25 18.0002H21.75C22.3594 18.0002 22.875 17.8127 23.3438 17.344C23.7656 16.9221 24 16.4065 24 15.7502V6.18774C24 6.09399 23.9062 6.00024 23.8125 5.90649C23.7188 5.85962 23.625 5.85962 23.5312 5.95337ZM12 12.0002C11.5781 12.0002 11.0625 11.8127 10.5 11.4377C10.125 11.2502 9.65625 10.9221 9.04688 10.4065L8.57812 10.0784C4.73438 7.26587 2.10938 5.34399 0.75 4.26587L0.421875 4.03149C0.140625 3.84399 0 3.51587 0 3.14087V2.25024C0 1.64087 0.1875 1.12524 0.65625 0.656494C1.07812 0.234619 1.59375 0.000244141 2.25 0.000244141H21.75C22.3594 0.000244141 22.875 0.234619 23.3438 0.656494C23.7656 1.12524 24 1.64087 24 2.25024V3.14087C24 3.51587 23.8594 3.84399 23.5781 4.03149L23.3438 4.21899C21.9844 5.29712 19.3594 7.26587 15.4219 10.0784L14.9531 10.4065C14.2969 10.9221 13.8281 11.2502 13.5 11.4377C12.8906 11.8127 12.375 12.0002 12 12.0002Z' fill='%23506461'/%3E%3C/svg%3E");}
 
-/* .share-icons #st-1.st-animated .st-btn[data-network="snapchat"],
-.share-icons #st-1.st-animated .st-btn[data-network="livejournal"],
-.share-icons #st-2.st-animated .st-btn[data-network="snapchat"],
-.share-icons #st-2.st-animated .st-btn[data-network="livejournal"]
-{display: none !important;}
+body .share-icons div.st-animated .st-btn[data-network="sharethis"]:hover::after {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='21' viewBox='0 0 18 21' fill='none'%3E%3Cpath d='M14 13.0002C15.0156 13.0002 15.9141 13.3909 16.6562 14.094C17.3594 14.8362 17.75 15.7346 17.75 16.7502C17.75 17.8049 17.3594 18.7034 16.6562 19.4065C15.9141 20.1487 15.0156 20.5002 14 20.5002C12.9453 20.5002 12.0469 20.1487 11.3438 19.4065C10.6016 18.7034 10.25 17.8049 10.25 16.7502C10.25 16.4768 10.25 16.2034 10.3281 15.9299L6.34375 13.4299C5.64062 13.9768 4.85938 14.2502 4 14.2502C2.94531 14.2502 2.04688 13.8987 1.34375 13.1565C0.601562 12.4534 0.25 11.5549 0.25 10.5002C0.25 9.48462 0.601562 8.58618 1.34375 7.84399C2.04688 7.14087 2.94531 6.75024 4 6.75024C4.85938 6.75024 5.64062 7.02368 6.34375 7.57056L10.3281 5.07056C10.25 4.83618 10.25 4.56274 10.25 4.25024C10.25 3.23462 10.6016 2.33618 11.3438 1.59399C12.0469 0.890869 12.9453 0.500244 14 0.500244C15.0156 0.500244 15.9141 0.890869 16.6562 1.59399C17.3594 2.33618 17.75 3.23462 17.75 4.25024C17.75 5.30493 17.3594 6.20337 16.6562 6.90649C15.9141 7.64868 15.0156 8.00024 14 8.00024C13.1016 8.00024 12.3203 7.72681 11.6562 7.17993L7.67188 9.67993C7.75 10.2268 7.75 10.7737 7.67188 11.3206L11.6562 13.8206C12.3203 13.2737 13.1016 13.0002 14 13.0002Z' fill='white'/%3E%3C/svg%3E");} 
+body .share-icons div.st-animated .st-btn[data-network="facebook"]:hover::after{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='24' viewBox='0 0 13 24' fill='none'%3E%3Cpath d='M12.0781 13.5002L12.7344 9.18774H8.5625V6.37524C8.5625 5.15649 9.125 4.03149 11 4.03149H12.9219V0.328369C12.9219 0.328369 11.1875 0.000244141 9.54688 0.000244141C6.125 0.000244141 3.875 2.10962 3.875 5.85962V9.18774H0.03125V13.5002H3.875V24.0002H8.5625V13.5002H12.0781Z' fill='white'/%3E%3C/svg%3E");} 
+body .share-icons div.st-animated .st-btn[data-network="twitter"]:hover::after {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='20' viewBox='0 0 24 20' fill='none'%3E%3Cpath d='M21.5156 5.12524C21.5156 5.35962 21.5156 5.54712 21.5156 5.78149C21.5156 12.2971 16.5938 19.7502 7.54688 19.7502C4.73438 19.7502 2.15625 18.9534 0 17.5471C0.375 17.594 0.75 17.6409 1.17188 17.6409C3.46875 17.6409 5.57812 16.844 7.26562 15.5315C5.10938 15.4846 3.28125 14.0784 2.67188 12.1096C3 12.1565 3.28125 12.2034 3.60938 12.2034C4.03125 12.2034 4.5 12.1096 4.875 12.0159C2.625 11.5471 0.9375 9.57837 0.9375 7.18774V7.14087C1.59375 7.51587 2.39062 7.70337 3.1875 7.75024C1.82812 6.85962 0.984375 5.35962 0.984375 3.67212C0.984375 2.73462 1.21875 1.89087 1.64062 1.18774C4.07812 4.14087 7.73438 6.10962 11.8125 6.34399C11.7188 5.96899 11.6719 5.59399 11.6719 5.21899C11.6719 2.50024 13.875 0.297119 16.5938 0.297119C18 0.297119 19.2656 0.859619 20.2031 1.84399C21.2812 1.60962 22.3594 1.18774 23.2969 0.625244C22.9219 1.79712 22.1719 2.73462 21.1406 3.34399C22.125 3.25024 23.1094 2.96899 23.9531 2.59399C23.2969 3.57837 22.4531 4.42212 21.5156 5.12524Z' fill='white'/%3E%3C/svg%3E");} 
+body .share-icons div.st-animated .st-btn[data-network="linkedin"]:hover::after{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21' fill='none'%3E%3Cpath d='M4.6875 21.0002H0.328125V6.9846H4.6875V21.0002ZM2.48438 5.1096C1.125 5.1096 0 3.93773 0 2.53148C0 0.6096 2.0625 -0.60915 3.75 0.375225C4.54688 0.7971 5.01562 1.64085 5.01562 2.53148C5.01562 3.93773 3.89062 5.1096 2.48438 5.1096ZM16.6406 21.0002V14.2034C16.6406 12.5627 16.5938 10.5002 14.3438 10.5002C12.0938 10.5002 11.7656 12.2346 11.7656 14.0627V21.0002H7.40625V6.9846H11.5781V8.90648H11.625C12.2344 7.82835 13.6406 6.65648 15.75 6.65648C20.1562 6.65648 21 9.56273 21 13.3127V21.0002H16.6406Z' fill='white'/%3E%3C/svg%3E"); }
+body .share-icons div.st-animated .st-btn[data-network="email"]:hover::after{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='18' viewBox='0 0 24 18' fill='none'%3E%3Cpath d='M23.5312 5.95337C22.4062 6.84399 19.9688 8.62524 16.3125 11.2502L15.8438 11.6252C15.0938 12.1877 14.5312 12.6096 14.0625 12.844C13.3125 13.3127 12.6094 13.5002 12 13.5002C11.3438 13.5002 10.6875 13.3127 9.9375 12.8909C9.46875 12.6565 8.90625 12.2346 8.15625 11.6721L7.6875 11.2502C3.89062 8.53149 1.5 6.75024 0.46875 5.95337C0.375 5.90649 0.234375 5.90649 0.140625 5.95337C0.046875 6.00024 0 6.09399 0 6.18774V15.7502C0 16.4065 0.1875 16.9221 0.65625 17.344C1.07812 17.8127 1.59375 18.0002 2.25 18.0002H21.75C22.3594 18.0002 22.875 17.8127 23.3438 17.344C23.7656 16.9221 24 16.4065 24 15.7502V6.18774C24 6.09399 23.9062 6.00024 23.8125 5.90649C23.7188 5.85962 23.625 5.85962 23.5312 5.95337ZM12 12.0002C11.5781 12.0002 11.0625 11.8127 10.5 11.4377C10.125 11.2502 9.65625 10.9221 9.04688 10.4065L8.57812 10.0784C4.73438 7.26587 2.10938 5.34399 0.75 4.26587L0.421875 4.03149C0.140625 3.84399 0 3.51587 0 3.14087V2.25024C0 1.64087 0.1875 1.12524 0.65625 0.656494C1.07812 0.234619 1.59375 0.000244141 2.25 0.000244141H21.75C22.3594 0.000244141 22.875 0.234619 23.3438 0.656494C23.7656 1.12524 24 1.64087 24 2.25024V3.14087C24 3.51587 23.8594 3.84399 23.5781 4.03149L23.3438 4.21899C21.9844 5.29712 19.3594 7.26587 15.4219 10.0784L14.9531 10.4065C14.2969 10.9221 13.8281 11.2502 13.5 11.4377C12.8906 11.8127 12.375 12.0002 12 12.0002Z' fill='white'/%3E%3C/svg%3E");}
 
- */
 
-.share-icons #st-1.st-animated img{display: none;}
-.share-icons #st-1.st-has-labels .st-btn.st-remove-label{min-width: 100%;}
+body .share-icons div.st-animated img{display: none !important;}
+body .share-icons #st-1.st-has-labels .st-btn.st-remove-label{min-width: 56px;}
 .share-inline-arrow{flex: 0 0 80px; opacity: 0.25;}
 
 
 body.single-post .share-inline-arrow{padding: 35px 0 0 ;}
 
-.share-icons #st-1.st-animated .st-btn[data-network="sharethis"]{background: none !important; color: var(--Orange) !important; font-size: 2.813rem; line-height: 3rem; font-weight: 100;}
-
-
 
 
 /*-- media css starts here --*/
+@media screen and (min-width: 1200px){
+
+body .share-icons div.st-animated{flex-direction: column;}
+}
 @media screen and (min-width: 1024px){
-    .post-video-aside .share-icons{padding-top: 21px;}
-    .share-icons #st-1.st-animated .st-btn[data-network="sharethis"]  {  width: 42px;  margin-right: 7px;}
-    body.page-template-default .share-icons{margin: 55px 0 0;}
+    .post-video-aside body .share-icons{padding-top: 21px;}
+    body.page-template-default body .share-icons{margin: 55px 0 0;}
 }
 @media screen and (max-width: 1299px) and (min-width: 1024px){
-    .share-icons #st-1.st-animated{justify-content: flex-start;}
+    body .share-icons div.st-animated{justify-content: flex-start;}
 }
-@media screen and (max-width: 1023px) and (min-width: 744px){
-    .share-icons #st-1.st-animated{justify-content: flex-start;}
+@media screen and (max-width: 1023px) and (min-width: 760px){
+    #st-1.st-justified, #st-2.st-justified{justify-content: center;}
+    
 }
-@media screen and (max-width: 743px) and (min-width: 200px){
-    .share-icons{display: block;}
-    .share-inline-arrow{flex: 1;}
-    .share-icons #st-1.st-animated{justify-content: flex-start; margin-bottom: 40px;}
-    body.single-post .share-icons #st-1.st-animated{margin-bottom: 0;}
-    .share-icons #st-1.st-animated .st-btn[data-network="sharethis"]  {  width: 42px;  margin-right: 7px;}
-    body.page-template-default .share-icons {margin-top: 55px;}
-    body.single-post .share-icons #st-1.st-animated .st-btn[data-network="sharethis"] {margin-right: 0;}
-
-}
-
-@media screen and (max-width: 389px) and (min-width: 200px){
-    .share-icons #st-1.st-animated .st-btn[data-network="sharethis"] { font-size: 42px; line-height: 3rem; }
-    .share-icons #st-1.st-animated .st-btn{ min-width: 44px; width: 44px; height: 44px; }
-
+@media screen and (max-width: 759px) and (min-width: 200px){
+    body .share-icons{padding: 0;}
+    body .share-icons div.st-animated .st-btn{width: 40px !important; min-width: 40px !important; flex: 0 0 40px !important; height: 40px !important; min-height: 40px !important; border-radius: 14px !important;}
+    body .share-icons div.st-animated .st-btn[data-network="facebook"]::after { width: 10px; height: 18px;}
+    body .share-icons div.st-animated .st-btn[data-network="twitter"]::after { width: 19px; height: 15px;}
+    body .share-icons div.st-animated .st-btn[data-network="linkedin"]::after { width: 16px; height: 16px;}
+    body .share-icons div.st-animated .st-btn[data-network="email"]::after { width: 18px; height: 14px;}
+    body .share-icons div.st-animated .st-btn[data-network="sharethis"]::after { width: 14px; height: 15px;}
+    #st-1.st-justified, #st-2.st-justified{justify-content: center;}
 }
 
-/* .share-icons-main{min-height: 300px;} */
-.share-icons{margin: 0; background-color: var(--Umber);}
-.share-icons #st-2.st-animated{gap: 8px; flex-direction: column; display: flex; flex-wrap: nowrap; z-index: 1; flex: 1;}
-.share-icons #st-2.st-animated .st-btn{padding: 0; margin: 0; width: 56px; height: 56px; min-width: 56px; font-size: 24px; line-height: 24px; position: relative; z-index: 1; font-family: "Font Awesome 6 Brands"; font-weight: 400; display: flex !important; align-items: center; justify-content: center; transition: var(--b-transition); background: var(--Muted-Ochre); color: var(--White); border-radius: 20px;}
-.share-icons #st-2.st-animated .st-btn:hover{ opacity: 1;}
-.share-icons #st-2.st-animated span.st-label{display: none;}
-.share-icons #st-2.st-animated .st-btn[data-network="sharethis"]::after {display: none; content: "\f1e0"; font-family: "Font Awesome 6 Pro"; } 
-.share-icons #st-2.st-animated .st-btn[data-network="facebook"]::after {content: "\f39e"; } 
-.share-icons #st-2.st-animated .st-btn[data-network="twitter"]::after {content: "\e61b"; } 
-.share-icons #st-2.st-animated .st-btn[data-network="linkedin"]::after{content: "\f0e1"; }
-.share-icons #st-2.st-animated .st-btn[data-network="email"]::after{content: "\f0c1"; font-family: "Font Awesome 6 Pro"; font-weight: 900;}
-.share-icons #st-2.st-animated img{display: none;}
-.share-icons #st-2.st-has-labels .st-btn.st-remove-label{min-width: 100%;}
-.share-inline-arrow{flex: 0 0 80px; opacity: 0.25;}
-
-
-body.single-post .share-inline-arrow{padding: 35px 0 0 ;}
-
-.share-icons #st-2.st-animated .st-btn[data-network="sharethis"]{background: none !important; font-size: 2.813rem; line-height: 3rem; font-weight: 100;}
-
-
-
-
-/*-- media css starts here --*/
-@media screen and (min-width: 1024px){
-    .post-video-aside .share-icons{padding-top: 21px;}
-    .share-icons #st-2.st-animated .st-btn[data-network="sharethis"]  {  width: 42px;  margin-right: 7px;}
-    body.page-template-default .share-icons{margin: 55px 0 0;}
-}
-@media screen and (max-width: 1299px) and (min-width: 1024px){
-    .share-icons #st-2.st-animated{justify-content: flex-start;}
-}
-@media screen and (max-width: 1023px) and (min-width: 744px){
-    .share-icons #st-2.st-animated{justify-content: flex-start;}
-}
-@media screen and (max-width: 743px) and (min-width: 200px){
-    .share-icons{display: block;}
-    .share-inline-arrow{flex: 1;}
-    .share-icons #st-2.st-animated{justify-content: flex-start; margin-bottom: 40px;}
-    body.single-post .share-icons #st-2.st-animated{margin-bottom: 0;}
-    .share-icons #st-2.st-animated .st-btn[data-network="sharethis"]  {  width: 42px;  margin-right: 7px;}
-    body.page-template-default .share-icons {margin-top: 55px;}
-    body.single-post   .share-icons #st-2.st-animated .st-btn[data-network="sharethis"] {margin-right: 0;}
-
-}
-
-@media screen and (max-width: 389px) and (min-width: 200px){
-    .share-icons #st-2.st-animated .st-btn[data-network="sharethis"] { font-size: 42px; line-height: 3rem; }
-    .share-icons #st-2.st-animated .st-btn{ min-width: 44px; width: 44px; height: 44px; }
-
-}

@@ -1,0 +1,31 @@
+
+
+
+
+
+@import url("./sections/large-cta-section.css?v=77661");
+
+
+
+
+
+
+body{background-color: var(--Charcoal-Black);}
+
+
+.page-not-main {
+    max-width: 475px;
+  }
+  .page-not-text {
+    padding: 177px 0 80px;
+  }
+  .page-not-text span.optional-text {
+  
+    text-transform:uppercase;
+  }
+  .page-not-text h1 {
+    margin-bottom:31px
+  }
+  .page-not-text p {
+    margin-bottom:24px
+  }

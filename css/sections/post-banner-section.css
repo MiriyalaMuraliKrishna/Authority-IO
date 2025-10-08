@@ -1,4 +1,4 @@
-.post-banner-main {padding: 197px 0 102px;}
+.post-banner-main{padding: 197px 0 102px;}
 .post-banner-gradient{ background: linear-gradient(270deg, rgba(28, 28, 28, 0.00) 50%, rgba(28, 28, 28, 0.70) 83.65%); }
 .post-banner-overlay{ opacity: 0.5; background-color: var(--Charcoal-Black);}
 .post-banner-ellipse{ left: -256px; bottom: -286.733px; border-radius: 388.261px; background: var(--Muted-Ochre); filter: blur(75px); width: 388.261px; height: 388.261px; transform: rotate(-2.485deg); z-index: -1;}
@@ -20,5 +20,6 @@ ul.post-banner-categories > li:first-child:before{display: none;}
 
 }
 @media only screen and (max-width: 759px) and (min-width: 0px){
-    
+    .post-banner-gradient{background: linear-gradient(185deg, rgba(28, 28, 28, 0.00) 43.27%, #1C1C1C 77.8%);}
+    .post-banner-main{padding: 197px 0 33px; min-height: 700px;}
 }
