@@ -28,12 +28,14 @@ ul.blog-post-order > li:first-child::before{display: none;}
 .blog-post-form input{padding: 8px 16px 10px; background-color: var(--White); width: 100%; font-weight: 600; font-size: 14px; line-height: 18px; border: none; border-radius: 10px;}
 .blog-post-form button{top: 50%; right: 10px; transform: translateY(-50%); border: none; background: none; margin: 0; padding: 0;}
 .blog-post-form button svg{animation: none;}
+ul#blog_list{margin: 0;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .blog-post-main{padding: 0 0 40px;}
     .blog-post-row{gap: 40px;}
     .blog-post-list{flex: 0 0 calc(33.33333% - 27px);}
+    .load_more_news span#more-blog:not(:last-child){margin-bottom: 40px; display: block;}
 }   
 @media only screen and (max-width: 1199px) and (min-width: 1024px){
     .blog-post-row{gap: 32px;}

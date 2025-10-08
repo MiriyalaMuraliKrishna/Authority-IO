@@ -104,7 +104,7 @@ body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:not(:has(s
 .button:hover svg, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover svg, button:hover svg{ transform: translateX(4px);}
 .button.reverse{flex-direction: row-reverse;}
 .button.transparent{padding: 8px 10px 9px 20px; border: 1px solid var(--Light-Gray); color: var(--White); background: transparent;}
-.button.transparent:hover{border-color: var(--Muted-Ochre); background-color: var(--Muted-Ochre);}
+.button.transparent:hover{border-color: var(--Muted-Ochre); background-color: var(--Muted-Ochre); color: var(--Text-Color);}
 .button.transparent:hover svg path{stroke: var(--Charcoal-Black); fill: var(--Charcoal-Black);}
 .button.transparent svg{width: 21px;}
 .button.transparent svg path{transition: var(--b-transition);}

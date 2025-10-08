@@ -1,6 +1,6 @@
-// import { animate } from "animejs";
 import $ from 'jquery';
 import 'is-in-viewport';
+import { mountain } from './mountain';
 
 class Animate {
   constructor(selector) {
@@ -15,6 +15,9 @@ class Animate {
 
         if ($ele.is(':in-viewport')) {
           $ele.addClass(animateType + ' visible');
+          setTimeout(() => {
+            mountain.play();
+          }, 4000);
           if (timeline && !timeline.played) {
             timeline.restart().play();
             timeline.played = true; // mark as played (avoid repeat)
@@ -22,7 +25,6 @@ class Animate {
           if (animateType === 'counter') {
             const $counter = $ele[0];
             if ($counter.counter && $counter.counter.paused) {
-              console.log($counter);
               $counter.counter.start();
             }
           }

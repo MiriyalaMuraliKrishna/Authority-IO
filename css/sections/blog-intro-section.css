@@ -20,6 +20,12 @@
 .blog-intro-list:nth-child(3) h2{margin-bottom: 27px; font-size: 20px; line-height: 25px; letter-spacing: -0.4px;}
 .blog-intro-list:nth-child(3) hr{margin-bottom: 30px;}
 
+.no_featured_image .background-text{background-color: var(--White); color: var(--Charcoal-Black); border-radius: 20px; position: static;}
+.no_featured_image .blog-intro-text, .no_featured_image .blog-intro-text p{color: var(--Charcoal-Black);}
+.no_featured_image .blog-intro-text h2 a{color: var(--Charcoal-Black);}
+.no_featured_image .blog-intro-text h2 a:hover{color: var(--Muted-Ochre);}
+.no_featured_image .blog-intro-text a.text-link svg path{fill: var(--Bluish-Gray);}
+
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .blog-intro-main{padding: 176px 0 0;}
