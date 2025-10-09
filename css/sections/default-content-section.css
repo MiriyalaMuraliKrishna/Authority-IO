@@ -17,7 +17,8 @@ article h1, article h2, article h3, article h4, article h5, article h6{color: va
 .micro-cta-text{padding: 40px;}
 .micro-cta-thumb img{border-radius: 0 10px 10px 0;}
 
-.article-cta-main{padding: 14px 40px 16px; margin: 64px 0 64px; gap: 16px; background-color: var(--Background);}
+.article-cta-main{padding: 14px 40px 16px; margin: 64px 0 64px; gap: 16px; background-color: var(--Mid-Gray);}
+
 .article-cta-title{flex: 1; letter-spacing: -0.48px;}
 .article-cta-link{width: fit-content;}
 
@@ -29,7 +30,7 @@ article h1, article h2, article h3, article h4, article h5, article h6{color: va
 
 
 .cta-module-main{margin: 64px 0 64px; padding: 28px 48px; }
-.cta-module-bg{ background-image: url('../../images/large-cta-bg@2x.jpg'); background-repeat: no-repeat; background-size: cover;}
+/* .cta-module-bg{ background-image: url('../../images/large-cta-bg@2x.jpg'); background-repeat: no-repeat; background-size: cover;} */
 .cta-module-overlay{background-color: var(--Charcoal-Black); opacity: 0.7;}
 .cta-module-gradient{background: linear-gradient(90deg, rgba(28, 28, 28, 0.00) 0.72%, #1C1C1C 63.11%);}
 .cta-module-title{flex: 1; color: var(--White);}
@@ -93,7 +94,7 @@ aside.default-aside{width: 56px; right: -148px;}
     .micro-cta-main{margin: 39px 0 38px;}
     .default-content ul > li{margin-bottom: 15px;}
     .cta-module-main{padding: 33px 16px 28px; margin: 41px 0 40px; display: block;} 
-    .cta-module-bg{ background-image: url('../../images/large-cta-bg-mobile@2x.jpg');}
+    /* .cta-module-bg{ background-image: url('../../images/large-cta-bg-mobile@2x.jpg');} */
     .cta-module-gradient{background: linear-gradient(90deg, rgba(28, 28, 28, 0.00) 0.72%, #1C1C1C 63.11%);}
     .cta-module-title{margin-bottom: 20px;}
 
@@ -104,6 +105,8 @@ aside.default-aside{width: 56px; right: -148px;}
     .fluid-blockquote{margin: 0 0 38px;}
     .fluid-blockquote blockquote{padding: 40px 32px; font-size: 26px; line-height: 33px; letter-spacing: -0.52px;}
     .fluid-blockquote .quote-avatar{margin-top: 25px;}
+
+    body.single .default-aside{padding-top: 14px;}
 }
 
 

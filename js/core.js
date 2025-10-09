@@ -13,6 +13,7 @@ import { slickme } from './elements/customSlick.js';
 import { stickme } from './elements/sticksy.js';
 import { cards } from './elements/swipecards.js';
 import { spyScroll } from './elements/spyScroll.js';
+import { categories } from './elements/categories.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   header.init();
@@ -32,4 +33,5 @@ document.addEventListener('DOMContentLoaded', () => {
   slickme.init();
   stickme.init();
   cards.init();
+  categories.init();
 });

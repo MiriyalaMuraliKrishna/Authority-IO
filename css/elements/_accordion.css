@@ -5,9 +5,9 @@
 .accordion-icon{transition: var(--b-transition); position: absolute; right: 31px; top: 50%; transform: translateY(-50%); width: 10px; height: 11px;}
 .accordion-icon svg{top: 50%; left: 50%; transform: translate(-50%,-50%); transition: all 0.5s ease; position: absolute;}
 .accordion-icon svg:not(:first-child){opacity: 0;}
-.accordion-header:hover .accordion-icon svg:first-child{opacity: 0;}
-.accordion-header:hover .accordion-icon svg:last-child{opacity: 1;}
-.accordion-header.open:hover .accordion-icon svg,
+.accordion-header.open .accordion-icon svg:first-child{opacity: 0;}
+.accordion-header.open .accordion-icon svg:last-child{opacity: 1;}
+/* .accordion-header.open:hover .accordion-icon svg, */
 .accordion-header.open .accordion-icon svg{top: calc(50% + 0px); transform: translate(-50%, -50%) rotate(180deg);}
 
 
@@ -42,7 +42,7 @@
     .accordion-main{padding: 40px 0 60px;}
 }
 @media screen and (max-width: 759px) and (min-width: 0px){
-    .accordion-main{padding: 24px 0 40px;}
+    .accordion-main{padding: 24px 0 32px;}
     .accordion-header{padding: 16px 48px 16px 24px;}
     .accordion-desc {padding: 5px 24px 17px;}
     .accordion-wrap { padding: 50px 0 20px; }

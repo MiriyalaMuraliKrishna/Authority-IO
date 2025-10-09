@@ -1,12 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-  jQuery("select").selectBox({
+jQuery(function () {
+  jQuery('select').selectBox({
     keepInViewport: false,
-    menuSpeed: "normal",
+    menuSpeed: 'normal',
     mobile: true,
     hideOnWindowScroll: true,
-    menuTransition: "slide",
+    menuTransition: 'slide',
   });
-  jQuery(".selectBox, .selectBox-dropdown .selectBox-label").removeAttr(
-    "style"
+  jQuery('.selectBox, .selectBox-dropdown .selectBox-label').removeAttr(
+    'style'
   );
 });

@@ -37,7 +37,7 @@
         async='async'></script>
 </head>
 
-<body>
+<body class="single">
     <header class="site-header">
         <div class="container">
             <div class="header radius-12 blur-5 flex flex-vcenter">
@@ -83,9 +83,9 @@
                     <div class="post-banner-text inverted fs-20 lh-30 white-70 f-500">
                         <hr data-animate="hithere">
                         <h1>This is the sample post heading on two lines</h1>
-                        <ul class="post-banner-categories m-0 f-700 flex fs-14 lh-14">
-                            <li>Category</li>
-                            <li>MM/DD/YYYY</li>
+                        <ul class="post-banner-categories m-0 f-700 flex flex-vcenter fs-14 lh-18">
+                            <li class="mb-0">Category</li>
+                            <li class="mb-0">MM/DD/YYYY</li>
                         </ul>
                     </div>
                 </div>
@@ -241,7 +241,13 @@
                             fermentum
                             aliquet egestas.</p>
                         <div class="cta-module-wrap relative">
-                            <div class="cta-module-bg background-bg"></div>
+                            <div class="cta-module-bg background-bg">
+                                <picture class="object-fit">
+                                    <source srcset="images/large-cta-bg@2x.jpg" media="(min-width:760px)">
+                                    <img src="images/large-cta-bg-mobile@2x.jpg" alt="default-banner-mobile"
+                                        title="large-cta-bg-mobile">
+                                </picture>
+                            </div>
                             <div class="cta-module-gradient background-bg z-0"></div>
                             <div class="cta-module-overlay background-bg z-1"></div>
                             <div class="cta-module-main flex relative z-2 o-hidden">

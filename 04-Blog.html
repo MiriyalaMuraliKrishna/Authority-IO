@@ -240,22 +240,359 @@
         <section class="blog-post-section gray-bg">
             <div class="container">
                 <div class="blog-post-main">
-                    <div class="blog-post-right">
+                    <div class="blog-post-right relative z-2">
                         <ul class="blog-post-order m-0 flex flex-end">
-                            <!-- <li>  -->
-                            <!-- <div class="blog-post-select">
-                                <select name="" id="">
-                                    <option value="Categories">Categories</option>
-                                    <option value="Categories">Categories</option>
-                                    <option value="Categories">Categories</option>
-                                    <option value="Categories">Categories</option>
-                                    <option value="Categories">Categories</option>
-                                    <option value="Categories">Categories</option>
-                                    <option value="Categories">Categories</option>
-                                </select>
-                            </div> -->
-                            <!-- </li> -->
-                            <li>
+                            <li class="mb-0">
+                                <div class="blog-post-select">
+                                    <div class="post-categories-btn white-bg radius-10 relative">
+                                        <span class="post-categories-text fs-14 lh-20 f-600">Categories</span>
+                                        <span class="post-categories-arrow absolute"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="13" height="6"
+                                                viewBox="0 0 13 6" fill="none">
+                                                <path
+                                                    d="M6.25298 4.34958C6.41701 4.36976 6.58296 4.36976 6.74698 4.34958C7.00822 4.31751 7.29988 4.19674 7.75397 3.84482C8.2214 3.48253 8.77317 2.94711 9.57476 2.16657L11.55 0.243314C11.8796 -0.0776291 12.4164 -0.0799198 12.749 0.238187C13.0816 0.556294 13.084 1.07436 12.7543 1.39531L10.7435 3.35315C9.98623 4.0906 9.36721 4.69321 8.81567 5.12063C8.2422 5.56514 7.66014 5.88689 6.96142 5.97283C6.65496 6.01052 6.345 6.01052 6.03854 5.97283C5.33982 5.88689 4.75776 5.56514 4.18425 5.12063C3.63273 4.69321 3.01378 4.0906 2.25644 3.35315L0.245654 1.39531C-0.0839573 1.07436 -0.0815718 0.556294 0.251001 0.238187C0.583574 -0.0799198 1.12038 -0.0776291 1.44999 0.243314L3.42521 2.16657C4.22684 2.94711 4.77856 3.48253 5.24599 3.84482C5.70009 4.19674 5.99174 4.31751 6.25298 4.34958Z"
+                                                    fill="#789291" />
+                                            </svg></span>
+                                    </div>
+                                    <div class="post-categories-wrap absolute">
+                                        <form action="" class="post-categories-form flex flex-end">
+                                            <div class="post-categories-field">
+                                                <label for="Clear" class="clear">
+                                                    <span class="flex flex-vcenter">Clear<svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                                                            viewBox="0 0 12 13" fill="none">
+                                                            <path
+                                                                d="M1.54197 0.436367C1.543 0.197044 1.35642 0.00217077 1.12523 0.00110304C0.894045 3.53052e-05 0.705795 0.193178 0.704763 0.432499L0.699712 1.60482C0.69782 2.04097 0.696246 2.40475 0.727094 2.69721C0.759455 3.00397 0.83179 3.2867 1.0154 3.5323C1.06512 3.59881 1.11984 3.66103 1.17903 3.7184C1.21388 3.75219 1.25028 3.78429 1.28811 3.8146C1.52536 4.00467 1.79848 4.07955 2.09481 4.11305C2.37733 4.14498 2.72872 4.14335 3.15004 4.1414L4.28255 4.13617C4.51373 4.1351 4.70031 3.94023 4.69928 3.7009C4.69825 3.46158 4.51 3.26844 4.27881 3.26951L3.17051 3.27463C2.71874 3.27671 2.41528 3.27746 2.1857 3.2515C2.16843 3.24955 2.15191 3.24748 2.1361 3.24529C2.36689 2.97591 2.62356 2.73082 2.90206 2.51421C3.76498 1.84308 4.83704 1.44554 6 1.44554C8.85131 1.44554 11.1628 3.83833 11.1628 6.78999C11.1628 9.74162 8.85131 12.1344 6 12.1344C3.14867 12.1344 0.837209 9.74162 0.837209 6.78999C0.837209 6.55067 0.649792 6.35665 0.418605 6.35665C0.187418 6.35665 0 6.55067 0 6.78999C0 10.2203 2.68629 13.0011 6 13.0011C9.31373 13.0011 12 10.2203 12 6.78999C12 3.35969 9.31373 0.578876 6 0.578876C4.64949 0.578876 3.40211 1.04128 2.39917 1.82132C2.09596 2.05714 1.81506 2.32201 1.56031 2.61194L1.55936 2.60313C1.53429 2.36546 1.53501 2.05133 1.53702 1.58367L1.54197 0.436367Z"
+                                                                fill="#789291" />
+                                                        </svg></span>
+                                                    <input type="checkbox" value="Clear">
+                                                </label>
+                                            </div>
+
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Sub-Category">
+                                                    <span class="flex flex-vcenter">Sub-Category</span>
+                                                    <input type="checkbox" value="Sub-Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Another Category">
+                                                    <span class="flex flex-vcenter">Another Category</span>
+                                                    <input type="checkbox" value="Another Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Category">
+                                                    <span class="flex flex-vcenter">Category</span>
+                                                    <input type="checkbox" value="Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Topic">
+                                                    <span class="flex flex-vcenter">Topic</span>
+                                                    <input type="checkbox" value="Topic">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Sub-Category">
+                                                    <span class="flex flex-vcenter">Sub-Category</span>
+                                                    <input type="checkbox" value="Sub-Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Another Category">
+                                                    <span class="flex flex-vcenter">Another Category</span>
+                                                    <input type="checkbox" value="Another Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Category">
+                                                    <span class="flex flex-vcenter">Category</span>
+                                                    <input type="checkbox" value="Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Topic">
+                                                    <span class="flex flex-vcenter">Topic</span>
+                                                    <input type="checkbox" value="Topic">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Sub-Category">
+                                                    <span class="flex flex-vcenter">Sub-Category</span>
+                                                    <input type="checkbox" value="Sub-Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Another Category">
+                                                    <span class="flex flex-vcenter">Another Category</span>
+                                                    <input type="checkbox" value="Another Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Category">
+                                                    <span class="flex flex-vcenter">Category</span>
+                                                    <input type="checkbox" value="Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Topic">
+                                                    <span class="flex flex-vcenter">Topic</span>
+                                                    <input type="checkbox" value="Topic">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Sub-Category">
+                                                    <span class="flex flex-vcenter">Sub-Category</span>
+                                                    <input type="checkbox" value="Sub-Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Another Category">
+                                                    <span class="flex flex-vcenter">Another Category</span>
+                                                    <input type="checkbox" value="Another Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Category">
+                                                    <span class="flex flex-vcenter">Category</span>
+                                                    <input type="checkbox" value="Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Topic">
+                                                    <span class="flex flex-vcenter">Topic</span>
+                                                    <input type="checkbox" value="Topic">
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-0">
+                                <div class="blog-post-select">
+                                    <div class="post-categories-btn white-bg radius-10 relative">
+                                        <span class="post-categories-text fs-14 lh-20 f-600">Categories</span>
+                                        <span class="post-categories-arrow absolute"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="13" height="6"
+                                                viewBox="0 0 13 6" fill="none">
+                                                <path
+                                                    d="M6.25298 4.34958C6.41701 4.36976 6.58296 4.36976 6.74698 4.34958C7.00822 4.31751 7.29988 4.19674 7.75397 3.84482C8.2214 3.48253 8.77317 2.94711 9.57476 2.16657L11.55 0.243314C11.8796 -0.0776291 12.4164 -0.0799198 12.749 0.238187C13.0816 0.556294 13.084 1.07436 12.7543 1.39531L10.7435 3.35315C9.98623 4.0906 9.36721 4.69321 8.81567 5.12063C8.2422 5.56514 7.66014 5.88689 6.96142 5.97283C6.65496 6.01052 6.345 6.01052 6.03854 5.97283C5.33982 5.88689 4.75776 5.56514 4.18425 5.12063C3.63273 4.69321 3.01378 4.0906 2.25644 3.35315L0.245654 1.39531C-0.0839573 1.07436 -0.0815718 0.556294 0.251001 0.238187C0.583574 -0.0799198 1.12038 -0.0776291 1.44999 0.243314L3.42521 2.16657C4.22684 2.94711 4.77856 3.48253 5.24599 3.84482C5.70009 4.19674 5.99174 4.31751 6.25298 4.34958Z"
+                                                    fill="#789291" />
+                                            </svg></span>
+                                    </div>
+                                    <div class="post-categories-wrap absolute">
+                                        <form action="" class="post-categories-form flex flex-end">
+                                            <div class="post-categories-field">
+                                                <label for="Clear" class="clear">
+                                                    <span class="flex flex-vcenter">Clear<svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                                                            viewBox="0 0 12 13" fill="none">
+                                                            <path
+                                                                d="M1.54197 0.436367C1.543 0.197044 1.35642 0.00217077 1.12523 0.00110304C0.894045 3.53052e-05 0.705795 0.193178 0.704763 0.432499L0.699712 1.60482C0.69782 2.04097 0.696246 2.40475 0.727094 2.69721C0.759455 3.00397 0.83179 3.2867 1.0154 3.5323C1.06512 3.59881 1.11984 3.66103 1.17903 3.7184C1.21388 3.75219 1.25028 3.78429 1.28811 3.8146C1.52536 4.00467 1.79848 4.07955 2.09481 4.11305C2.37733 4.14498 2.72872 4.14335 3.15004 4.1414L4.28255 4.13617C4.51373 4.1351 4.70031 3.94023 4.69928 3.7009C4.69825 3.46158 4.51 3.26844 4.27881 3.26951L3.17051 3.27463C2.71874 3.27671 2.41528 3.27746 2.1857 3.2515C2.16843 3.24955 2.15191 3.24748 2.1361 3.24529C2.36689 2.97591 2.62356 2.73082 2.90206 2.51421C3.76498 1.84308 4.83704 1.44554 6 1.44554C8.85131 1.44554 11.1628 3.83833 11.1628 6.78999C11.1628 9.74162 8.85131 12.1344 6 12.1344C3.14867 12.1344 0.837209 9.74162 0.837209 6.78999C0.837209 6.55067 0.649792 6.35665 0.418605 6.35665C0.187418 6.35665 0 6.55067 0 6.78999C0 10.2203 2.68629 13.0011 6 13.0011C9.31373 13.0011 12 10.2203 12 6.78999C12 3.35969 9.31373 0.578876 6 0.578876C4.64949 0.578876 3.40211 1.04128 2.39917 1.82132C2.09596 2.05714 1.81506 2.32201 1.56031 2.61194L1.55936 2.60313C1.53429 2.36546 1.53501 2.05133 1.53702 1.58367L1.54197 0.436367Z"
+                                                                fill="#789291" />
+                                                        </svg></span>
+                                                    <input type="checkbox" value="Clear">
+                                                </label>
+                                            </div>
+
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Sub-Category">
+                                                    <span class="flex flex-vcenter">Sub-Category</span>
+                                                    <input type="checkbox" value="Sub-Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Another Category">
+                                                    <span class="flex flex-vcenter">Another Category</span>
+                                                    <input type="checkbox" value="Another Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Category">
+                                                    <span class="flex flex-vcenter">Category</span>
+                                                    <input type="checkbox" value="Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Topic">
+                                                    <span class="flex flex-vcenter">Topic</span>
+                                                    <input type="checkbox" value="Topic">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Sub-Category">
+                                                    <span class="flex flex-vcenter">Sub-Category</span>
+                                                    <input type="checkbox" value="Sub-Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Another Category">
+                                                    <span class="flex flex-vcenter">Another Category</span>
+                                                    <input type="checkbox" value="Another Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Category">
+                                                    <span class="flex flex-vcenter">Category</span>
+                                                    <input type="checkbox" value="Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Topic">
+                                                    <span class="flex flex-vcenter">Topic</span>
+                                                    <input type="checkbox" value="Topic">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Sub-Category">
+                                                    <span class="flex flex-vcenter">Sub-Category</span>
+                                                    <input type="checkbox" value="Sub-Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Another Category">
+                                                    <span class="flex flex-vcenter">Another Category</span>
+                                                    <input type="checkbox" value="Another Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Category">
+                                                    <span class="flex flex-vcenter">Category</span>
+                                                    <input type="checkbox" value="Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Topic">
+                                                    <span class="flex flex-vcenter">Topic</span>
+                                                    <input type="checkbox" value="Topic">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Blog Category">
+                                                    <span class="flex flex-vcenter">Blog Category</span>
+                                                    <input type="checkbox" value="Blog Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Sub-Category">
+                                                    <span class="flex flex-vcenter">Sub-Category</span>
+                                                    <input type="checkbox" value="Sub-Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Another Category">
+                                                    <span class="flex flex-vcenter">Another Category</span>
+                                                    <input type="checkbox" value="Another Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Category">
+                                                    <span class="flex flex-vcenter">Category</span>
+                                                    <input type="checkbox" value="Category">
+                                                </label>
+                                            </div>
+                                            <div class="post-categories-field">
+                                                <label for="Topic">
+                                                    <span class="flex flex-vcenter">Topic</span>
+                                                    <input type="checkbox" value="Topic">
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- <li class="mb-0">
                                 <div class="blog-post-select">
                                     <select name="" id="">
                                         <option value="Categories">Categories</option>
@@ -267,8 +604,8 @@
                                         <option value="Categories">Categories</option>
                                     </select>
                                 </div>
-                            </li>
-                            <li>
+                            </li> -->
+                            <li class="mb-0">
                                 <form class="blog-post-form relative" action="">
                                     <input type="text" name="" id="" placeholder="Search">
                                     <button class="absolute"><svg xmlns="http://www.w3.org/2000/svg" width="15"

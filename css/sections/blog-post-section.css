@@ -8,7 +8,7 @@
 
 .blog-post-right{margin-bottom: 99px;}
 ul.blog-post-order{gap: 41px 82px; justify-content: flex-end;}
-ul.blog-post-order > li::before{top: 50%; transform: translateY(-50%); left: -41px;}
+ul.blog-post-order > li::before{top: 19px; left: -41px; position: relative; display: block;}
 ul.blog-post-order > li:first-child::before{display: none;}
 
 .blog-post-overlay{background-color: var(--Black-60);}
@@ -22,13 +22,25 @@ ul.blog-post-order > li:first-child::before{display: none;}
 #load-more hr{flex: 1;}
 #load-more hr{flex: 1;}
 
-.blog-post-select{width: 132px;}
 
-.blog-post-form{width: 104px;}
-.blog-post-form input{padding: 8px 16px 10px; background-color: var(--White); width: 100%; font-weight: 600; font-size: 14px; line-height: 18px; border: none; border-radius: 10px;}
+.blog-post-form input{padding: 8px 32px 10px 16px; background-color: var(--White); color: var(--Charcoal-Black); width: 100%; font-weight: 600; font-size: 14px; line-height: 18px; border: none; border-radius: 10px;}
 .blog-post-form button{top: 50%; right: 10px; transform: translateY(-50%); border: none; background: none; margin: 0; padding: 0;}
 .blog-post-form button svg{animation: none;}
 ul#blog_list{margin: 0;}
+
+ul.blog-post-order > li{position: static;}
+.post-categories-btn{outline: 0; border-radius: 10px; padding: 9px 34px 8px 16px; width: 100%; font-size: 14px; letter-spacing: 0; font-weight: 600; line-height: 20px; background: var(--White); color: var(--Charleston-Green); box-shadow: none; border: none; vertical-align: middle; height: auto;  cursor: pointer; transform: var(--b-transition); position: relative; display: block;}
+.post-categories-btn.open .post-categories-arrow{top: calc(50% + 4px); transform: translateY(-50%) rotate(180deg);}
+.post-categories-arrow{right: 12px; top: 50%; transform: translateY(-50%);}
+.post-categories-arrow svg{width: 13px; height: 6px;}
+.post-categories-wrap{display: none; width: 100%; top: 100%; right: 0; z-index: 1; background: var(--Background);}
+form.post-categories-form{margin: 0; gap: 12px; padding: 24px 0;  justify-content: flex-end;}
+form.post-categories-form label{margin: 0; padding: 0; position: relative;}
+form.post-categories-form label.clear span{padding: 12px 16px; background-color: var(--White);}
+form.post-categories-form label span{margin: 0; gap: 14px; padding: 12px 28px; width: 100%; border-radius: 20px; opacity: 0.8; background: rgba(120, 146, 145, 0.20); border: none; color: var(--Charleston-Green); font-size: 14px; font-weight: 600; line-height: 12px; cursor: pointer; }
+form.post-categories-form label span svg{width: 12px; height: 13px;}
+form.post-categories-form label input{margin: 0; padding: 0; width: 100%; height: 100%; top: 0; cursor: pointer; left: 0; position: absolute; opacity: 0; background: none;}
+form.post-categories-form label.checked span{background-color: var(--White);}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
@@ -36,7 +48,11 @@ ul#blog_list{margin: 0;}
     .blog-post-row{gap: 40px;}
     .blog-post-list{flex: 0 0 calc(33.33333% - 27px);}
     .load_more_news span#more-blog:not(:last-child){margin-bottom: 40px; display: block;}
+    .blog-post-select{width: fit-content;}
 }   
+@media only screen and (min-width: 760px){
+    .blog-post-form{width: 105px;}
+}
 @media only screen and (max-width: 1199px) and (min-width: 1024px){
     .blog-post-row{gap: 32px;}
     .blog-post-list{flex: 0 0 calc(33.33333% - 22px);}
@@ -45,6 +61,7 @@ ul#blog_list{margin: 0;}
     .blog-post-main{padding: 0 0 40px;}
     .blog-post-row{gap: 32px; justify-content: center;}
     .blog-post-list{flex: 0 0 calc(50% - 16px);}
+
 }
 @media only screen and (max-width: 759px) and (min-width: 0px){
     .blog-post-main{padding: 0 0 40px;}
@@ -52,4 +69,10 @@ ul#blog_list{margin: 0;}
     .blog-post-row{display: block;}
     .blog-post-list:not(:last-child){margin-bottom: 20px;}
     .blog-post-text h2{ margin-bottom: 19px; font-size: 24px; line-height: 32px; letter-spacing: -0.48px;}
+    ul.blog-post-order{gap: 43px; flex-direction: row-reverse;}
+    ul.blog-post-order li{flex: calc(50% - 21.5px); position: relative;}
+    .post-categories-wrap{width: 226px;  margin-top: 8px; padding: 8px 16px; border-radius: 10px; background-color: var(--White);}
+    form.post-categories-form{display: block; padding: 0;}
+    .post-categories-field:not(:last-child){margin-bottom: 8px;}
+    form.post-categories-form label span{justify-content: center;}
 }

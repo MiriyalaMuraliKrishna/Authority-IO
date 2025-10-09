@@ -28,9 +28,10 @@
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .blog-intro-main{padding: 176px 0 0;}
+    .blog-intro-main{padding: 176px 0 40px;}
+    
     .blog-intro-heading{margin-bottom: 40px; max-width: 750px;}
-    .blog-intro-row{gap: 40px; margin-bottom: 40px;}
+    .blog-intro-row{gap: 40px;}
 
     .blog-intro-list{flex: 0 0 calc(100% - 460px);}
     .blog-intro-list:nth-child(2), .blog-intro-list:nth-child(3){flex: 0 0 420px;}
