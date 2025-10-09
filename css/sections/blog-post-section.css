@@ -8,6 +8,7 @@
 
 .blog-post-right{margin-bottom: 99px;}
 ul.blog-post-order{gap: 41px 82px; justify-content: flex-end;}
+ul.blog-post-order > li{margin: 0;}
 ul.blog-post-order > li::before{top: 19px; left: -41px; position: relative; display: block;}
 ul.blog-post-order > li:first-child::before{display: none;}
 
