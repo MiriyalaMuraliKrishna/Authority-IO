@@ -12,6 +12,7 @@
 @media only screen and (min-width: 760px){
     .image-captions{gap: 21px; margin: 64px 0 62px;}
     .image-caption{flex: 0 0 calc(50% - 10.5px);}
+    .image-caption:nth-child(1):last-child{flex: 0 0 100%;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 760px){
     .full-image-caption{margin: 47px 0 42px;}

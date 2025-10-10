@@ -8,10 +8,10 @@
 .post-banner-text p{margin-bottom: 33px;}
 .post-banner-btns{gap: 32px;}
 
-ul.post-banner-categories{gap: 0 53px;}
-ul.post-banner-categories > li::before{width: 4px; height: 4px; top: calc(50% + 2px); left: -24px; transform: translateY(-50%); background-color: var(--Muted-Ochre);}
+ul.post-banner-categories{gap: 0 27px;}
+ul.post-banner-categories > li::before{width: 4px; height: 4px; top: 2px; left: 0; transform: none; background-color: var(--Muted-Ochre); position: relative; display: block;}
 ul.post-banner-categories > li:first-child:before{display: none;}
-ul.post-banner-categories > li:not(:first-child){padding-top: 1px;}
+ul.post-banner-categories > li:not(:first-child){padding-top: 1px; gap: 0 27px; align-items: center; display: flex;}
 ul.post-banner-categories > li > a{color: var(--White-70);}
 ul.post-banner-categories > li > a:hover{color: var(--Muted-Ochre);}
 

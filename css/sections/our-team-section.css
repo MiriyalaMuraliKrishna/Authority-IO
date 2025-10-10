@@ -4,61 +4,6 @@
 
 
   
-  
-  .our-team-swiper.swiper {
-    user-select: none;
-  }
-  
-  .our-team-swiper .swiper-slide {
-    position: relative;
-    height: 500px;
-    border-radius: 30px;
-    overflow: hidden;
-    filter: grayscale(20%) brightness(80%);
-    pointer-events: none;
-    will-change: transform;
-  }
-  
-  .our-team-swiper .swiper-slide-active {
-    perspective: 1000px;
-    filter: grayscale(0) brightness(100%);
-    pointer-events: auto;
-    padding: 10px 0;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .our-team-swiper .swiper-slide-active .card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-  }
-  
-
-  
-  .our-team-swiper .swiper-slide .front{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 30px;
-    pointer-events: none;
-  }
-
-  
-
-
-  
-  .our-team-swiper .swiper-slide img {
-    object-fit: cover;
-    border-radius: 30px;
-    pointer-events: none;
-  }
-  
-  
-  
-
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){

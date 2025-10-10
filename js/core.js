@@ -11,7 +11,7 @@ import { accordion } from './elements/accordion.js';
 import { asSeen } from './elements/asSlider.js';
 import { slickme } from './elements/customSlick.js';
 import { stickme } from './elements/sticksy.js';
-import { cards } from './elements/swipecards.js';
+import { cards } from './elements/cards.js';
 import { spyScroll } from './elements/spyScroll.js';
 import { categories } from './elements/categories.js';
 

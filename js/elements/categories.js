@@ -18,17 +18,21 @@ class Categories {
   }
 
   handler(e) {
-    this.btn.forEach((ele) => ele.classList.remove('open'));
-
     const currentBtn = e.currentTarget;
+    this.btn.forEach((ele) => {
+      if (ele !== currentBtn) ele.classList.remove('open');
+    });
+
     currentBtn.classList.toggle('open');
 
     const myele = currentBtn
       .closest('.blog-post-select')
       .querySelector('.post-categories-wrap');
 
-    this.eles.forEach((ele) => $(ele).hide());
-    $(myele).slideToggle(800);
+    this.eles.forEach((ele) => {
+      if (ele !== myele) $(ele).stop(true, true).hide();
+    });
+    $(myele).stop(true, true).slideToggle(800);
   }
 
   formHandler(e) {
